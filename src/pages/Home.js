@@ -2,6 +2,7 @@ import React from "react";
 import "./main.css";
 import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import SectionOne from "../components/Home/SectionOne";
 
 const useStyles = makeStyles({
   main: {
@@ -14,7 +15,7 @@ const Home = () => {
   return (
     <div className="home fullHeader">
       <Container maxWidth="md" className={classes.main}>
-        <h1>Home Pages</h1>
+        <SectionOne />
       </Container>
     </div>
   );
