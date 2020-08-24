@@ -1,0 +1,36 @@
+.background {
+  background-image: linear-gradient(
+      0deg,
+      rgba(28, 30, 32, 81%),
+      rgba(28, 30, 32, 81%)
+    ),
+    url("../../../assets//images//MaskGroup2.jpg");
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 120px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.background h2 {
+  text-align: center;
+}
+.background {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.background button {
+  text-transform: capitalize;
+  background-color: white;
+  padding: 10px 40px;
+  border-radius: 20px;
+  margin-top: 40px;
+  font-weight: 700;
+}
+.background button:hover {
+  background-color: #ebebeb;
+}

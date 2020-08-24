@@ -1,0 +1,26 @@
+.section-one {
+  margin: 25% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.section-one > * {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.section-one h1 {
+  text-transform: capitalize;
+  margin: 20px 0px;
+}
+.section-one h5 {
+  width: 70%;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .section-one h5 {
+    width: auto;
+  }
+}
