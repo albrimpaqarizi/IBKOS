@@ -1,0 +1,498 @@
+// ======================================================
+// Components :: Modal
+// ======================================================
+
+.ant-modal {
+  max-width: 100%;
+  font-family: inherit;
+}
+
+.ant-modal {
+  @include respond-to(phone-and-down) {
+    max-width: 90%;
+  }
+}
+
+// Add method modal
+.add-medthod-modal {
+  .ant-modal-body {
+    padding: 40px 0;
+  }
+
+  &__header {
+    padding: 0 100px;
+
+    @include respond-to(phone-and-down) {
+      padding: 0 50px;
+    }
+
+    @include respond-to(smallphone-and-down) {
+      padding: 0 30px;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.33;
+    color: #252525;
+    margin-bottom: 2px;
+  }
+
+  &__sub-title {
+    font-size: 12px;
+    line-height: 1.75;
+    color: #a4a4a4;
+  }
+
+  &__list {
+    margin-top: 30px;
+  }
+
+  &__item {
+    &-opt {
+      background: #fafafa;
+      padding: 22px 100px;
+
+      @include respond-to(phone-and-down) {
+        padding: 10px 50px;
+      }
+
+      @include respond-to(smallphone-and-down) {
+        padding: 10px 30px;
+      }
+
+      &--paypal {
+        .radio-label {
+          background: url('#{$path-to-images}/logo-paypal.png') no-repeat right center;
+          background-size: 85px 23px;
+          width: 115px;
+          height: 23px;
+          text-indent: -9999px;
+        }
+      }
+    }
+
+    &.active {
+      .payment-info {
+        display: flex;
+      }
+    }
+
+    .payment-info {
+      display: none;
+      padding: 30px 100px;
+
+      @include respond-to(phone-and-down) {
+        padding: 15px 50px;
+      }
+
+      @include respond-to(smallphone-and-down) {
+        padding: 10px 30px;
+      }
+    }
+
+    &-button {
+      width: 136px;
+
+      button {
+        height: 57px;
+        border-radius: 28.5px;
+      }
+    }
+  }
+}
+
+// Add porfolio modal
+
+.add-portfolio-modal {
+  &__header {
+    display: flex;
+    align-items: center;
+    background: #fafafa;
+    padding: 40px;
+
+    @include respond-to(phone-and-down) {
+      padding: 15px;
+    }
+
+    &-content {
+      flex: 1;
+    }
+
+    &-title {
+      font-size: 27px;
+      font-weight: 500;
+      line-height: 1.04;
+      color: #252525;
+      margin-bottom: 10px;
+
+      @include respond-to(smallphone-and-down) {
+        font-size: 20px;
+      }
+    }
+
+    &-sub-title {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #a4a4a4;
+    }
+
+    &-close {
+      font-size: 28px;
+      font-weight: 700;
+      color: #7ed321;
+      cursor: pointer;
+    }
+  }
+
+  .modal-form {
+    padding: 40px;
+
+    @include respond-to(phone-and-down) {
+      padding: 20px 0;
+    }
+
+    &__item {
+      margin-bottom: 20px;
+
+      &-title {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.62;
+        color: #333333;
+        margin-bottom: 7px;
+      }
+
+      &-sub-title {
+        font-size: 13px;
+        line-height: 1.85;
+        color: #a4a4a4;
+        margin-bottom: 12px;
+      }
+
+      &-list {
+        li {
+          font-size: 13px;
+          line-height: 1.85;
+          color: #a4a4a4;
+
+          span {
+            color: #3a3a3a;
+            padding-right: 5px;
+          }
+        }
+      }
+
+      textarea {
+        height: auto;
+        resize: none;
+      }
+    }
+
+    &__publish {
+      background: #fafafa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 15px;
+
+      @include respond-to(phone-and-down) {
+        padding: 15px;
+      }
+
+      button {
+        width: 198px;
+        height: 57px;
+        border-radius: 28.5px;
+      }
+    }
+  }
+}
+
+// Create ticket modal
+.create-ticket-modal {
+  .ant-modal-body {
+    padding: 55px;
+    border: 1px solid #f1f1f1;
+
+    @include respond-to(phone-and-down) {
+      padding: 20px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 37px;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.25;
+    color: #252525;
+    margin-bottom: 5px;
+  }
+
+  &__sub-title {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #a4a4a4;
+  }
+
+  &__item {
+    label {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 1.62;
+      color: #333;
+    }
+
+    textarea {
+      height: auto;
+      resize: none;
+    }
+  }
+}
+
+// Ticket review modal
+.ticket-review-modal {
+  .ant-modal-body {
+    padding: 55px 20px;
+    border: 1px solid #f1f1f1;
+
+    @include respond-to(phone-and-down) {
+      padding: 20px;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.25;
+    color: #252525;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__review {
+    text-align: center;
+    margin-bottom: 60px;
+
+    &-title {
+      font-size: 13px;
+      line-height: 1.62;
+      color: #84ce3f;
+      margin-bottom: 15px;
+    }
+
+    &-stars {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        color: #e2e2e2;
+        margin-right: 15px;
+        font-size: 40px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &.active {
+          color: #84ce3f;
+        }
+      }
+    }
+  }
+
+  &__form {
+    background: #fafafa;
+    padding: 15px 30px 35px 30px;
+
+    @include respond-to(phone-and-down) {
+      padding: 10px 20px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 40px;
+
+    label {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 1.62;
+      color: #333;
+    }
+
+    textarea {
+      height: auto;
+      resize: none;
+    }
+  }
+
+  &__button {
+    width: 156px;
+    border-radius: 29.5px;
+    margin: 0 auto;
+  }
+}
+
+// Add timesSheets new task
+.timessheets-new-adding-modal {
+  .ant-modal {
+    max-width: 100%;
+    font-family: inherit;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 30px 10px;
+    border-bottom: 1px solid rgba(#979797, 0.3);
+
+    &-content {
+      flex: 1;
+    }
+
+    &-title {
+      font-size: 36px;
+      line-height: 1.25;
+      color: #252525;
+      margin-bottom: 10px;
+    }
+
+    &-sub-title {
+      font-size: 13px;
+      line-height: 1.38;
+      color: #a4a4a4;
+    }
+
+    &-close {
+      font-size: 28px;
+      font-weight: 700;
+      color: #000;
+      cursor: pointer;
+    }
+  }
+
+  .modal-form {
+    padding: 20px 0;
+
+    &__item {
+      margin-bottom: 20px;
+
+      &.typing {
+        .modal-form {
+          &__item-title {
+            color: #7ed321;
+          }
+        }
+      }
+
+      &-title {
+        font-size: 12px;
+        line-height: 1.75;
+        color: #b6b6b6;
+        margin-bottom: 10px;
+      }
+
+      textarea {
+        height: auto;
+        resize: none;
+      }
+
+      &-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &-col {
+        width: calc((100% - 5px) / 2);
+      }
+
+      &-note {
+        font-size: 12px;
+        line-height: 1.75;
+        color: #7ed321;
+        margin-top: 10px;
+      }
+    }
+
+    &__upload {
+      &-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 15px;
+        border-radius: 3px;
+        border: 1px dashed #e7e7e7;
+        position: relative;
+      }
+
+      &-file {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        cursor: pointer;
+        opacity: 0;
+      }
+
+      &-icon {
+        background: url('#{$path-to-images}/icon-images.svg') no-repeat center center;
+        background-size: 57px 57px;
+        width: 47px;
+        height: 57px;
+        text-indent: -999px;
+        margin-bottom: 22px;
+      }
+
+      &-text {
+        font-size: 12px;
+        line-height: 1.75;
+        color: #444;
+      }
+    }
+
+    &__button {
+      width: 156px;
+      height: 42px;
+      border-radius: 29.5px;
+      box-shadow: 0 2px 9px -1px rgba(0, 0, 0, 0.11);
+      margin-top: 50px;
+    }
+
+    .all-shared-file {
+      &__item {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        border: solid 1px #f2f2f2;
+        background-color: #fafafa;
+        padding: 0 20px;
+        margin-top: 10px;
+
+        &:not(:last-child) {
+          border-bottom: none;
+        }
+
+        &-icon {
+          padding-right: 12px;
+        }
+
+        &-desc {
+          font-size: 12px;
+          line-height: 1.75;
+          color: #444;
+        }
+
+        &-close {
+          color: #000;
+          margin-left: auto;
+          font-weight: 700;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

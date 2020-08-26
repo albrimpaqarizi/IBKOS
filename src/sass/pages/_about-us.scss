@@ -1,0 +1,225 @@
+// ======================================================
+// Pages :: About us
+// ======================================================
+
+.about-us {
+  background: #fafafa;
+  padding: 54px 0;
+
+  @include respond-to(smallphone-and-down) {
+    padding: 30px 0;
+  }
+
+  &__inner {
+    margin-top: 70px;
+
+    @include respond-to(smallphone-and-down) {
+      margin-top: 30px;
+    }
+  }
+
+  .about-banner {
+    &__full {
+      margin-bottom: 9px;
+      height: 500px;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    &__half {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      img {
+        width: calc((100% - 14px) / 2);
+        object-fit: cover;
+
+        @include respond-to(middlephone-and-down) {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .who-we-are {
+    padding: 70px 0;
+
+    @include respond-to(phone-and-down) {
+      padding: 30px 0;
+    }
+
+    &__intro {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 80px;
+
+      @include respond-to(tablet-and-down) {
+        padding-bottom: 30px;
+      }
+
+      @include respond-to(middlephone-and-down) {
+        padding-bottom: 0;
+      }
+
+      &-title {
+        font-size: 36px;
+        line-height: 1.25;
+        color: #252525;
+        padding-right: 190px;
+
+        @include respond-to(tablet-and-down) {
+          padding-right: 30px;
+          font-size: 30px;
+        }
+
+        @include respond-to(middlephone-and-down) {
+          width: 100%;
+          padding-right: 0;
+        }
+      }
+
+      &-content {
+        font-size: 18px;
+        line-height: 1.83;
+        color: #a4a4a4;
+        flex: 1;
+
+        @include respond-to(tablet-and-down) {
+          font-size: 15px;
+        }
+
+        p {
+          margin-bottom: 30px;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    &__staticstics {
+      border: 1px solid #f2f2f2;
+      box-shadow: 0 2px 15px -1px rgba(0, 0, 0, 0.05);
+      padding: 45px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @include respond-to(phone-and-down) {
+        padding: 20px;
+      }
+
+      &-item {
+        width: calc((100% - 80px) / 3);
+
+        @include respond-to(phone-and-down) {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+
+        span {
+          font-size: 45px;
+          line-height: 1;
+          color: #252525;
+          position: relative;
+          padding-bottom: 34px;
+          display: block;
+
+          &::before {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            height: 1.5px;
+            background-color: #84ce3f;
+            width: 100%;
+          }
+        }
+
+        p {
+          font-size: 15px;
+          line-height: 2.2;
+          color: #a4a4a4;
+          margin-top: 28px;
+        }
+      }
+    }
+  }
+
+  .about-team {
+    margin-top: 63px;
+
+    &__list {
+      margin-top: 125px;
+      display: flex;
+      flex-flow: row wrap;
+
+      @include respond-to(phone-and-down) {
+        margin-top: 50px;
+      }
+    }
+
+    &__item {
+      width: calc(100% / 5);
+      text-align: center;
+
+      @include respond-to(tablet-and-down) {
+        width: calc(100% / 4);
+      }
+
+      @include respond-to(phone-and-down) {
+        width: calc(100% / 2);
+      }
+
+      @include respond-to(smallphone-and-down) {
+        width: calc(100%);
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &-image {
+        width: 173px;
+        height: 173px;
+        background-color: $primary;
+        margin: 0 auto;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &-plus {
+        color: $white;
+        font-size: 99px;
+      }
+
+      h4 {
+        font-size: 18px;
+        line-height: 1.56;
+        color: #252525;
+      }
+
+      p {
+        font-size: 13px;
+        line-height: 2.31;
+        color: #a4a4a4;
+      }
+    }
+  }
+}

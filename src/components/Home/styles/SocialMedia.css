@@ -1,0 +1,18 @@
+.SocalMedia {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.SocalMedia > *:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.SocalMedia > * {
+  background-color: white;
+  padding: 4px;
+  color: #2699fb;
+  font-size: 25px;
+  margin: 2px 10px;
+}

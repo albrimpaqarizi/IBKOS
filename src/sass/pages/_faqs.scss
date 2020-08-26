@@ -1,0 +1,63 @@
+// ======================================================
+// Pages :: FAQs
+// ======================================================
+
+.faqs {
+  .list-question {
+    &__tab {
+      border-top: 1px solid $gray-25;
+      border-bottom: 1px solid $gray-25;
+      height: 66px;
+      background: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-item {
+        height: 100%;
+        color: $gray-26;
+        font-size: $font-size-large;
+        line-height: 1.33;
+        padding: 0 33px;
+        margin-right: 20px;
+        background: transparent;
+        border: none;
+        margin-bottom: -1px;
+
+        @include respond-to(middlephone-and-down) {
+          font-size: $font-size-small;
+          padding: 0 15px;
+          margin-right: 10px;
+        }
+
+        @include respond-to(middlephone-and-down) {
+          font-size: $font-size-small - 1;
+          padding: 0 15px;
+          margin-right: 10px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &.active {
+          border-bottom: 3px solid $primary;
+          color: $black-01;
+        }
+      }
+    }
+
+    &__content {
+      padding-top: 97px;
+      padding-bottom: 30px;
+
+      @include respond-to(phone-and-down) {
+        padding-top: 50px;
+      }
+
+      @include respond-to(smallphone-and-down) {
+        padding-top: 30px;
+      }
+    }
+  }
+}

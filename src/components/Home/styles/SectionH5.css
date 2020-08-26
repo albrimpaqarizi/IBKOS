@@ -1,0 +1,11 @@
+.gallery-h {
+  font-size: 23pt;
+}
+.gallery-p {
+  font-size: 18pt;
+}
+@media (min-width: 992.98px) {
+  .gallery-div {
+    padding-left: 5rem !important;
+  }
+}

@@ -1,0 +1,245 @@
+// ======================================================
+// Components :: Chat box
+// ======================================================
+.chat-box {
+  width: 467px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+
+  @include respond-to(desktop-and-down) {
+    width: 400px;
+  }
+
+  @include respond-to(small-desktop-and-down) {
+    transform: translateX(450px);
+    transition: all .4s ease-in-out;
+  }
+
+  &__inner {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
+    border: solid 1px #f3f3f3;
+    background-color: #fff;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    cursor: pointer;
+
+    &-close {
+      font-size: 24px;
+      color: #252525;
+      font-weight: 300;
+    }
+  }
+
+  &__search {
+    background-color: #fafafa;
+
+    .form-control {
+      height: 88px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #585858;
+    }
+  }
+
+  .chat-list {
+    max-height: calc(100vh - 300px);
+    overflow: auto;
+  }
+
+  .chat-item {
+    display: flex;
+    align-items: center;
+    padding: 25px 35px;
+    border: 1px solid #f4f4f4;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+
+    &--online {
+      .chat-item {
+        &__avatar {
+          &::before {
+            background: #7ed321;
+          }
+        }
+      }
+    }
+
+    &__avatar {
+      width: 62px;
+      height: 62px;
+      flex-basis: 62px;
+      margin-right: 32px;
+      border-radius: 50%;
+      position: relative;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+
+      &::before {
+        position: absolute;
+        content: '';
+        bottom: -7px;
+        right: 23px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: solid 3px #fff;
+        background: #ff0000;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      &--blue {
+        background: #4a90e2;
+      }
+
+      &--yellow {
+        background: #f5a623;
+      }
+    }
+
+    &__desc {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: #252525;
+
+      &-dotted {
+        padding: 0 5px;
+      }
+
+      &-title {
+        color: #737373;
+      }
+    }
+  }
+}
+
+.conversation-box {
+  width: 470px;
+  position: fixed;
+  right: 530px;
+  bottom: 0;
+
+  @include respond-to(desktop-and-down) {
+    width: 400px;
+    right: 430px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border: solid 1px #f3f3f3;
+    background: #84ce3f;
+    color: #fff;
+
+    &-action {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &-close {
+      padding-left: 30px;
+      font-weight: 300;
+    }
+  }
+
+  &__content {
+    height: 745px;
+    max-height: 745px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #f3f3f3;
+    border-left: 1px solid #f3f3f3;
+
+    @include respond-to(desktop-and-down) {
+      max-height: calc(100vh - 200px);
+    }
+
+    .conversation-details {
+      margin-top: 0;
+      flex: 1;
+      padding: 30px 35px;
+    }
+
+    .conversation-item {
+      margin-bottom: 20px;
+
+      &__chat {
+        max-width: 95%;
+
+        &-content {
+          padding: 15px 30px;
+        }
+      }
+    }
+  }
+
+  &__form {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
+    border: solid 1px #f3f3f3;
+
+    &-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 88px;
+
+      .form-control {
+        border: none;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #585858;
+      }
+    }
+
+    &-input {
+      width: calc(100% / 2);
+    }
+
+    &-options {
+      width: calc(100% / 2);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 30px;
+
+      &-item {
+        padding-right: 15px;
+        position: relative;
+
+        input {
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+        }
+
+        i {
+          color: #a4a4a4;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

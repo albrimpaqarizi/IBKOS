@@ -1,0 +1,258 @@
+// ======================================================
+// Pages :: Ticket details
+// ======================================================
+
+.ticket-details {
+  background: #fafafa;
+  padding-bottom: 45px;
+
+  &__inner {
+    border: solid 1px #f0f0f0;
+    border-bottom: none;
+    background-color: #fff;
+    padding-top: 45px;
+  }
+
+  .ticket-header {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 22px;
+    padding: 0 45px;
+
+    @include respond-to(smallphone-and-down) {
+      padding: 0 20px;
+    }
+
+    &__title {
+      font-size: 27px;
+      line-height: 1.04;
+      color: #252525;
+      margin-bottom: 22px;
+    }
+
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+
+      @include respond-to(large-tablet-and-down) {
+        flex-wrap: wrap;
+      }
+    }
+
+    &__type {
+      display: flex;
+      align-items: center;
+
+      @include respond-to(large-tablet-and-down) {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      @include respond-to(phone-and-down) {
+        flex-wrap: wrap;
+      }
+
+      &-title {
+        font-size: 15px;
+        color: #a4a4a4;
+        display: flex;
+        align-items: center;
+
+        @include respond-to(phone-and-down) {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+
+        &:first-child {
+          border-right: 1px solid rgba(#979797, 0.15);
+          padding-right: 15px;
+          margin-right: 15px;
+
+          @include respond-to(phone-and-down) {
+            border-right: none;
+          }
+        }
+      }
+
+      &-icon {
+        padding-right: 15px;
+      }
+    }
+
+    &__supporter {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .personal-info {
+        justify-content: flex-end;
+
+        @include respond-to(large-tablet-and-down) {
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    &__option {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-left: 25px;
+
+      @include respond-to(large-tablet-and-down) {
+        position: absolute;
+        bottom: 15px;
+        right: 0;
+      }
+
+      &-item {
+        width: 58px;
+        height: 41px;
+        border-radius: 9px;
+        background-color: #f2f3f5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:first-child {
+          margin-right: 7px;
+
+          .ticket-header {
+            &__option-icon {
+              height: 30px;
+            }
+          }
+        }
+
+        @include respond-to(smallphone-and-down) {
+          width: 30px;
+          height: 25px;
+        }
+      }
+
+      &-icon {
+        color: #5e6a84;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .supporter-review {
+    margin-top: 23px;
+    padding: 0 45px;
+
+    @include respond-to(smallphone-and-down) {
+      padding: 0 20px;
+    }
+
+    .review-details {
+      padding: 20px 35px;
+      margin-top: 26px;
+      border-radius: 6px;
+      background: #fafafa;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      &__item {
+        padding-right: 90px;
+
+        @include respond-to(tablet-and-down) {
+          padding-right: 50px;
+        }
+
+        @include respond-to(phone-and-down) {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+
+        &-stars {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          @include respond-to(phone-and-down) {
+            justify-content: flex-start;
+          }
+
+          i {
+            font-size: 20px;
+            color: #dfe1e6;
+            padding-right: 4px;
+
+            &.active {
+              color: #f5a623;
+            }
+          }
+        }
+
+        &-title {
+          font-size: 15px;
+          line-height: 1.6;
+          color: #252525;
+          margin-bottom: 6px;
+        }
+
+        &-criteria {
+          font-size: 12px;
+          line-height: 2;
+          color: #737373;
+        }
+      }
+    }
+  }
+}
+
+.personal-info {
+  display: flex;
+  align-items: center;
+
+  &__avatar {
+    flex-basis: 31px;
+    min-width: 31px;
+    margin-right: 30px;
+    border-radius: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__desc {
+    font-size: 12px;
+    line-height: 2;
+
+    &-name {
+      color: #252525;
+    }
+
+    &-dash {
+      padding: 0 5px;
+    }
+
+    &-title {
+      color: #737373;
+    }
+  }
+
+  &__date-time {
+    font-size: 12px;
+    color: #cfcfcf;
+    padding-left: 20px;
+
+    span {
+      padding-right: 20px;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+// ======================================================
+// Pages :: Referral Program
+// ======================================================
+
+.affiliate {
+  .dynamic-cpa {
+    padding-top: 50px;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 150px 0;
+
+      @include respond-to(large-tablet-and-down) {
+        padding: 100px 0;
+      }
+
+      @include respond-to(tablet-and-down) {
+        padding: 70px 0;
+      }
+
+      @include respond-to(phone-and-down) {
+        padding: 50px 0;
+      }
+
+      @include respond-to(smallphone-and-down) {
+        padding: 30px 0;
+      }
+    }
+
+    &__item {
+      width: calc((100% - 100px) / 3);
+      text-align: center;
+
+      @include respond-to(phone-and-down) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      &-icon {
+        height: 75px;
+        margin-bottom: 60px;
+
+        @include respond-to(phone-and-down) {
+          margin-bottom: 20px;
+        }
+      }
+
+      &-title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.33;
+        color: #252525;
+        margin-bottom: 13px;
+      }
+
+      &-desc {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #a4a4a4;
+      }
+    }
+  }
+
+  .collapse-custom {
+    padding: 50px 0;
+    background: #fafafa;
+  }
+}

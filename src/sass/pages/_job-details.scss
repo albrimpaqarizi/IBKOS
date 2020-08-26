@@ -1,0 +1,269 @@
+// ======================================================
+// Pages :: Job Details
+// ======================================================
+
+.job-details {
+  &__main {
+    background: $white-06;
+    padding-bottom: 50px;
+
+    @include respond-to(phone-and-down) {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+
+    @include respond-to(tablet-and-down) {
+      flex-wrap: wrap;
+    }
+
+    .another-job {
+      @include respond-to(tablet-and-down) {
+        display: none;
+      }
+    }
+  }
+
+  &__info {
+    border: 1px solid $gray-24;
+    flex: 1;
+    margin-right: 10px;
+    background: $white;
+
+    @include respond-to(tablet-and-down) {
+      width: 100%;
+      flex: auto;
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+  }
+
+  &__more {
+    flex-basis: 296px;
+
+    @include respond-to(tablet-and-down) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-basis: auto;
+      width: 100%;
+
+      .job-other {
+        width: calc((100% - 15px) / 2);
+        margin-bottom: 0;
+
+        @include respond-to(middlephone-and-down) {
+          width: 100%;
+          margin-bottom: 25px;
+        }
+      }
+
+      .share-print {
+        width: 100%;
+      }
+    }
+
+    @include respond-to(phone-and-down) {
+      flex-basis: auto;
+    }
+  }
+
+  .job-list {
+    margin-top: 0;
+    padding-top: 50px;
+
+    &__inner {
+      margin-top: 50px;
+
+      @include respond-to(phone-and-down) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.job-content {
+  &__overview {
+    padding: 30px 48px 24px;
+    border-bottom: 1px solid $gray-30;
+
+    @include respond-to(smallphone-and-down) {
+      padding: 15px;
+    }
+
+    &-keywords {
+      font-size: $font-size-base + 1;
+      line-height: 1.6;
+      color: $gray-05;
+      margin-bottom: 7px;
+    }
+
+    &-title {
+      font-size: $font-size-largest - 1;
+      line-height: 1.04;
+      color: $black-01;
+
+      @include respond-to(smallphone-and-down) {
+        font-size: 20px;
+      }
+    }
+
+    &-icon {
+      color: $gray-05;
+      font-size: $font-size-larger;
+    }
+  }
+
+  &__company {
+    &-info {
+      @include respond-to(smallphone-and-down) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: $font-size-base + 1;
+        line-height: 1.4;
+        color: $gray-28;
+
+        > span {
+          &:first-child {
+            color: $gray-05;
+            width: 120px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.job-description {
+  padding: 24px 48px 40px;
+
+  @include respond-to(smallphone-and-down) {
+    padding: 15px;
+  }
+
+  &__title {
+    font-size: $font-size-medium + 1;
+    line-height: 1.65;
+    color: $black-01;
+    margin-bottom: 18px;
+  }
+
+  p,
+  li {
+    font-size: $font-size-base + 1;
+    line-height: 1.6;
+    color: $gray-05;
+    margin-bottom: 30px;
+  }
+
+  button {
+    height: 57px;
+    font-size: $font-size-base + 1;
+    line-height: 1.87;
+    color: $white;
+    width: 198px;
+    border-radius: 28px;
+  }
+}
+
+.job-other {
+  background: $white;
+  border: 1px solid $gray-24;
+  padding: 25px;
+
+  &__title {
+    font-size: $font-size-large;
+    line-height: 1.56;
+    color: $black-01;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  &__desc {
+    font-size: $font-size-base;
+    line-height: 1.71;
+    color: $gray-05;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  &__button {
+    width: 225px;
+    height: 52px;
+    margin: 20px auto 0;
+  }
+
+  &__note {
+    font-size: $font-size-small;
+    line-height: 2;
+    color: $gray-05;
+    text-align: center;
+  }
+
+  .form-control {
+    border: none;
+    color: $gray-31;
+    border-bottom: 1px solid $gray-03;
+    font-size: $font-size-base;
+    padding: 0;
+  }
+}
+
+.share-print {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding-left: 15px;
+
+  a {
+    font-size: $font-size-small + 1;
+    line-height: 1.85;
+    color: $black-04;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+
+  i {
+    color: $primary;
+    font-size: $font-size-large;
+    margin-right: 15px;
+  }
+}
+
+.another-job {
+  box-shadow: 0 2px 9px 3px rgba(0, 0, 0, 0.03);
+  background-color: $white;
+  padding: 26px 30px;
+
+  &__link {
+    font-size: $font-size-small + 1;
+    line-height: 1.85;
+    color: $green-01;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-size: $font-size-large;
+    line-height: 1.67;
+    color: $black-06;
+
+    a {
+      color: $black-06;
+    }
+  }
+
+  &__desc {
+    font-size: $font-size-base;
+    line-height: 1.71;
+    color: $gray-32;
+  }
+}

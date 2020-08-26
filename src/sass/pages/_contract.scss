@@ -1,0 +1,265 @@
+// ======================================================
+// Pages :: Contract
+// ======================================================
+
+.contract-details {
+  &__inner {
+    border: 1px solid #f4f4f4;
+    border-bottom: none;
+    background: #fff;
+    padding: 35px 30px;
+    margin-top: 33px;
+
+    @include respond-to(large-tablet-and-down) {
+      padding: 35px 20px;
+    }
+  }
+
+  &__status {
+    font-size: 15px;
+    line-height: 2;
+    color: #fff;
+    width: 168px;
+    height: 37px;
+    border-radius: 18.5px;
+    background-color: #7ed321;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -55px auto 0;
+  }
+
+  &__content {
+    padding: 50px 60px;
+
+    @include respond-to(large-tablet-and-down) {
+      padding: 20px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.38;
+    color: #1f2832;
+    margin-bottom: 22px;
+  }
+
+  .contract-info {
+    margin-bottom: 25px;
+
+    &__title {
+      font-size: 14px;
+      line-height: 1.71;
+      color: #b6b6b6;
+    }
+
+    &__desc {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 2;
+      color: #333;
+    }
+  }
+
+  &__freelancer {
+    display: flex;
+    padding-bottom: 35px;
+    border-bottom: 1px solid rgba(#979797, .15);
+
+    @include respond-to(tablet-and-down) {
+      flex-direction: column;
+    }
+
+    &-item {
+      display: flex;
+      padding-right: 135px;
+
+      @include respond-to(tablet-and-down) {
+        padding-right: 0;
+        margin-bottom: 20px;
+      }
+
+      .contract-info {
+        margin-bottom: 0;
+      }
+    }
+
+    &-avatar {
+      flex-basis: 31px;
+      width: 31px;
+      margin-right: 16px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .contract-info {
+      &__title {
+        margin-bottom: 11px;
+      }
+    }
+
+    &-price {
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      p {
+        font-size: 12px;
+        line-height: 2;
+        color: #b6b6b6;
+        margin-bottom: 3px;
+      }
+
+      h4 {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1;
+        color: #84ce3f;
+      }
+    }
+  }
+
+  &__about {
+    padding-top: 35px;
+
+    &-title {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.33;
+      color: #252525;
+      margin-bottom: 5px;
+    }
+
+    &-desc {
+      font-size: 12px;
+      line-height: 1.75;
+      color: #a4a4a4;
+    }
+
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 37px;
+
+      @include respond-to(phone-and-down) {
+        flex-direction: column;
+      }
+    }
+
+    &-item {
+      width: calc((100% - 20px) / 3);
+
+      @include respond-to(phone-and-down) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-title {
+      font-size: 12px;
+      line-height: 2;
+      color: #b6b6b6;
+    }
+
+    &-desc {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.67;
+      color: #2f3c4c;
+    }
+  }
+
+  .contract-milestone {
+    background: #fafafa;
+    border: solid 1px #f4f4f4;
+
+    &__list {
+      padding: 0 60px;
+
+      @include respond-to(tablet-and-down) {
+        padding: 0 20px;
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      padding: 35px 0;
+      border-bottom: 1px solid rgba(#979797, .15);
+
+      @include respond-to(phone-and-down) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 0;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &-icon {
+        width: 37px;
+        flex-basis: 37px;
+        margin-right: 45px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &-content {
+        flex: 1;
+
+        @include respond-to(phone-and-down) {
+          margin: 20px 0;
+        }
+      }
+
+      &-title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.33;
+        color: #252525;
+        margin-bottom: 5px;
+      }
+
+      &-desc {
+        font-size: 12px;
+        line-height: 1.75;
+        color: #a4a4a4;
+      }
+
+      &-status {
+        margin-left: auto;
+
+        @include respond-to(phone-and-down) {
+          margin-left: unset;
+        }
+      }
+
+      .milestone-status {
+        font-size: 15px;
+        line-height: 2;
+        color: #fff;
+        height: 41px;
+        border-radius: 18.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 30px;
+
+        &--sent {
+          background: #7ed321;
+        }
+
+        &--wait {
+          background: #f5a623;
+        }
+      }
+    }
+  }
+}

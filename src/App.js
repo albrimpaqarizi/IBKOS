@@ -4,9 +4,9 @@ import Route from "./route.js";
 
 function App() {
   return (
-    <React.Fragment>
+    <div className="App">
       <Route />
-    </React.Fragment>
+    </div>
   );
 }
 

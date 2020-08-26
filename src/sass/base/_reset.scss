@@ -1,0 +1,152 @@
+//
+// Base :: Reset
+// --------------------------------------------------
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: $primary;
+
+  &,
+  &:focus,
+  &:hover {
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: $primary;
+    transition: all .2s ease-in-out;
+  }
+}
+
+button {
+  &,
+  &.button {
+    &:focus {
+      outline: 0 none;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+input[type="checkbox"]:focus {
+  outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 400;
+}
+
+:focus {
+  outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  &,
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  line-height: 1;
+  background-color: $white;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+input {
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $primary;
+  }
+
+  &[type=number] {
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+  }
+}
+
+input:-ms-input-placeholder {
+  color: $primary !important;
+}
+
+textarea {
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $primary;
+  }
+}
+
+textarea:-ms-input-placeholder {
+  color: $primary !important;
+}
+
+table {
+  width: 100%;
+}
+
+.ant-select {
+  font-family: inherit;
+}

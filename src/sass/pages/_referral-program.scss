@@ -1,0 +1,66 @@
+// ======================================================
+// Pages :: Referral Program
+// ======================================================
+
+.referral-program {
+  .main-banner {
+    background-size: cover;
+    height: 758px;
+    display: flex;
+    align-items: center;
+
+    &--referral {
+      background: url('#{$path-to-images}/referral-program-bg.jpg') no-repeat center center;
+    }
+
+    &--affiliate {
+      background: url('#{$path-to-images}/affiliate-bg.jpg') no-repeat center center;
+    }
+
+    @include respond-to(large-tablet-and-down) {
+      height: 650px;
+    }
+
+    @include respond-to(tablet-and-down) {
+      height: 550px;
+    }
+
+    @include respond-to(phone-and-down) {
+      height: 450px;
+    }
+
+    @include respond-to(smallphone-and-down) {
+      height: 350px;
+    }
+
+    &__title {
+      font-size: 57px;
+      line-height: 1.16;
+      color: #fff;
+      margin-bottom: 17px;
+
+      @include respond-to(phone-and-down) {
+        font-size: 40px;
+      }
+
+      @include respond-to(smallphone-and-down) {
+        font-size: 30px;
+      }
+    }
+
+    &__desc {
+      font-size: 15px;
+      line-height: 1.2;
+      color: rgba(#fff, 0.6);
+      margin-bottom: 38px;
+    }
+
+    .button {
+      width: 200px;
+    }
+  }
+
+  .selling-works {
+    padding-top: 50px;
+  }
+}

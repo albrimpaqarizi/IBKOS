@@ -1,0 +1,482 @@
+// ======================================================
+// Pages :: Home
+// ======================================================
+
+.home-page {
+  &__fullBackground {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    /* background-attachment: fixed; */
+  }
+
+  .sectionH1 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(28, 30, 32, 31%),
+        rgba(28, 30, 32, 31%)
+      ),
+      url("../../assets/images/home/Mask1.jpg");
+  }
+  .sectionH2 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(37, 155, 249, 45%),
+        rgba(37, 155, 249, 45%)
+      ),
+      url("../../assets/images/home/Mask\ Group\ 4.jpg");
+  }
+  .main {
+    margin-top: 65px;
+  }
+
+  .job-list {
+    margin-top: -100px;
+
+    @include respond-to(tablet-and-down) {
+      margin-top: 30px;
+    }
+  }
+
+  .home-banner {
+    height: 735px;
+    position: relative;
+
+    .slick-slider {
+      height: 100%;
+
+      @include respond-to(phone-and-down) {
+        .slick-dots {
+          bottom: 0;
+          z-index: 2;
+
+          button {
+            &:before {
+              color: $white;
+              font-size: $font-size-extra-small;
+            }
+          }
+        }
+      }
+    }
+
+    .slick-list,
+    .slick-track {
+      height: 100%;
+    }
+
+    .slick-slide {
+      height: 100%;
+
+      & > div {
+        height: 100%;
+      }
+    }
+
+    .slick-arrow {
+      width: 107px;
+      height: 107px;
+      box-shadow: 0 2px 9px 3px rgba($black, 0.05);
+      background-color: $white;
+      border-radius: 50%;
+      background-size: 42px 45px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      z-index: 2;
+      opacity: 0.1;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        opacity: 1;
+        transition: all 0.4s ease-in-out;
+      }
+
+      @include respond-to(small-desktop-and-down) {
+        width: 75px;
+        height: 75px;
+      }
+
+      @include respond-to(large-tablet-and-down) {
+        background-size: 20px;
+        width: 40px;
+        height: 40px;
+      }
+
+      &::before {
+        content: none;
+      }
+
+      &.slick-next {
+        background-image: url("#{$path-to-images}/icon-rounded-right.svg");
+        right: 100px;
+
+        @include respond-to(large-desktop-and-down) {
+          right: 50px;
+        }
+
+        @include respond-to(small-desktop-and-down) {
+          right: 10px;
+        }
+      }
+
+      &.slick-prev {
+        background-image: url("#{$path-to-images}/icon-rounded-left.svg");
+        left: 100px;
+
+        @include respond-to(large-desktop-and-down) {
+          left: 50px;
+        }
+
+        @include respond-to(small-desktop-and-down) {
+          left: 10px;
+        }
+      }
+    }
+
+    &__inner {
+      height: 100%;
+    }
+
+    &__content {
+      height: 100%;
+    }
+
+    &__item {
+      height: 100%;
+
+      &-inner {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        display: flex !important;
+        align-items: flex-end;
+      }
+    }
+
+    &__search-box {
+      position: absolute;
+      top: 180px;
+      width: 100%;
+      left: 0;
+      padding: 0 15px;
+
+      @include respond-to(middlephone-and-down) {
+        top: 50px;
+      }
+    }
+
+    &__title {
+      color: $white;
+      font-size: $font-size-extra-larger;
+      padding-bottom: 50px;
+      font-weight: $font-weight-light;
+    }
+
+    .employees {
+      padding-top: 80px;
+
+      @include respond-to(large-desktop-and-down) {
+        width: 1024px;
+      }
+
+      @include respond-to(desktop-and-down) {
+        width: 800px;
+      }
+
+      @include respond-to(tablet-and-down) {
+        padding-top: 50px;
+      }
+
+      @include respond-to(phone-and-down) {
+        padding-top: 30px;
+      }
+
+      &__inner {
+        max-width: 280px;
+      }
+
+      &__item {
+        width: 98px;
+        height: 98px;
+        margin-right: 9px;
+        margin-bottom: 9px;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          box-shadow: 0 0 30px 15px rgba($white, 0.1);
+        }
+      }
+
+      &__general {
+        padding-left: 12px;
+
+        &-title {
+          color: $white;
+          font-size: $font-size-small;
+          line-height: 3.75;
+        }
+
+        &-number {
+          color: $white;
+          font-size: $font-size-extra-larger;
+        }
+      }
+
+      &__avatar {
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1, 1.1);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .find-jobs {
+    border-top: 1px solid $white-02;
+    padding-top: 43px;
+
+    .find-jobs-filter {
+      border: 1px solid $white-02;
+      margin: 0 15px;
+
+      &__title {
+        font-size: $font-size-larger;
+        line-height: 1.88;
+        color: $gray-09;
+
+        span {
+          color: $gray-10;
+        }
+      }
+
+      &__inner {
+        padding: 11px 22px 150px;
+
+        @include respond-to(tablet-and-down) {
+          padding-bottom: 20px;
+        }
+      }
+
+      &__box {
+        @include respond-to(middlephone-and-down) {
+          flex-wrap: wrap;
+        }
+      }
+
+      &__item {
+        flex: 1;
+        margin-right: 21px;
+
+        @include respond-to(tablet-and-down) {
+          margin-right: 0;
+          flex: none;
+          width: calc((100% - 30px) / 4);
+          margin-bottom: 15px;
+        }
+
+        @include respond-to(middlephone-and-down) {
+          width: 100%;
+        }
+
+        .selectbox-custom {
+          &::before {
+            content: none;
+          }
+        }
+      }
+
+      &__button {
+        width: 190px;
+
+        @include respond-to(tablet-and-down) {
+          width: 130px;
+        }
+      }
+
+      &__form {
+        margin-top: 23px;
+        margin-bottom: 42px;
+      }
+    }
+
+    .find-jobs-type {
+      &__item {
+        margin-right: 15px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        @include respond-to(phone-and-down) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .browse-more {
+    text-align: center;
+    padding: 50px 0;
+
+    @include respond-to(tablet-and-down) {
+      display: none;
+    }
+
+    &__link {
+      color: $black-02;
+      font-size: $font-size-base + 1;
+
+      &:hover {
+        color: $primary;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    &__text {
+      text-decoration: underline;
+    }
+
+    &__icon {
+      font-size: $font-size-extra-small;
+    }
+  }
+
+  .popular-categories {
+    background: $white-06;
+    padding-top: 75px;
+
+    @include respond-to(phone-and-down) {
+      padding-top: 40px;
+    }
+
+    &__list {
+      padding-top: 114px;
+
+      @include respond-to(tablet-and-down) {
+        padding-top: 70px;
+      }
+
+      @include respond-to(phone-and-down) {
+        padding-top: 40px;
+      }
+    }
+
+    &__item {
+      width: calc(100% / 4);
+      text-align: center;
+      padding: 35px 20px;
+      border-right: 1px solid $gray-08;
+      border-bottom: 1px solid $gray-08;
+
+      &:nth-child(4n + 4) {
+        border-right: none;
+      }
+
+      &:nth-child(n + 5) {
+        border-bottom: none;
+      }
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 2px 9px 3px rgba($black, 0.05);
+        transform: scale(1.02, 1.02);
+        background: $white;
+        transition: all 0.4s ease-in-out;
+
+        .isvg {
+          animation: pulse 0.5s infinite;
+        }
+      }
+
+      @include respond-to(tablet-and-down) {
+        width: calc(100% / 2);
+
+        &:nth-child(5),
+        &:nth-child(6) {
+          border-bottom: 1px solid $gray-08;
+        }
+      }
+
+      @include respond-to(smallphone-and-down) {
+        width: 100%;
+        border: 1px solid $gray-08;
+
+        &:nth-child(4n + 4),
+        &:nth-child(n + 5) {
+          border: 1px solid $gray-08;
+        }
+
+        &:not(:last-child) {
+          border-bottom: none;
+        }
+      }
+    }
+
+    &__icon {
+      height: 60px;
+      display: block;
+    }
+
+    &__title {
+      font-size: $font-size-medium;
+      line-height: 1.75;
+      color: $black-01;
+      margin-bottom: 6px;
+    }
+
+    &__count {
+      font-size: $font-size-small;
+      line-height: 1.5;
+      color: $gray-15;
+    }
+  }
+
+  .analytics {
+    @include respond-to(tablet-and-down) {
+      border-bottom: 1px solid #f3f3f3;
+    }
+  }
+
+  &__partner {
+    display: none;
+
+    @include respond-to(tablet-and-down) {
+      display: block;
+    }
+  }
+
+  &__categories-mobile {
+    display: none;
+
+    .popular-categories {
+      background: #fff;
+      padding-top: 40px;
+    }
+
+    @include respond-to(tablet-and-down) {
+      display: block;
+    }
+  }
+
+  &__categories-desktop {
+    display: block;
+
+    @include respond-to(tablet-and-down) {
+      display: none;
+    }
+  }
+
+  .recent-news {
+    @include respond-to(tablet-and-down) {
+      display: none;
+    }
+  }
+}

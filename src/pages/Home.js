@@ -1,22 +1,23 @@
 import React from "react";
 import "./main.css";
-import { Container } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import SectionOne from "../components/Home/SectionOne";
-
-const useStyles = makeStyles({
-  main: {
-    marginTop: "65px",
-  },
-});
+import SectionOne from "../components/Home/SectionH1";
+import SectionTwo from "../components/Home/SectionH2";
+import SectionThree from "../components/Home/SectionH3";
+import SectionFour from "../components/Home/SectionH4";
+import SectionFive from "../components/Home/SectionH5";
+import SectionSix from "../components/Home/SectionH6";
+import SectionSeven from "../components/Home/SectionH7";
 
 const Home = () => {
-  const classes = useStyles();
   return (
-    <div className="home fullHeader">
-      <Container maxWidth="md" className={classes.main}>
-        <SectionOne />
-      </Container>
+    <div>
+      <SectionOne />
+      <SectionTwo />
+      <SectionThree />
+      <SectionFour />
+      <SectionFive />
+      <SectionSix />
+      <SectionSeven />
     </div>
   );
 };

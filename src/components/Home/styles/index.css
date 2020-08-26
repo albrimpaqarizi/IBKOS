@@ -1,0 +1,50 @@
+/* .fullBackground {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  /* background-attachment: fixed; */
+/* }  */
+
+.background-1 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(28, 30, 32, 31%),
+      rgba(28, 30, 32, 31%)
+    ),
+    url("../../../assets/images/home/Mask1.jpg");
+}
+.background-2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(37, 155, 249, 45%),
+      rgba(37, 155, 249, 45%)
+    ),
+    url("../../../assets/images/home/Mask\ Group\ 4.jpg");
+}
+.background-3 {
+  height: 700px;
+  background-image: url("../../../assets/images/home/bench-accounting-FIM--j1B_Rc-unsplash.jpg");
+}
+.background-4 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(251, 251, 251, 12%),
+      rgba(251, 251, 251, 12%)
+    ),
+    url("../../../assets/images/home/Rectangle1110.jpg");
+}
+
+.blue-bg {
+  color: #259bf9 !important;
+}
+.light-bg {
+  color: #606a74 !important;
+}
+
+.home-center {
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}

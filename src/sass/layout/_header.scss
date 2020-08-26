@@ -1,0 +1,242 @@
+// ======================================================
+// Layout :: Header
+// ======================================================
+
+.header {
+  height: 84px;
+  background: $white;
+  border-bottom: 1px solid $white-01;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+
+  &__container {
+    max-width: 1200px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  &__inner {
+    height: 100%;
+    position: relative;
+  }
+
+  .logo {
+    padding-right: 20px;
+
+    &__title {
+      width: 115px;
+    }
+
+    &__image {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .mobile-menu {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    min-height: 100vh;
+    width: 200px;
+    z-index: 99;
+    transform: translateX(200px);
+    transition: all 0.5s ease 0s;
+
+    &--open {
+      display: block;
+      transform: translateX(0);
+      transition: all .5s ease 0s;
+    }
+
+    &__inner {
+      height: 100%;
+      overflow: auto;
+      background: rgb(34, 34, 34);
+      padding: 30px 0px 0px;
+      font-size: 1.15em;
+      position: relative;
+    }
+
+    &__close-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: $white;
+      font-size: $font-size-large;
+      cursor: pointer;
+    }
+
+    &__item {
+      display: block;
+      font-size: $font-size-base;
+      line-height: 50px;
+      padding-left: 20px;
+      user-select: none;
+
+      &:not(:first-child) {
+        border-top: 1px solid rgb(51, 51, 51);
+      }
+    }
+
+    &__text {
+      color: $white;
+    }
+  }
+
+  .main-menu {
+    &__icon-menu {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+      position: absolute;
+      top: 30px;
+      right: 0;
+
+      @include respond-to(large-tablet-and-down) {
+        display: block;
+      }
+    }
+
+    &__list {
+      padding-left: 29px;
+      border-left: 1px solid $white-02;
+      height: 28px;
+      line-height: 28px;
+
+      @include respond-to(large-tablet-and-down) {
+        display: none;
+      }
+    }
+
+    &__item {
+      padding-right: 40px;
+
+      @include respond-to(small-desktop-and-down) {
+        padding-right: 20px;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    &__link {
+      font-size: $font-size-base - 1;
+      color: $gray-01;
+      height: 100%;
+      display: block;
+      font-weight: $font-weight-base;
+      border-bottom: 1px solid transparent;
+      transition: all .4s ease-in-out;
+
+      &:hover {
+        border-bottom: 1px solid $primary;
+        color: $primary;
+        transition: all .4s ease-in-out;
+      }
+    }
+  }
+
+  .user {
+    margin-left: auto;
+
+    &__authen {
+      @include respond-to(large-tablet-and-down) {
+        display: none;
+      }
+
+      &-button {
+        width: 138px;
+        color: $primary;
+        border-radius: 18px;
+
+        &:hover {
+          background: $primary;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .user-logged {
+    position: relative;
+
+    &__avatar {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .user-dropdown {
+      display: none;
+      position: absolute;
+      top: 35px;
+      right: 0;
+      width: 268px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03);
+      border: solid 1px #ececec;
+      background: #fff;
+      padding: 20px 30px;
+
+      &__tab {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 3px;
+
+        &-item {
+          width: calc(100% / 2);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 24px;
+          height: 30px;
+          border: solid 1px #ddd;
+          background: #fff;
+
+          &.active {
+            border: solid 1px #7ed321;
+            background: #7ed321;
+            color: #fff;
+          }
+        }
+      }
+
+      &__list {
+        margin-top: 13px;
+      }
+
+      &__item {
+        font-size: 12px;
+        line-height: 2.75;
+
+        a {
+          color: #a4a4a4;
+          height: 100%;
+          width: 100%;
+          display: block;
+
+          &:hover {
+            color: #7ed321;
+          }
+        }
+      }
+    }
+
+    &--open {
+      .user-dropdown {
+        display: block;
+      }
+    }
+  }
+}

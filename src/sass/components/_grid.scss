@@ -1,0 +1,49 @@
+//
+// Components :: Grid
+// --------------------------------------------------
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--start {
+    justify-content: flex-start;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &__item-full {
+    flex: 1;
+  }
+
+  &--end {
+    justify-content: flex-end;
+  }
+
+  &--align-center {
+    align-items: center;
+  }
+
+  &--align-end {
+    align-items: flex-end;
+  }
+
+  &--align-base {
+    align-items: baseline;
+  }
+
+  &--align-start {
+    align-items: flex-start;
+  }
+}

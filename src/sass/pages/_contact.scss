@@ -1,0 +1,233 @@
+// ======================================================
+// Pages :: Sign up
+// ======================================================
+
+.contact-page {
+  .contact-intro {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding-top: 150px;
+
+    @include respond-to(tablet-and-down) {
+      padding-top: 50px;
+    }
+
+    @include respond-to(smallphone-and-down) {
+      padding-top: 30px;
+    }
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__content {
+      padding: 30px 0;
+
+      p {
+        font-size: 18px;
+        line-height: 1.83;
+        color: #a4a4a4;
+        margin-bottom: 13px;
+        font-weight: 300;
+
+        strong {
+          color: #2f2f2f;
+          font-weight: 300;
+        }
+      }
+    }
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 30px;
+
+      &-item {
+        width: calc((100% - 200px) / 5);
+
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+
+        @include respond-to(tablet-and-down) {
+          width: calc((100% - 50px) / 5);
+        }
+
+        @include respond-to(phone-and-down) {
+          width: calc((100% - 200px) / 5);
+        }
+
+        @include respond-to(smallphone-and-down) {
+          width: calc((100% - 50px) / 3);
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &__info {
+      flex: 1;
+
+      @include respond-to(phone-and-down) {
+        flex: auto;
+        width: 100%;
+      }
+    }
+
+    &__mockup {
+      width: 517px;
+      margin-left: 80px;
+      margin-bottom: -50px;
+
+      img {
+        width: 100%;
+      }
+
+      @include respond-to(tablet-and-down) {
+        width: 400px;
+        margin-left: 30px;
+      }
+
+      @include respond-to(phone-and-down) {
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .contact-info {
+    padding-top: 110px;
+    padding-bottom: 90px;
+    border-bottom: 1px solid #e8e8e8;
+
+    @include respond-to(phone-and-down) {
+      padding: 50px 0;
+    }
+
+    @include respond-to(smallphone-and-down) {
+      padding: 30px 0;
+    }
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  .contact-form {
+    flex: 1;
+    padding-right: 120px;
+
+    @include respond-to(tablet-and-down) {
+      padding-right: 50px;
+    }
+
+    @include respond-to(phone-and-down) {
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 30px;
+    }
+
+    .form-control {
+      border: none;
+      border-bottom: 1px solid #dfdfdf;
+      margin-bottom: 43px;
+      padding-left: 0;
+      font-size: 15px;
+
+      &::placeholder {
+        color: #888889;
+      }
+
+      @include respond-to(phone-and-down) {
+        margin-bottom: 20px;
+      }
+    }
+
+    textarea {
+      height: 170px;
+      border: none;
+      border-bottom: 1px solid #dfdfdf;
+      font-size: 15px;
+      line-height: 2.2;
+      resize: none;
+      width: 100%;
+
+      &::placeholder {
+        color: #888889;
+        font-size: 15px;
+        font-family: 'Roboto';
+      }
+    }
+
+    .button {
+      margin-top: 73px;
+      width: 163px;
+
+      @include respond-to(phone-and-down) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .information {
+    width: 517px;
+
+    @include respond-to(tablet-and-down) {
+      width: 400px;
+    }
+
+    @include respond-to(phone-and-down) {
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 39px;
+      line-height: 1.49;
+      color: #333333;
+      margin-bottom: 36px;
+
+      @include respond-to(smallphone-and-down) {
+        font-size: 24px;
+      }
+    }
+
+    &__sub-title {
+      font-size: 18px;
+      line-height: 1.83;
+      color: #888889;
+      margin-bottom: 12px;
+    }
+
+    &__phone-number {
+      font-size: 39px;
+      line-height: 1.49;
+      color: #84ce3f;
+
+      @include respond-to(smallphone-and-down) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .contact-more-info {
+    border-top: none;
+
+    &__list {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+
+    &__item {
+      &:first-child {
+        padding-left: 20px;
+      }
+    }
+  }
+}

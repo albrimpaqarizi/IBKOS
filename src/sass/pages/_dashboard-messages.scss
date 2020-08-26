@@ -1,0 +1,124 @@
+// ======================================================
+// Pages :: Dashboard messages
+// ======================================================
+
+.dashboard-messages {
+  display: flex;
+  position: relative;
+
+  .dashboard-sidebar {
+    flex-basis: 400px;
+    width: 400px;
+    border-right: 1px solid #efefef;
+    background: #fafafa;
+
+    @include respond-to(small-desktop-and-down) {
+      width: 300px;
+      flex-basis: 300px;
+    }
+
+    @include respond-to(large-tablet-and-down) {
+      transform: translateX(-350px);
+      transition: all 0.2s ease-in-out;
+      position: absolute;
+      top: 60px;
+
+      &.show {
+        transform: translateX(0);
+        border-top: 1px solid #efefef;
+        background: #fff;
+        z-index: 2;
+      }
+    }
+
+    &__search {
+      .form-control {
+        height: 62px;
+        border: none;
+      }
+    }
+
+    .sidebar-item {
+      padding: 25px 30px;
+      border: 1px solid #efefef;
+      border-right: none;
+      cursor: pointer;
+      background: #fafafa;
+
+      &.active {
+        background: #fff;
+      }
+
+      &:not(:last-child) {
+        border-bottom: none;
+      }
+
+      &__inner {
+        display: flex;
+      }
+
+      &__image {
+        flex-basis: 31px;
+        height: 31px;
+        margin-right: 20px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &__content {
+        flex: 1;
+
+        &-header {
+          font-size: 13px;
+          line-height: 2.15;
+          color: #858585;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        &-title {
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 1.87;
+          color: #252525;
+          margin-bottom: 2px;
+        }
+
+        &-desc {
+          font-size: 12px;
+          line-height: 1.75;
+          color: #a4a4a4;
+        }
+      }
+    }
+  }
+
+  .dashboard-content {
+    flex: 1;
+
+    @include respond-to(large-tablet-and-down) {
+      width: 100%;
+    }
+
+    &__sidebar-show {
+      display: none;
+      padding-left: 20px;
+      padding-top: 20px;
+      font-size: 20px;
+      cursor: pointer;
+
+      @include respond-to(large-tablet-and-down) {
+        display: block;
+      }
+    }
+  }
+
+  .ticket-details {
+    &__inner {
+      border-left: none;
+      border-top: none;
+    }
+  }
+}
