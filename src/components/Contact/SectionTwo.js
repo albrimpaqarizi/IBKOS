@@ -109,7 +109,7 @@ const SectionTwo = () => {
                 label="Tell us about it"
                 className={classes.input}
               />
-              <button type="submit" className="btn submit">
+              <button type="submit" className="btn btn-submit">
                 send
               </button>
             </Box>

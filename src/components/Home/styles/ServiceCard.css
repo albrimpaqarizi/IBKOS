@@ -8,9 +8,9 @@
   font-weight: 700;
   text-align: center;
 }
-img {
-  width: 40px;
-  height: 40px;
+.service-img {
+  width: 40px !important;
+  height: 40px !important;
 }
 h4 {
   color: #259bf9;

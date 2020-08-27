@@ -23,14 +23,16 @@ const SectionH7 = () => {
     <div className="sectionH7 container my-5">
       <div className="row">
         <div className="col-12 col-lg-6 questions">
-          <Link to="/#" className="my-3 btn-a btn-a2 btn-bg3 text-uppercase">
-            POPULAR QUESTIONS
-          </Link>
+          <div>
+            <Link to="/#" className="my-3 btn-a btn-a2 btn-bg3 text-uppercase">
+              POPULAR QUESTIONS
+            </Link>
+          </div>
           <h2 className=" my-3 text-uppercase">faq</h2>
           <ul className="list-unstyled pl-0 my-3">
             <li className="my-3">
               <p className="text-black m-1 text-capitalize dt d-inline-block">
-                Quality reasrch & analysis{" "}
+                General
               </p>
               <div className="progress h-1px">
                 <div className="progress-bar w-25"></div>

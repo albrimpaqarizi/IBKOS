@@ -92,3 +92,22 @@ code {
 .btn-light:hover {
   background-color: #f1f1f1;
 }
+
+.btn-submit {
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  background-color: #2699fb !important;
+  padding: 10px 40px;
+  border-radius: 20px !important;
+  margin-top: 40px;
+  color: white !important;
+}
+.btn-submit:hover {
+  background-color: #2698fbda !important;
+}
+
+.form-name {
+  font-size: 1rem;
+  color: #259bf9;
+  font-weight: 600;
+}

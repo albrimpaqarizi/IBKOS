@@ -23,7 +23,7 @@ const ServiceCard = (props) => {
       <div className="p-3 card-icon bg-light">
         <img
           src={props.icon}
-          className="img-responsive"
+          className="img-responsive service-img"
           alt="stock-market.svg"
         />
       </div>
