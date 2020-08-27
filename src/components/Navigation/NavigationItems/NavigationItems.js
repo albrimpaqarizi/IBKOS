@@ -13,13 +13,13 @@ function NavigationItems(props) {
         <NavigationItem clicked={props.drawerToggle} link="/about">
           About Us
         </NavigationItem>
-        <NavigationItem clicked={props.drawerToggle} link="/pages">
+        <NavigationItem clicked={props.drawerToggle} link="/403">
           Our Team
         </NavigationItem>
         <NavigationItem clicked={props.drawerToggle} link="/service">
           Service
         </NavigationItem>
-        <NavigationItem clicked={props.drawerToggle} link="/pages">
+        <NavigationItem clicked={props.drawerToggle} link="/404">
           Pages
         </NavigationItem>
         <NavigationItem clicked={props.drawerToggle} link="/contact">

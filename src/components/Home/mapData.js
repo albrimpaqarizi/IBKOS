@@ -26,23 +26,23 @@ export const listProfile = [
   },
   {
     icon: img3,
-    profileName: "dgssdghsd",
-    jobTitle: "sdgsgsdgsd",
+    profileName: "Jennifer Bailey",
+    jobTitle: "Safety Consultant",
   },
   {
     icon: img4,
-    profileName: "dgssdghsd",
-    jobTitle: "sdgsgsdgsd",
+    profileName: "Frida Logan",
+    jobTitle: "Economic Asistant",
   },
   {
     icon: img5,
-    profileName: "dgssdghsd",
-    jobTitle: "sdgsgsdgsd",
+    profileName: "Nick Osmani",
+    jobTitle: "Programmer",
   },
   {
     icon: img6,
-    profileName: "dgssdghsd",
-    jobTitle: "sdgsgsdgsd",
+    profileName: "Eden Walker",
+    jobTitle: "Consultant",
   },
 ];
 

@@ -1,0 +1,24 @@
+.about {
+  background-image: linear-gradient(
+      0deg,
+      rgba(28, 30, 32, 0.5),
+      rgba(28, 30, 32, 0.5)
+    ),
+    url("../../../assets/images/MaskGroup9.jpg");
+}
+.sectionA1 {
+  margin: 25% 1%;
+}
+@media (max-width: 992.98px) {
+  .sectionA1 {
+    margin: 27% 1%;
+    font-size: 1.9rem;
+  }
+}
+
+.text-col1 {
+  color: #606a74;
+}
+.text-col2 {
+  color: #9a9ea1;
+}

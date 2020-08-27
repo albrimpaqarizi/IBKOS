@@ -3,3 +3,9 @@
   border: none;
   padding: 4rem;
 }
+
+@media (max-width: 992.98px) {
+  .analysis-img img {
+    padding: 2rem;
+  }
+}

@@ -24,7 +24,9 @@ const Footer = () => {
         <Container maxWidth="md" className={classes.main}>
           <div className="footer-logo">
             <Logo />
-            <p>Since 1999, we have been helping American business thrive</p>
+            <p className="text-left">
+              Since 1999, we have been helping American business thrive
+            </p>
           </div>
           <Divider />
 

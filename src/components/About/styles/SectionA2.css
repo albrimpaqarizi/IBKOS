@@ -1,0 +1,19 @@
+.quote-col {
+  color: #2196f3;
+  padding: 3%;
+  font-size: 1.3rem;
+}
+.profile-text {
+  margin-left: 10%;
+}
+
+.about-consult img {
+  border-color: transparent;
+  width: 670px;
+}
+.about-consult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}

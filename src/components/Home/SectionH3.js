@@ -12,7 +12,7 @@ const SectionH3 = () => {
           <div className="col-12 col-lg-6 about-img">
             <img className="img-thumbnail " src={about} alt="null" />
           </div>
-          <div className="col-12 col-lg-6">
+          <div className="col-12 col-lg-6 div-2">
             <Link
               to="/about"
               className="my-2 btn-a btn-a2 btn-bg3 text-uppercase"

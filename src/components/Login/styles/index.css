@@ -8,13 +8,15 @@
 }
 
 .login-page {
-  margin: 10% 0%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 @media (max-width: 992.98px) {
   .login-page .row {
     flex-flow: column-reverse;
   }
   .login-page {
-    margin: 15% 0%;
+    margin-top: 15%;
+    margin-bottom: 15%;
   }
 }
