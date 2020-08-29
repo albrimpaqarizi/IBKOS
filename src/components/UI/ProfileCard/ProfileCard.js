@@ -1,7 +1,7 @@
 import React from "react";
 import { Paper } from "@material-ui/core";
 import SocialMedia from "./SocialMedia";
-import "./styles/ProfileCard.css";
+import "./ProfileCard.css";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
@@ -15,6 +15,7 @@ const useStyles = makeStyles({
     borderRadius: "15px",
     width: "275px",
     boxShadow: "none",
+    height: "270px",
   },
 });
 

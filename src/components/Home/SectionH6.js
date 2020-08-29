@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ProfileCard from "./ProfileCard";
-import { listProfile } from "./mapData";
+import ProfileCard from "../UI/ProfileCard/ProfileCard";
+import { listProfile } from "../mapData";
 
 const SectionH6 = () => {
   return (

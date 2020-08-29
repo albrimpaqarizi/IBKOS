@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ServiceCard from "./ServiceCard";
 import "./styles/SectionH2.css";
-import { listServices } from "./mapData";
+import { listServices } from "../mapData";
 
 const SectionH2 = () => {
   return (

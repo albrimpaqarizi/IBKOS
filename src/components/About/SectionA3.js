@@ -8,7 +8,7 @@ import img4 from "../../assets/images/about/MaskGroup6.jpg";
 
 const SectionA3 = () => {
   return (
-    <div className="sectionA3">
+    <div className="sectionA3 py-5">
       <div className="container ">
         <div className="row">
           <div className="col-lg-4 px-0 box-1">

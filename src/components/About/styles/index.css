@@ -22,3 +22,13 @@
 .text-col2 {
   color: #9a9ea1;
 }
+
+.sectionA5 {
+  background-image: url("../../../assets/images/about/Mask\ Group\ 7.jpg");
+}
+.sectionA5 {
+  padding: 6% 0%;
+  -webkit-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+}

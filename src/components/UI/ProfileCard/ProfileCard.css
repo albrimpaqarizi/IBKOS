@@ -7,15 +7,15 @@
   font-weight: 700;
   text-align: center;
 }
-img {
+.card-icon img {
   width: 60%;
   height: auto;
 }
-h5 {
+.card-icon h5 {
   color: #575c60;
   margin: 0;
 }
-p {
+.card-icon p {
   color: #564040;
   text-align: center;
 }
