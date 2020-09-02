@@ -15,4 +15,10 @@
   .sectionH3:first-child div {
     flex-flow: column-reverse;
   }
+  .about-img img {
+    max-width: 90%;
+  }
+  .sectionH3 h1 {
+    font-size: 1.8rem;
+  }
 }

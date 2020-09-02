@@ -1,4 +1,4 @@
-.about {
+.sectionA1 {
   background-image: linear-gradient(
       0deg,
       rgba(28, 30, 32, 0.5),
@@ -6,29 +6,35 @@
     ),
     url("../../../assets/images/MaskGroup9.jpg");
 }
-.sectionA1 {
+.sectionA1 div h1 {
   margin: 25% 1%;
 }
 @media (max-width: 992.98px) {
-  .sectionA1 {
+  .sectionA1 div h1 {
     margin: 27% 1%;
     font-size: 1.9rem;
   }
 }
 
-.text-col1 {
-  color: #606a74;
-}
-.text-col2 {
-  color: #9a9ea1;
-}
-
 .sectionA5 {
   background-image: url("../../../assets/images/about/Mask\ Group\ 7.jpg");
 }
-.sectionA5 {
-  padding: 6% 0%;
-  -webkit-box-sizing: content-box !important;
-  -moz-box-sizing: content-box !important;
-  box-sizing: content-box !important;
+
+.sectionA7 {
+  background: linear-gradient(
+      0deg,
+      rgba(37, 155, 249, 90%),
+      rgba(37, 155, 249, 81%)
+    ),
+    url("../../../assets/images/about/MaskGroup10.jpg");
+}
+.sectionA5,
+.sectionA7 {
+  padding: 4% 0%;
+}
+@media (max-width: 992px) {
+  .sectionA5 h1,
+  .sectionA7 h1 {
+    font-size: 1.6rem;
+  }
 }

@@ -12,7 +12,7 @@ const LoginForm = () => {
     <div className=" login fullHeader">
       <div className="container main-top login-page">
         <div className="row">
-          <div className="col-12 col-lg-6 py-5">
+          <div className="col-12 col-lg-6 py-5 container-form">
             <Form />
           </div>
           <div className="col-12 col-lg-6 p-3 pt-5">

@@ -13,7 +13,7 @@ import Email from "../UI/Input/Email";
 
 const useStyles = makeStyles({
   paper: {
-    padding: "2.5rem",
+    padding: "8%",
     display: "flex",
     justifyContent: "center",
     flexFlow: "column",

@@ -1,0 +1,30 @@
+.profileCard-2 {
+  margin: 0;
+  text-align: center;
+}
+
+.profileCard-2 img {
+  width: 130px;
+  height: 130px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+}
+.profileCard-2-h4 {
+  color: #575c60;
+  margin: 0;
+}
+.profileCard-2-h6 {
+  color: #259bf9;
+}
+.profileCard-2-p {
+  color: #564040;
+  text-align: center;
+  margin: 1rem 0rem;
+}
+@media (min-width: 768px) {
+  .profileCard-2-p {
+    width: 60%;
+    margin: 2rem 0rem;
+  }
+}

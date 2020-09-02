@@ -1,0 +1,11 @@
+.media-card {
+  justify-content: space-between;
+  flex-flow: row;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .media-card {
+    flex-flow: column;
+  }
+}

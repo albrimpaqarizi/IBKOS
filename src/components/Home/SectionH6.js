@@ -1,9 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ProfileCard from "../UI/ProfileCard/ProfileCard";
+import ProfileCard from "../UI/ProfileCard/ProfileCard_1";
 import { listProfile } from "../mapData";
+import "./styles/SectionH6.css";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles({
+  paper: {
+    margin: "2rem 0.8rem",
+    padding: "0.5%",
+    display: "flex",
+    justifyContent: "center",
+    flexFlow: "column",
+    alignItems: "center",
+    borderRadius: "15px",
+    width: "275px",
+    boxShadow: "none",
+    height: "270px",
+    "&:hover": {
+      boxShadow: "0 10px 6px -6px #777",
+    },
+  },
+});
 
 const SectionH6 = () => {
+  const classes = useStyles();
   return (
     <div className="background-4 fullBackground">
       <div className="container py-4">
@@ -21,6 +42,7 @@ const SectionH6 = () => {
                 icon={item.icon}
                 profileName={item.profileName}
                 jobTitle={item.jobTitle}
+                paper={classes.paper}
               />
             );
           })}

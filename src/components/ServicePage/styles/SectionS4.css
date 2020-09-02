@@ -1,0 +1,33 @@
+.sectionS4-cards {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+div.sectionS4-cards div:last-child {
+  margin-left: 10%;
+}
+.sectionS4-cards div > div:last-child {
+  margin: 2% auto 5% 20%;
+}
+
+@media (max-width: 992px) {
+  .sectionS4-cards {
+    flex-flow: column;
+    text-align: center;
+  }
+  div.sectionS4-cards div:last-child {
+    margin-left: auto;
+  }
+  .sectionS4-cards p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* box-shadow: 
+    5px 5px rgba(40, 118, 221, 0.4), 
+    10px 10px rgba(40, 118, 221, 0.3),
+      15px 15px rgba(40, 118, 221, 0.2), 
+      20px 20px rgba(40, 118, 221, 0.1),
+      25px 25px rgba(40, 118, 221, 0.05); */
+  }
+}

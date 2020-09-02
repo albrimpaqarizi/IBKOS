@@ -2,9 +2,9 @@ import React from "react";
 import "./styles/index.css";
 import Carousel1 from "../UI/Carousel/Carousel_1";
 
-const SectionA5 = () => {
+const SectionS6 = () => {
   return (
-    <div className="sectionA5 fullBackground">
+    <div className="sectionS6 fullBackground">
       <div className="container ">
         <div className="d-flex justify-content-center flex-column align-items-center">
           <button className="btn-a btn-a2 btn-bg3 my-2">meet our team</button>
@@ -16,4 +16,4 @@ const SectionA5 = () => {
   );
 };
 
-export default SectionA5;
+export default SectionS6;

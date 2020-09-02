@@ -17,7 +17,6 @@ code {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  /* background-attachment: fixed; */
 }
 
 .main-top {
@@ -26,6 +25,10 @@ code {
 
 .font-r {
   font-family: "Roboto", sans-serif;
+}
+.font-cart {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 .btn-a {
   display: inline-block;
@@ -50,6 +53,9 @@ code {
 }
 .btn-a:hover {
   text-decoration: none;
+}
+.btn-a:focus {
+  outline: none !important;
 }
 .btn-bg1 {
   color: white;
@@ -110,4 +116,14 @@ code {
   font-size: 1rem;
   color: #259bf9;
   font-weight: 600;
+}
+
+.text-col1 {
+  color: #606a74;
+}
+.text-col2 {
+  color: #9a9ea1;
+}
+.text-col3 {
+  color: #2699fb;
 }

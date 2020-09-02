@@ -5,8 +5,9 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
 import "./index.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

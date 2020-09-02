@@ -1,0 +1,32 @@
+.sectionS1 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(28, 30, 32, 94%),
+      rgba(28, 30, 32, 94%)
+    ),
+    url("../../../assets/images/MaskGroup16.jpg");
+}
+.sectionS1 div div {
+  margin: 22% 1%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+}
+.sectionS1 div div p {
+  width: 50%;
+}
+
+@media (max-width: 992.98px) {
+  .sectionS1 div div {
+    margin: 25% 1%;
+  }
+  .sectionS1 div div h1 {
+    font-size: 1.9rem;
+  }
+  .sectionS1 div div p {
+    width: 90%;
+  }
+}

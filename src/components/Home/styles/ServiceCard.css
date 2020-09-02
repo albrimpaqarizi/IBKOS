@@ -1,21 +1,16 @@
-.card-icon {
+.serviceCard {
   border: 1px solid transparent;
   border-radius: 50%;
   margin: 10px 0px;
 }
-.font {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  text-align: center;
-}
-.service-img {
+.serviceCard img {
   width: 40px !important;
   height: 40px !important;
 }
-h4 {
+.service-h4 {
   color: #259bf9;
 }
-p {
+.service-p {
   color: #606a74;
   text-align: center;
 }

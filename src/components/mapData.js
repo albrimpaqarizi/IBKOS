@@ -13,6 +13,11 @@ import icon4 from "../assets/images/home/list.svg";
 import icon5 from "../assets/images/home/audit.svg";
 import icon6 from "../assets/images/home/talk.svg";
 
+// market card
+import market1 from "../assets/images/Loesungen_Marktforschung.jpg";
+import market2 from "../assets/images/Marktanalysen&Prognosen.jpg";
+import market3 from "../assets/images/askStatista.jpg";
+
 export const listProfile = [
   {
     icon: img1,
@@ -76,5 +81,32 @@ export const listServices = [
     icon: icon6,
     title: "Consulting",
     desc: "We support your business with fact  based market resarch",
+  },
+];
+
+export const marketList = [
+  {
+    img: market1,
+    title: "Market Resarch",
+    desc:
+      "As a full-service market research firm, we help you find the answers to your questions about consumers, brands and products. Each year, weconduct more than a million interviews, while collecting and analyzing data ",
+    btn: [{ name: "read more", to: "/#" }],
+  },
+  {
+    img: market2,
+    title: "Market Analyses & Forecasts",
+    desc:
+      "What's the size of your market segment? How are markets developing? What are the trends behind these developments? For many years, we have specialized in building market models and developing forecasting methods. ",
+    btn: [{ name: "read more", to: "/#" }],
+  },
+  {
+    img: market3,
+    title: "Business Planing And Consulting?",
+    desc:
+      "What's the size of your market segment? How are markets developing? What are the trends behind these developments? For many years, we have specialized in building market models and developing forecasting methods. ",
+    btn: [
+      { name: "solution", to: "/#" },
+      { name: "contact us", to: "/contact" },
+    ],
   },
 ];

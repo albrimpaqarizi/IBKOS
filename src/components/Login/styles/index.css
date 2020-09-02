@@ -19,4 +19,7 @@
     margin-top: 15%;
     margin-bottom: 15%;
   }
+  .login-page h1 {
+    font-size: 1.7rem;
+  }
 }
