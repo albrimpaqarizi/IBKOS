@@ -17,9 +17,9 @@ const useStyles = makeStyles({
     width: "275px",
     boxShadow: "none",
     height: "270px",
-    "&:hover": {
-      boxShadow: "0 10px 6px -6px #777",
-    },
+    // "&:hover": {
+    //   boxShadow: "0 10px 6px -6px #777",
+    // },
   },
 });
 

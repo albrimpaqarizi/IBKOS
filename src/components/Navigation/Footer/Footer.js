@@ -1,27 +1,17 @@
 import React from "react";
 import "./Footer.css";
 import Logo from "../../UI/Logo/Logo";
-import { Link } from "react-router-dom";
-import { Container, Divider, Typography, Grid } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { Divider, Typography } from "@material-ui/core";
 import SocialMedia from "../../../components/UI/SocialMedia/SocialMedia";
 import Signup from "./Signup";
-
-const useStyles = makeStyles({
-  main: {
-    padding: "4% 0%",
-  },
-});
+import MenuListFooter from "./MenuList";
 
 const Footer = () => {
-  const classes = useStyles();
-
   return (
     <div>
       <Signup />
-
       <div className="footer">
-        <Container maxWidth="md" className={classes.main}>
+        <div className="container py-3">
           <div className="footer-logo">
             <Logo />
             <p className="text-left">
@@ -30,64 +20,34 @@ const Footer = () => {
           </div>
           <Divider />
 
-          <Grid container>
-            <Grid item xs={12} sm={6} md={3}>
-              <h2>Who We Are</h2>
-              <ul className="footer-list">
-                <li>
-                  <Link to="/about">About Us</Link>
-                </li>
-                <li>
-                  <Link to="/#">Careers</Link>
-                </li>
+          <div className="row">
+            <MenuListFooter
+              title="Who We Are"
+              items={["about us", "careers", "out team"]}
+            />
+            <MenuListFooter
+              title="Quick Links"
+              items={["sign up", "new", "privacy policy"]}
+            />
+            <MenuListFooter
+              title="Quick Links"
+              items={["contact us", "faq", "features"]}
+            />
 
-                <li>
-                  <Link to="/#">Our Team</Link>
-                </li>
-              </ul>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-              <h2>Quick Links</h2>
-              <ul className="footer-list">
-                <li>
-                  <Link to="/#">sign up</Link>
-                </li>
-                <li>
-                  <Link to="/#">new</Link>
-                </li>
-                <li>
-                  <Link to="/#">privacy policy</Link>
-                </li>
-              </ul>
-            </Grid>
-
-            <Grid item xs={12} sm={6} md={3}>
-              <h2>Quick Links</h2>
-              <ul className="footer-list">
-                <li>
-                  <Link to="/#">fateaures</Link>
-                </li>
-                <li>
-                  <Link to="/#">FAQ</Link>
-                </li>
-                <li>
-                  <Link to="/#">contacts</Link>
-                </li>
-              </ul>
-            </Grid>
-
-            <Grid item xs={12} sm={6} md={3}>
+            <div className="col-sm-6 col-md-3">
               <h2>Get in Touch</h2>
               <ul className="footer-list">
                 <li>
-                  <Link to="/#">info@ibkos.com</Link>
+                  <a className="text-lowercase" href="mailto: info@ibkos.com">
+                    info@ibkos.com
+                  </a>
                 </li>
                 <li>
-                  <Link to="/#">+1-852-234-56</Link>
+                  <a href="tel:+185223456">+1-852-234-56</a>
                 </li>
               </ul>
-            </Grid>
-          </Grid>
+            </div>
+          </div>
           <div className="footer-bottom">
             <Typography variant="subtitle2" gutterBottom>
               © 2020 ImageSpread Group Inc. All Rights Reserved
@@ -97,7 +57,7 @@ const Footer = () => {
               <SocialMedia />
             </div>
           </div>
-        </Container>
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import { Paper } from "@material-ui/core";
-import SocialMedia from "./SocialMedia";
+import SocialMedia from "./SocialMediaCard";
 import "./ProfileCard1.css";
 
 const ProfileCard1 = (props) => {

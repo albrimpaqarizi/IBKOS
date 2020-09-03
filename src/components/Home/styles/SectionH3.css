@@ -1,7 +1,7 @@
 .about-img img {
   width: 557px;
   padding: 0 !important;
-  border-radius: 3.5rem !important;
+  border-radius: 3.5rem;
   border: none !important;
   max-width: 80%;
 }

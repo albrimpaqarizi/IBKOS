@@ -8,10 +8,13 @@ const SectionH2 = () => {
   return (
     <div className="container py-4">
       <div className="sectionH2 home-center ">
-        <Link to="/service" className="btn-a btn-a2 btn-bg3 my-2">
+        <Link
+          to="/service"
+          className="btn-a btn-a2 btn-bg3 my-2   home-center-a"
+        >
           our service
         </Link>
-        <h1 className="my-2">what we do</h1>
+        <h1 className="my-2 test">what we do</h1>
       </div>
       <div className="d-flex justify-content-center flex-wrap flex-row ">
         {listServices.map((item, index) => {

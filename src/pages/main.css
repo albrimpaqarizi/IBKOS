@@ -1,27 +1,3 @@
-.fullHeader {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  /* background-attachment: fixed; */
-}
-
-/* .about {
-  background-image: linear-gradient(
-      0deg,
-      rgba(28, 30, 32, 0.5),
-      rgba(28, 30, 32, 0.5)
-    ),
-    url("../assets/images/MaskGroup9.jpg");
-} */
-.contact-section {
-  background-image: linear-gradient(
-      0deg,
-      rgba(28, 30, 32, 91%),
-      rgba(28, 30, 32, 91%)
-    ),
-    url("../assets/images/Mask\ Group12.jpg");
-}
 .page-bg {
   background-color: rgb(27, 27, 27);
 }

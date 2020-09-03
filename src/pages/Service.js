@@ -4,6 +4,7 @@ import SectionOne from "../components/ServicePage/SectionS1";
 import SectionTwo from "../components/ServicePage/SectionS2";
 import SectionThree from "../components/ServicePage/SectionS3";
 import SectionFour from "../components/ServicePage/SectionS4";
+import SectionFive from "../components/ServicePage/SectionS5";
 import SectionSix from "../components/ServicePage/SectionS6";
 
 const Service = () => {
@@ -13,6 +14,7 @@ const Service = () => {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
+      <SectionFive />
       <SectionSix />
     </div>
   );

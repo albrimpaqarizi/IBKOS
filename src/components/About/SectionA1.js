@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/index.css";
+import "./styles/SectionA1.scss";
 
 const SectionA1 = () => {
   return (

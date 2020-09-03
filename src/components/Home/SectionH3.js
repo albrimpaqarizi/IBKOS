@@ -10,7 +10,7 @@ const SectionH3 = () => {
       <div className="sectionH3 container my-5">
         <div className="row">
           <div className="col-12 col-lg-6 about-img">
-            <img className="img-thumbnail " src={about} alt="null" />
+            <img className="img-thumbnail" src={about} alt="null" />
           </div>
           <div className="col-12 col-lg-6 div-2">
             <Link

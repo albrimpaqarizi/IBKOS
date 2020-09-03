@@ -1,15 +1,15 @@
-.SocalMedia {
+.SocalMediaCard {
   display: flex;
   justify-content: space-evenly;
   color: white;
 }
 
-.SocalMedia > *:hover {
+.SocalMediaCard > *:hover {
   cursor: pointer;
   color: black;
 }
 
-.SocalMedia > * {
+.SocalMediaCard > * {
   background-color: white;
   padding: 4px;
   color: #2699fb;

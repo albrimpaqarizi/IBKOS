@@ -1,0 +1,29 @@
+.sectionC1 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(28, 30, 32, 91%),
+      rgba(28, 30, 32, 91%)
+    ),
+    url("../../assets/images/Mask\ Group12.jpg");
+}
+
+.sectionC1 > div > div {
+  margin: 25% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.sectionC1 h1 {
+  margin: 20px 0px;
+}
+.sectionC1 h5 {
+  width: 70%;
+}
+
+@media (max-width: 600px) {
+  .sectionC1 h5 {
+    width: auto;
+  }
+}
