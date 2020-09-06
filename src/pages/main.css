@@ -1,11 +1,9 @@
 .page-bg {
   background-color: rgb(27, 27, 27);
 }
-.nF-page {
-  margin-top: 65px;
-}
+
 .nF-page h1 {
-  margin: 35% 3%;
+  padding: 35% 3%;
   color: white;
   font-weight: bold;
   font-family: "Courier New", Courier, monospace;

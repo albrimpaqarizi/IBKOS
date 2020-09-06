@@ -13,7 +13,41 @@
   border-radius: 8px;
 }
 
+@media (max-width: 600px) {
+  .SocalMedia a {
+    margin: 0px 6px;
+  }
+}
+
 .SocalMedia a:hover {
-  cursor: pointer;
-  color: #2699fb;
+  -webkit-animation: flip-horizontal-bottom 0.9s
+    cubic-bezier(0.47, 0, 0.745, 0.715) reverse;
+  animation: flip-horizontal-bottom 0.9s cubic-bezier(0.47, 0, 0.745, 0.715)
+    reverse;
+  color: #fff;
+  transition: all 0.5s;
+  background-color: #2699fb;
+}
+
+@keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+    background-color: #2699fb;
+    color: #fff;
+  }
+}
+@-webkit-keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+  }
 }

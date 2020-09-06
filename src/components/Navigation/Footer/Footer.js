@@ -5,6 +5,7 @@ import { Divider, Typography } from "@material-ui/core";
 import SocialMedia from "../../../components/UI/SocialMedia/SocialMedia";
 import Signup from "./Signup";
 import MenuListFooter from "./MenuList";
+import LangOptions from "../../UI/LangOptions";
 
 const Footer = () => {
   return (
@@ -12,11 +13,16 @@ const Footer = () => {
       <Signup />
       <div className="footer">
         <div className="container py-3">
-          <div className="footer-logo">
-            <Logo />
-            <p className="text-left">
-              Since 1999, we have been helping American business thrive
-            </p>
+          <div className="footer-logo ">
+            <div className="mb-4">
+              <Logo />
+              <p>Since 1999, we have been helping American business thrive</p>
+            </div>
+
+            <div className="d-flex justify-content-center flex-row align-items-center mb-4">
+              <h5 className="text-white">Follow us</h5>
+              <SocialMedia />
+            </div>
           </div>
           <Divider />
 
@@ -34,7 +40,7 @@ const Footer = () => {
               items={["contact us", "faq", "features"]}
             />
 
-            <div className="col-sm-6 col-md-3">
+            <div className="col-sm-6 col-lg-3">
               <h2>Get in Touch</h2>
               <ul className="footer-list">
                 <li>
@@ -48,13 +54,13 @@ const Footer = () => {
               </ul>
             </div>
           </div>
+
           <div className="footer-bottom">
             <Typography variant="subtitle2" gutterBottom>
               © 2020 ImageSpread Group Inc. All Rights Reserved
             </Typography>
             <div>
-              <h5>Follow us</h5>
-              <SocialMedia />
+              <LangOptions />
             </div>
           </div>
         </div>

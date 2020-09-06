@@ -18,6 +18,7 @@ import market1 from "../assets/images/Loesungen_Marktforschung.jpg";
 import market2 from "../assets/images/Marktanalysen&Prognosen.jpg";
 import market3 from "../assets/images/askStatista.jpg";
 
+export const profileCardImg = [img1, img2, img3, img4, img5, img6];
 export const listProfile = [
   {
     icon: img1,
@@ -50,6 +51,7 @@ export const listProfile = [
     jobTitle: "Consultant",
   },
 ];
+export const serviceCardImg = [icon1, icon2, icon3, icon4, icon5, icon6];
 
 export const listServices = [
   {

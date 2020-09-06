@@ -2,9 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ServiceCard from "./ServiceCard";
 import "./styles/SectionH2.css";
-import { listServices } from "../mapData";
+import { serviceCardImg } from "../mapData";
+import { useTranslation } from "react-i18next";
 
 const SectionH2 = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="container py-4">
       <div className="sectionH2 home-center ">
@@ -17,16 +20,15 @@ const SectionH2 = () => {
         <h1 className="my-2 test">what we do</h1>
       </div>
       <div className="d-flex justify-content-center flex-wrap flex-row ">
-        {listServices.map((item, index) => {
-          return (
-            <ServiceCard
-              key={index}
-              icon={item.icon}
-              title={item.title}
-              desc={item.desc}
-            />
-          );
-        })}
+        {t("whatWeDo", { returnObjects: true }).map((item, index) => (
+          <ServiceCard
+            key={index}
+            icon={serviceCardImg[index]}
+            title={item.title}
+            desc={item.desc}
+          />
+        ))}
+        ;
       </div>
     </div>
   );

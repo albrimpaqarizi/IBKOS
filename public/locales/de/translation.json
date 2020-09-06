@@ -1,0 +1,28 @@
+{
+  "mainMenu": [
+    {
+      "link": "",
+      "name": "Startseite"
+    },
+    {
+      "link": "about",
+      "name": "Über uns"
+    },
+    {
+      "link": "our-team",
+      "name": "unser Team"
+    },
+    {
+      "link": "service",
+      "name": "bedienung"
+    },
+    {
+      "link": "pages",
+      "name": "seiten"
+    },
+    {
+      "link": "contact",
+      "name": "kontaktiere uns"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "error": {
+    "unspecific": "Something went wrong.",
+    "404": "The page was not found."
+  },
+  "homeBanner": {
+    "title": "Professional Business Consulting",
+    "desc": "Business Provide reliable business planning, management and advisory services backed by years of experience in the industry."
+  },
+  "mainMenu": [
+    {
+      "link": "",
+      "name": "home"
+    },
+    {
+      "link": "about",
+      "name": "about us"
+    },
+    {
+      "link": "our-team",
+      "name": "our team"
+    },
+    {
+      "link": "service",
+      "name": "service"
+    },
+    {
+      "link": "pages",
+      "name": "pages"
+    },
+    {
+      "link": "contact",
+      "name": "contact us"
+    }
+  ],
+  "logInBtn": {
+    "link": "login",
+    "name": "login"
+  },
+  "signUpBtn": {
+    "link": "sign",
+    "name": "sign up"
+  },
+  "contactBtn": {
+    "link": "contact",
+    "name": "contact"
+  },
+  "ourServicesbtn": {
+    "link": "service",
+    "name": "our services"
+  },
+  "ourAboutBtn": {
+    "link": "about",
+    "name": "our about"
+  },
+  "whyUsBtn": {
+    "link": "about",
+    "name": "why us"
+  },
+  "readMoreBtn": {
+    "link": "#",
+    "name": "read more"
+  },
+  "viewGalleryBtn": {
+    "link": "about",
+    "name": "view gallery"
+  },
+  "whatWeWorkOnBtn": {
+    "link": "about",
+    "name": "what we work on "
+  },
+  "meetOurTeamBtn": {
+    "link": "our-team",
+    "name": "meet our team"
+  },
+  "whatWeDo": [
+    {
+      "title": "Market Analysis",
+      "desc": "We support your business with fact- based market research "
+    },
+    {
+      "title": "Found Management",
+      "desc": "We support your business with fact  based market research"
+    },
+    {
+      "title": "PR & Marketing",
+      "desc": "We support your business with fact  based market research"
+    },
+    {
+      "title": "Business Planning",
+      "desc": "We support your business with fact  based market research"
+    },
+    {
+      "title": "Audit",
+      "desc": "We support your business with fact  based market research"
+    },
+    {
+      "title": "Consulting",
+      "desc": "We support your business with fact  based market research"
+    }
+  ],
+  "ourAbout": {
+    "title": "A Few Words About Us ",
+    "desc": "Our Consulting company is a leading firm of business managers and advisors with offices across the USA. We aim to provide you:",
+    "text1": "Quality Research & Analysis",
+    "text2": "Business Advisory Experience"
+  },
+  "whyUs": {
+    "title": "Reasons People <span>Choose IBKOS </span>",
+    "desc": "We believe there are many good reasons for you to choose us for your business consoulting here are some of them:",
+    "text1": "Qualified Team ",
+    "text2": "15 Years Experience",
+    "text3": "Flexibility"
+  },
+  "whatWeWorkOn": {
+    "title": "Browse Our Latest <span> Consulting Projects </span> ",
+    "desc": " Our team has worked on a wide variety of consulting and management projects since our establishment. Take a look at some of them in our project gallery."
+  },
+  "ourProfessionalTeam": "Our Professional Team",
+  "ourTeam": [
+    {
+      "profileName": "Market Analysis",
+      "jobTitle": "Co-Founder & CTO"
+    },
+    {
+      "profileName": "Found Management",
+      "jobTitle": "Executive Cosultant"
+    },
+    {
+      "profileName": "Jennifer Bailey",
+      "jobTitle": "Safety Consultant"
+    },
+    {
+      "profileName": "Frida Logan",
+      "jobTitle": "Economic Asistant"
+    },
+    {
+      "profileName": "Nick Osmani",
+      "jobTitle": "Programmer"
+    },
+    {
+      "profileName": "Eden Walker",
+      "jobTitle": "Consultant"
+    }
+  ],
+
+  "footerMenu": {
+    "menu1": {
+      "title": "who we are",
+      "items": [
+        {
+          "link": "about",
+          "name": "about us"
+        },
+        {
+          "link": "careers",
+          "name": "careers"
+        },
+        {
+          "link": "our-team",
+          "name": "our team"
+        }
+      ]
+    },
+    "menu2": {
+      "title": "quick links",
+      "items": [
+        {
+          "link": "signup",
+          "name": "sign up"
+        },
+        {
+          "link": "new",
+          "name": "new"
+        },
+        {
+          "link": "privacy-policy",
+          "name": "privacy policy"
+        }
+      ]
+    },
+    "menu3": {
+      "title": "quick links",
+      "items": [
+        {
+          "link": "contact",
+          "name": "contact us"
+        },
+        {
+          "link": "faq",
+          "name": "faq"
+        },
+        {
+          "link": "features",
+          "name": "features"
+        }
+      ]
+    },
+    "menu4": {
+      "title": "get in touch"
+    }
+  },
+  "signUpText": "Your solution is on its way in a few clicks.",
+  "companyAbout": "Since 1999, we have been helping American business thrive",
+  "followUs": "follow us",
+  "alRight": "All Rights Reserved"
+}

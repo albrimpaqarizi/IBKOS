@@ -1,5 +1,5 @@
 .sectionH1 {
-  margin: 25% 5%;
+  padding: 25% 5%;
   display: flex;
   flex-flow: column;
 }

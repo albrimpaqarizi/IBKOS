@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ProfileCard from "../UI/ProfileCard/ProfileCard_1";
-import { listProfile } from "../mapData";
+import { listProfile, profileCardImg } from "../mapData";
 import "./styles/SectionH6.css";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -17,9 +17,18 @@ const useStyles = makeStyles({
     width: "275px",
     boxShadow: "none",
     height: "270px",
-    // "&:hover": {
-    //   boxShadow: "0 10px 6px -6px #777",
-    // },
+    "&:hover": {
+      animation: "$slide 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both",
+    },
+  },
+  "@keyframes slide": {
+    "0%": {
+      transform: "scale(1)",
+    },
+    "100%": {
+      transform: "scale(0.9)",
+      boxShadow: "0 10px 6px -6px #777",
+    },
   },
 });
 

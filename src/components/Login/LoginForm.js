@@ -9,7 +9,7 @@ import avatar4 from "../../assets/images/login/Group204.jpg";
 
 const LoginForm = () => {
   return (
-    <div className=" login fullHeader">
+    <div className=" login fullBackground">
       <div className="container main-top login-page">
         <div className="row">
           <div className="col-12 col-lg-6 py-5 container-form">

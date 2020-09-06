@@ -16,12 +16,20 @@ code {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
+  /* overflow: hidden; */
+  background-attachment: fixed;
+  height: 100%;
 }
 
-.main-top {
-  margin-top: 65px;
+@media only screen and (max-device-width: 1366px) {
+  .fullBackground {
+    background-attachment: scroll;
+  }
 }
+
+/* .main-top {
+  margin-top: 65px;
+} */
 
 .font-r {
   font-family: "Roboto", sans-serif;
@@ -45,11 +53,20 @@ code {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   text-transform: capitalize;
   font-family: "Roboto", sans-serif;
+
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 .btn-a1 {
   padding: 10px 40px;
   border-radius: 20px;
-  font-weight: 600;
+  font-weight: 500;
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 .btn-a:hover {
   text-decoration: none;

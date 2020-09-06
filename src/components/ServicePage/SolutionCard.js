@@ -1,14 +1,31 @@
 import React from "react";
 import { Paper } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+// import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, createMuiTheme } from "@material-ui/core/styles";
+
+const theme = createMuiTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 768,
+      md: 992,
+      lg: 1280,
+      xl: 1920,
+    },
+  },
+});
 
 const useStyles = makeStyles({
   paper: {
     backgroundColor: "rgb(77 78 80 / 43%)",
     padding: "1rem",
     borderRadius: "25px",
-    margin: "8% 0",
+    marginBottom: "8%",
     height: "170px",
+    [theme.breakpoints.down("sm")]: {
+      height: "auto",
+      marginBottom: "6%",
+    },
   },
 });
 

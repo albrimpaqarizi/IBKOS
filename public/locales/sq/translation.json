@@ -1,0 +1,207 @@
+{
+  "error": {
+    "unspecific": "Dicka shkoi keq",
+    "404": "Faqja nuk u gjet"
+  },
+  "homeBanner": {
+    "title": "Konsulencë Profesionale e Biznesit",
+    "desc": "Biznesi siguron planifikim, menaxhim dhe këshillim të besueshëm të biznesit bazuar në përvojën e viteve në industri."
+  },
+  "mainMenu": [
+    {
+      "link": "",
+      "name": "ballina"
+    },
+    {
+      "link": "about",
+      "name": "rreth nesh"
+    },
+    {
+      "link": "our-team",
+      "name": "ekipi ynë"
+    },
+    {
+      "link": "service",
+      "name": "sherbimet"
+    },
+    {
+      "link": "pages",
+      "name": "faqet"
+    },
+    {
+      "link": "contact",
+      "name": "na kontaktoni"
+    }
+  ],
+  "logInBtn": {
+    "link": "login",
+    "name": "kyqu"
+  },
+  "signUpBtn": {
+    "link": "sign",
+    "name": "regjistrohu"
+  },
+  "contactBtn": {
+    "link": "contact",
+    "name": "kontakt"
+  },
+  "ourServicesbtn": {
+    "link": "service",
+    "name": "sherbimet tona"
+  },
+  "ourAboutBtn": {
+    "link": "about",
+    "name": "rreth nesh"
+  },
+  "whyUsBtn": {
+    "link": "about",
+    "name": "pse ne"
+  },
+  "readMoreBtn": {
+    "link": "#",
+    "name": "lexo më shumë"
+  },
+  "viewGalleryBtn": {
+    "link": "about",
+    "name": "shiko galerinë"
+  },
+  "whatWeWorkOnBtn": {
+    "link": "about",
+    "name": "çfarë punojmë"
+  },
+  "meetOurTeamBtn": {
+    "link": "our-team",
+    "name": "tako ekipin tonë"
+  },
+  "whatWeDo": [
+    {
+      "title": "Analiza e tregut",
+      "desc": "Ne e mbështesim biznesin tuaj me hulumtim tregu të bazuar në fakte"
+    },
+    {
+      "title": "Menaxhimi i gjetur",
+      "desc": "Ne e mbështesim biznesin tuaj me hulumtim tregu të bazuar në fakte"
+    },
+    {
+      "title": "PR & Marketingu",
+      "desc": "Ne e mbështesim biznesin tuaj me hulumtim tregu të bazuar në fakte"
+    },
+    {
+      "title": "Planifikimi i biznesit",
+      "desc": "Ne e mbështesim biznesin tuaj me hulumtim tregu të bazuar në fakte"
+    },
+    {
+      "title": "Kontrolli",
+      "desc": "Ne e mbështesim biznesin tuaj me hulumtim tregu të bazuar në fakte"
+    },
+    {
+      "title": "Konsulencë",
+      "desc": "Ne e mbështesim biznesin tuaj me hulumtim tregu të bazuar në fakte"
+    }
+  ],
+  "ourAbout": {
+    "title": "Disa Fjale Rreth Nesh ",
+    "desc": "Kompania jonë e Konsulencës është një firmë kryesore e menaxherëve dhe këshilltarëve të biznesit me zyra në të gjithë SHBA. Ne synojmë t'ju ofrojmë:",
+    "text1": "Kërkim dhe Analizë e Cilësisë",
+    "text2": "Përvoja Këshilluese e Biznesit"
+  },
+  "whyUs": {
+    "title": "Arsyet Njerëzit <span> Zgjidhni IBKOS </span>",
+    "desc": "Ne besojmë se ka shumë arsye të mira që ju të na zgjidhni për konsultimin e biznesit tuaj këtu janë disa prej tyre:",
+    "text1": "Ekipi i Kualifikuar",
+    "text2": "Përvojë 15 vjeçare",
+    "text3": "Fleksibiliteti"
+  },
+  "whatWeWorkOn": {
+    "title": "Browse Our Latest <span> Consulting Projects </span> ",
+    "desc": " Our team has worked on a wide variety of consulting and management projects since our establishment. Take a look at some of them in our project gallery."
+  },
+  "ourProfessionalTeam": "Our Professional Team",
+  "ourTeam": [
+    {
+      "profileName": "Market Analysis",
+      "jobTitle": "Co-Founder & CTO"
+    },
+    {
+      "profileName": "Found Management",
+      "jobTitle": "Executive Cosultant"
+    },
+    {
+      "profileName": "Jennifer Bailey",
+      "jobTitle": "Safety Consultant"
+    },
+    {
+      "profileName": "Frida Logan",
+      "jobTitle": "Economic Asistant"
+    },
+    {
+      "profileName": "Nick Osmani",
+      "jobTitle": "Programmer"
+    },
+    {
+      "profileName": "Eden Walker",
+      "jobTitle": "Consultant"
+    }
+  ],
+
+  "footerMenu": {
+    "menu1": {
+      "title": "who we are",
+      "items": [
+        {
+          "link": "about",
+          "name": "about us"
+        },
+        {
+          "link": "careers",
+          "name": "careers"
+        },
+        {
+          "link": "our-team",
+          "name": "our team"
+        }
+      ]
+    },
+    "menu2": {
+      "title": "quick links",
+      "items": [
+        {
+          "link": "signup",
+          "name": "sign up"
+        },
+        {
+          "link": "new",
+          "name": "new"
+        },
+        {
+          "link": "privacy-policy",
+          "name": "privacy policy"
+        }
+      ]
+    },
+    "menu3": {
+      "title": "quick links",
+      "items": [
+        {
+          "link": "contact",
+          "name": "contact us"
+        },
+        {
+          "link": "faq",
+          "name": "faq"
+        },
+        {
+          "link": "features",
+          "name": "features"
+        }
+      ]
+    },
+    "menu4": {
+      "title": "get in touch"
+    }
+  },
+  "signUpText": "Your solution is on its way in a few clicks.",
+  "companyAbout": "Since 1999, we have been helping American business thrive",
+  "followUs": "follow us",
+  "alRight": "All Rights Reserved"
+}

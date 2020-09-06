@@ -2,15 +2,25 @@ import React from "react";
 import "./NavigationItems.css";
 import NavigationItem from "./NavigationItem/NavigationItem";
 import LoginNav from "./LoginNav/LoginNav";
+import { useTranslation } from "react-i18next";
 
 function NavigationItems(props) {
+  const { t } = useTranslation();
+
   return (
     <div className="NavigationItems">
       <ul>
-        <NavigationItem clicked={props.drawerToggle} link="/">
-          Home
-        </NavigationItem>
-        <NavigationItem clicked={props.drawerToggle} link="/about">
+        {t("mainMenu", { returnObjects: true }).map(({ link, name }, index) => (
+          <NavigationItem
+            clicked={props.drawerToggle}
+            link={`/${link}`}
+            key={index}
+          >
+            {name}
+          </NavigationItem>
+        ))}
+
+        {/* <NavigationItem clicked={props.drawerToggle} link="/about">
           About Us
         </NavigationItem>
         <NavigationItem clicked={props.drawerToggle} link="/403">
@@ -24,7 +34,7 @@ function NavigationItems(props) {
         </NavigationItem>
         <NavigationItem clicked={props.drawerToggle} link="/contact">
           Contact Us
-        </NavigationItem>
+        </NavigationItem> */}
       </ul>
       <LoginNav />
     </div>

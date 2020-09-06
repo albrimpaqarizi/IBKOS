@@ -7,7 +7,7 @@ import about from "../../assets/images/home/Image1.jpg";
 const SectionH3 = () => {
   return (
     <div className="background-2 fullBackground">
-      <div className="sectionH3 container my-5">
+      <div className="sectionH3 container py-5">
         <div className="row">
           <div className="col-12 col-lg-6 about-img">
             <img className="img-thumbnail" src={about} alt="null" />

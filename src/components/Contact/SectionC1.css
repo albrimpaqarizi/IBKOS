@@ -8,7 +8,7 @@
 }
 
 .sectionC1 > div > div {
-  margin: 25% 5%;
+  padding: 25% 5%;
   display: flex;
   justify-content: center;
   align-items: center;
