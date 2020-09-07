@@ -26,7 +26,7 @@ const useStyles = makeStyles({
   },
 });
 const LangOptions = () => {
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState(localStorage.getItem("i18nextLng"));
   const classes = useStyles();
   const { i18n } = useTranslation();
 
@@ -40,9 +40,6 @@ const LangOptions = () => {
       <GTranslateIcon className={classes.icon} />
       <NativeSelect
         className={classes.select}
-        inputProps={{
-          id: "lang",
-        }}
         value={lang}
         onChange={handleChange}
       >

@@ -12,7 +12,7 @@ const ProfileCard1 = (props) => {
       <h4 className="font-cart text-center text-capitalize profileCard-h4">
         {props.profileName}
       </h4>
-      <p className="profileCard-p"> {props.jobTitle} </p>
+      <p className="profileCard-p text-capitalize"> {props.jobTitle} </p>
       <SocialMedia />
     </Paper>
   );

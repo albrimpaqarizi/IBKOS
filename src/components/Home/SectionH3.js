@@ -1,10 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./styles/SectionH3.css";
 import "./styles/index.css";
 import about from "../../assets/images/home/Image1.jpg";
+import { useTranslation } from "react-i18next";
+import ReadMore from "../UI/Button/ReadMore";
+import OurButton from "../UI/Button/OurButton";
 
 const SectionH3 = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="background-2 fullBackground">
       <div className="sectionH3 container py-5">
@@ -13,32 +17,21 @@ const SectionH3 = () => {
             <img className="img-thumbnail" src={about} alt="null" />
           </div>
           <div className="col-12 col-lg-6 div-2">
-            <Link
-              to="/about"
-              className="my-2 btn-a btn-a2 btn-bg3 text-uppercase"
-            >
-              our about
-            </Link>
-            <h1 className="text-white dt my-3">A Few Words About Us</h1>
-            <h6 className="text-white my-3 w-75">
-              Our Consulting company is a leading firm of business managers and
-              advisors with offices across the USA. We aim to provide you:
-            </h6>
+            <OurButton btn="ourAboutBtn" />
+            <h1 className="text-white dt my-3 text-inherit">
+              {t("ourAbout.title")}{" "}
+            </h1>
+            <h6 className="text-white my-3 w-75 ">{t("ourAbout.desc")}</h6>
             <ul className="text-white pl-3 my-3">
-              <li>
-                <p className="text-white text-capitalize dt d-inline-block">
-                  Quality reasrch & analysis{" "}
-                </p>
-              </li>
-              <li>
-                <p className="text-white text-capitalize dt d-inline-block">
-                  Business advisory experience
-                </p>
-              </li>
+              {t("ourAbout.textList").map((item, index) => (
+                <li key={index}>
+                  <p className="text-white text-inherit dt d-inline-block">
+                    {item}
+                  </p>
+                </li>
+              ))}
             </ul>
-            <Link to="/#" className="btn-a btn-a1 btn-bg2 ">
-              read more
-            </Link>
+            <ReadMore />
           </div>
         </div>
       </div>

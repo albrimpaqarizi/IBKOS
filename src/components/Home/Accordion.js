@@ -24,45 +24,21 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const AccordionCard = () => {
+const AccordionCard = (props) => {
   const classes = useStyles();
   return (
-    <div className="my-4 mx-1">
-      <Accordion className={classes.accordion}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography className={classes.heading}>
-            What are advantages working with us?
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography className={classes.p}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion className={classes.accordion}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <Typography className={classes.heading}>
-            How can i pay my order?
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography className={classes.p}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-    </div>
+    <Accordion className={classes.accordion}>
+      <AccordionSummary
+        expandIcon={<ExpandMoreIcon />}
+        aria-controls={`content-${props.idx}`}
+        id={`header-${props.idx}`}
+      >
+        <Typography className={classes.heading}>{props.title}</Typography>
+      </AccordionSummary>
+      <AccordionDetails>
+        <Typography className={classes.p}>{props.desc}</Typography>
+      </AccordionDetails>
+    </Accordion>
   );
 };
 

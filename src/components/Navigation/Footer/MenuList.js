@@ -7,13 +7,11 @@ const MenuList = (props) => {
     <div className="col-sm-6 col-lg-3">
       <h2 className="font-r text-white">{props.title} </h2>
       <ul className="footer-list">
-        {props.items.map((item, index) => {
-          return (
-            <li key={index}>
-              <Link to="/#">{item}</Link>
-            </li>
-          );
-        })}
+        {props.list.map((item, index) => (
+          <li key={index}>
+            <Link to={`/${item.link}`}>{item.name}</Link>
+          </li>
+        ))}
       </ul>
     </div>
   );

@@ -6,8 +6,10 @@ import SocialMedia from "../../../components/UI/SocialMedia/SocialMedia";
 import Signup from "./Signup";
 import MenuListFooter from "./MenuList";
 import LangOptions from "../../UI/LangOptions";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <Signup />
@@ -16,32 +18,26 @@ const Footer = () => {
           <div className="footer-logo ">
             <div className="mb-4">
               <Logo />
-              <p>Since 1999, we have been helping American business thrive</p>
+              <p>{t("companyAbout")} </p>
             </div>
 
             <div className="d-flex justify-content-center flex-row align-items-center mb-4">
-              <h5 className="text-white">Follow us</h5>
+              <h5 className="text-white text-capitalize ">{t("followUs")} </h5>
               <SocialMedia />
             </div>
           </div>
           <Divider />
 
           <div className="row">
-            <MenuListFooter
-              title="Who We Are"
-              items={["about us", "careers", "out team"]}
-            />
-            <MenuListFooter
-              title="Quick Links"
-              items={["sign up", "new", "privacy policy"]}
-            />
-            <MenuListFooter
-              title="Quick Links"
-              items={["contact us", "faq", "features"]}
-            />
-
+            {t("footerMenu").map((item, index) => (
+              <MenuListFooter
+                key={index}
+                title={item.title}
+                list={item.items}
+              />
+            ))}
             <div className="col-sm-6 col-lg-3">
-              <h2>Get in Touch</h2>
+              <h2 className="text-inherit text-white"> {t("getInTouch")} </h2>
               <ul className="footer-list">
                 <li>
                   <a className="text-lowercase" href="mailto: info@ibkos.com">
@@ -57,7 +53,7 @@ const Footer = () => {
 
           <div className="footer-bottom">
             <Typography variant="subtitle2" gutterBottom>
-              © 2020 ImageSpread Group Inc. All Rights Reserved
+              © 2020 ImageSpread Group Inc. {t("alRight")}
             </Typography>
             <div>
               <LangOptions />

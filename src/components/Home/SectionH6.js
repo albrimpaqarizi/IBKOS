@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import ProfileCard from "../UI/ProfileCard/ProfileCard_1";
-import { listProfile, profileCardImg } from "../mapData";
+import { profileCardImg } from "../mapData";
 import "./styles/SectionH6.css";
 import { makeStyles } from "@material-ui/core/styles";
+import OurButton from "../UI/Button/OurButton";
+import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles({
   paper: {
@@ -34,21 +35,20 @@ const useStyles = makeStyles({
 
 const SectionH6 = () => {
   const classes = useStyles();
+  const { t } = useTranslation();
   return (
     <div className="background-4 fullBackground">
       <div className="container py-4">
         <div className=" home-center ">
-          <Link to="/service" className="btn-a btn-a2 btn-bg3 my-2">
-            Meet Our Team
-          </Link>
-          <h1 className="my-1">Our Professional Team</h1>
+          <OurButton btn="meetOurTeamBtn" />
+          <h1 className="my-1 text-initial">{t("ourProfessionalTeam")} </h1>
         </div>
         <div className="d-flex justify-content-center flex-wrap flex-row ">
-          {listProfile.map((item, index) => {
+          {t("ourTeam").map((item, index) => {
             return (
               <ProfileCard
                 key={index}
-                icon={item.icon}
+                icon={profileCardImg[index]}
                 profileName={item.profileName}
                 jobTitle={item.jobTitle}
                 paper={classes.paper}

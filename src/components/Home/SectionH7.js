@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./styles/SectionH7.css";
 import "./styles/index.css";
 import { Paper } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Accordion from "./Accordion";
+import FaqProgressBar from "./FaqProgressBar";
+import { useTranslation } from "react-i18next";
+import OurButton from "../UI/Button/OurButton";
 
 const useStyles = makeStyles({
   paper: {
@@ -19,68 +21,40 @@ const useStyles = makeStyles({
 
 const SectionH7 = () => {
   const classes = useStyles();
+  const { t } = useTranslation();
   return (
     <div className="sectionH7 container my-5">
       <div className="row">
         <div className="col-12 col-lg-6 questions">
           <div>
-            <Link to="/#" className="my-3 btn-a btn-a2 btn-bg3 text-uppercase">
-              POPULAR QUESTIONS
-            </Link>
+            <OurButton btn="popularQuestionsBtn" />
           </div>
           <h2 className=" my-3 text-uppercase">faq</h2>
           <ul className="list-unstyled pl-0 my-3">
-            <li className="my-3">
-              <p className="text-black m-1 text-capitalize dt d-inline-block">
-                General
-              </p>
-              <div className="progress h-1px">
-                <div className="progress-bar w-25"></div>
-              </div>
-            </li>
-            <li className="my-3">
-              <p className="light-bg m-1  text-capitalize dt d-inline-block">
-                Our Solutions
-              </p>
-              <div className="progress h-1px">
-                <div className="progress-bar "></div>
-              </div>
-            </li>
-            <li className="my-3">
-              <p className="light-bg m-1  text-capitalize dt d-inline-block">
-                Our Experience
-              </p>
-              <div className="progress h-1px">
-                <div className="progress-bar "></div>
-              </div>
-            </li>
-            <li className="my-3">
-              <p className="light-bg m-1  text-capitalize dt d-inline-block">
-                Costumer Service
-              </p>
-              <div className="progress h-1px">
-                <div className="progress-bar "></div>
-              </div>
-            </li>
+            {t("faqList").map((item, index) => (
+              <FaqProgressBar key={index} name={item} />
+            ))}
           </ul>
         </div>
 
         <div className="col-12 col-lg-6 my-3 ">
           <Paper className={classes.paper}>
-            <h4 className="font-r text-center my-3">
-              What is unique / and non unique purchase ?
-            </h4>
-            <p>
-              Non-exclusive purchase means that other people can buy the
-              template you have chosen some time later. Exclusive or unique
-              purchase guarantees that you are the last person to buy this
-              template. After an exclusive purchase occurs the template is being
-              permanently removed from the sales directory and will never be
-              available to other customers again. Only you and people who bought
-              the template before you will own it.
-            </p>
+            <h4 className="font-r text-center my-3">{t("faq.title")}</h4>
+            <p>{t("faq.desc")}</p>
           </Paper>
-          <Accordion />
+
+          <div className="my-4 mx-1">
+            <Accordion
+              idx={1}
+              title={t("faqAccordion")[0]}
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+            />
+            <Accordion
+              idx={2}
+              title={t("faqAccordion")[1]}
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+            />
+          </div>
         </div>
       </div>
     </div>

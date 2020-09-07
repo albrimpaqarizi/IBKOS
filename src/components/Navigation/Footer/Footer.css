@@ -23,14 +23,14 @@
   display: flex;
   flex-flow: column;
 }
-.footer h2 {
-  color: white;
-  text-transform: capitalize;
-}
 .footer-list li {
   list-style: none;
   padding: 5px 0px;
 }
+.footer-list h2 {
+  text-transform: inherit;
+}
+
 .footer-list li a {
   color: rgb(201 202 203 / 80%);
   font-size: 18px;
