@@ -1,5 +1,5 @@
 import React from "react";
-import LoginForm from "./LoginForm";
+import ContactForm from "./ContactForm";
 import Office from "./Office";
 import "./SectionC2.css";
 import { Box, Divider } from "@material-ui/core";
@@ -20,13 +20,21 @@ const SectionC2 = () => {
           <div className="box">
             <h1 className="text-capitalize font-r">our office</h1>
             <p className="text-col1">
-              If you are living nerbay, come visit IBKOS in our comfortable
-              office.
+              If you are living Prishtina or Gjilan, <br /> come visit IBKOS in
+              our comfortable office.
             </p>
           </div>
-          <Office name="office 1" />
+          <Office
+            name="office 1"
+            linkMap="https://goo.gl/maps/FdytC973wz4VVqzU8"
+            linkName="Str. Fehmi Agani, Nr.15, Dragodan 10000 Prishtinë, Kosovë"
+          />
           <Divider className={classes.hr} />
-          <Office name="office 2" />
+          <Office
+            name="office 2"
+            linkMap="https://goo.gl/maps/g8vfmVjYzb1CHipb9"
+            linkName="Str. Medllin Ollbrajt, Nr.20 ,Kodra e Trimave 10000 Gjilan, Kosovë"
+          />
         </div>
         <div className="col-md-6">
           <Box paddingY={2} margin={3}>
@@ -38,7 +46,7 @@ const SectionC2 = () => {
               respond within two working days
             </p>
           </Box>
-          <LoginForm />
+          <ContactForm />
         </div>
       </div>
     </div>

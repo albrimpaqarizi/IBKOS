@@ -1,12 +1,15 @@
 import React from "react";
-import Footer from "../components/Navigation/Footer/Footer";
-import Header from "../components/Navigation/Header";
+import Footer from "../components/Shared/Footer/Footer";
+import Header from "../components/Shared/Header";
 
 function Layout(props) {
   return (
     <React.Fragment>
       <Header />
-      <main>{props.children}</main>
+      <main>
+        <div id="back-to-top-anchor"></div>
+        {props.children}
+      </main>
       <Footer />
     </React.Fragment>
   );

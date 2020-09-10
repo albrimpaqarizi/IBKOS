@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileCard from "../UI/ProfileCard/ProfileCard_1";
-import { profileCardImg } from "../mapData";
+import { profileCardImg } from "../Shared/mapData";
 import "./styles/SectionH6.css";
 import { makeStyles } from "@material-ui/core/styles";
 import OurButton from "../UI/Button/OurButton";
@@ -40,7 +40,10 @@ const SectionH6 = () => {
     <div className="background-4 fullBackground">
       <div className="container py-4">
         <div className=" home-center ">
-          <OurButton btn="meetOurTeamBtn" />
+          <OurButton
+            btn="meetOurTeamBtn"
+            classProps="text-capitalize px-4 py-2 font-s-small"
+          />
           <h1 className="my-1 text-initial">{t("ourProfessionalTeam")} </h1>
         </div>
         <div className="d-flex justify-content-center flex-wrap flex-row ">

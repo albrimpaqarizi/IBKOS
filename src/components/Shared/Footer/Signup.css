@@ -1,0 +1,22 @@
+.signup-footer {
+  background-image: linear-gradient(
+      0deg,
+      rgba(28, 30, 32, 81%),
+      rgba(28, 30, 32, 81%)
+    ),
+    url("../../../assets//images//MaskGroup2.jpg");
+}
+.signup-footer {
+  padding: 8% 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 992px) {
+  .signup-footer h2 {
+    font-size: 1.7rem;
+  }
+}

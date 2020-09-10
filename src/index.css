@@ -53,20 +53,16 @@ code {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   text-transform: capitalize;
   font-family: "Roboto", sans-serif;
-
   -moz-transition: all 0.4s ease-in;
   -o-transition: all 0.4s ease-in;
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
 }
 .btn-a1 {
-  padding: 10px 40px;
+  padding: 15px 40px;
   border-radius: 20px;
   font-weight: 500;
-  -moz-transition: all 0.4s ease-in;
-  -o-transition: all 0.4s ease-in;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .btn-a:hover {
   text-decoration: none;
@@ -77,14 +73,18 @@ code {
 .btn-bg1 {
   color: white;
   background-color: #2699fb;
+  font-weight: 700;
 }
 .btn-bg1:hover {
-  background-color: #2698fbbe;
-  color: white;
+  background-color: white;
+  color: #2699fb;
+  border-color: #259bf9;
 }
+
 .btn-bg2 {
   background-color: #fff;
   color: #2699fb;
+  font-weight: 700;
 }
 .btn-bg2:hover {
   background-color: #2698fbda;
@@ -92,12 +92,14 @@ code {
 }
 
 .btn-a2 {
-  background-color: #e8f7fd;
-  padding: 5px 40px;
+  background-color: #dceef6;
+  /* background-color: #e8f7fd; */
+  /* padding: 5px 40px; */
   color: #259bf9;
   border: 2px solid transparent;
   font-weight: 700;
-  border-radius: 20px;
+  border-radius: 40px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .btn-bg3:hover {
   color: #259bf9;
@@ -120,9 +122,21 @@ code {
   font-weight: 700 !important;
 }
 
+.font-600 {
+  font-weight: 600;
+}
+.font-500 {
+  font-weight: 500;
+}
+
 .btn-light {
   background-color: #fff;
   color: #606a74 !important;
+  font-weight: 700;
+  /* box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12); */
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
 }
 .btn-light:hover {
   background-color: #f1f1f1;
@@ -155,4 +169,34 @@ code {
 }
 .text-col3 {
   color: #2699fb;
+}
+.font-s-small {
+  font-size: 1.15rem;
+  line-height: 1.35rem;
+}
+.font-s-medium {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+.font-s-large {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+}
+
+.flag-select__btn:focus {
+  outline: none !important;
+}
+.flag-select__option--placeholder {
+  display: inline-flex !important;
+}
+.flag-select__option__icon {
+  width: 2em !important;
+  height: 1.5em !important;
+  top: 0 !important;
+}
+.flag-select__btn {
+  color: white !important;
+}
+.flag-select__btn:after {
+  border-top-color: white !important;
 }

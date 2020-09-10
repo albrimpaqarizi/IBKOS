@@ -19,8 +19,8 @@ const Office = (props) => {
       <ul className="list-group ">
         <li className="list-group-item pl-0 border-0">
           <LocationOnIcon className={classes.icons} />
-          <a href="/#" className="text-col1 text-decoration-none">
-            9863 - 9867 Mill Road, Cambridge, MG09 99HT
+          <a href={props.linkMap} className="text-col1 text-decoration-none">
+            {props.linkName}
           </a>
         </li>
         <li className="list-group-item pl-0 border-0">
@@ -32,10 +32,10 @@ const Office = (props) => {
         <li className="list-group-item pl-0 border-0">
           <MailIcon className={classes.icons} />
           <a
-            href="mailto: mail@ibkos.com"
+            href="mailto: info@ibkos.com"
             className="text-col1 text-decoration-none"
           >
-            mail@ibkos.com
+            info@ibkos.com
           </a>
         </li>
       </ul>

@@ -13,20 +13,23 @@ const SectionH5 = () => {
         <div className="row">
           <div className="col-12 col-lg-6 "></div>
           <div className="col-12 col-lg-6 my-5 gallery-div">
-            <OurButton btn="whatWeWorkOnBtn" />
-            <h2 className=" my-5 gallery-h">
+            <OurButton
+              btn="whatWeWorkOnBtn"
+              classProps="text-uppercase px-4 py-3 font-s-small"
+            />
+            <h1 className=" mt-5 mb-4 gallery-h ">
               {t("whatWeWorkOn.title")[0]}
               <br />
               <span className="blue-bg text-capitalize ">
                 {t("whatWeWorkOn.title")[1]}
               </span>
-            </h2>
-            <h6 className="my-5 light-bg gallery-p">
+            </h1>
+            <h6 className="mb-5 mt-4 light-bg gallery-p">
               {t("whatWeWorkOn.desc")}
             </h6>
             <Link
               to={`/${t("viewGalleryBtn.link")}`}
-              className="btn-a btn-a1 btn-bg2 btn-light mt-4"
+              className="btn-a btn-a1  btn-light mt-4"
             >
               {t("viewGalleryBtn.name")}
             </Link>

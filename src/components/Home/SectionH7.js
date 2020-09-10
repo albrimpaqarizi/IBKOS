@@ -11,7 +11,7 @@ import OurButton from "../UI/Button/OurButton";
 const useStyles = makeStyles({
   paper: {
     margin: "1%",
-    padding: "2%",
+    padding: "3%",
     display: "flex",
     justifyContent: "center",
     flexFlow: "column",
@@ -27,7 +27,10 @@ const SectionH7 = () => {
       <div className="row">
         <div className="col-12 col-lg-6 questions">
           <div>
-            <OurButton btn="popularQuestionsBtn" />
+            <OurButton
+              btn="popularQuestionsBtn"
+              classProps="text-uppercase px-3 py-2 font-s-small"
+            />
           </div>
           <h2 className=" my-3 text-uppercase">faq</h2>
           <ul className="list-unstyled pl-0 my-3">
@@ -39,8 +42,10 @@ const SectionH7 = () => {
 
         <div className="col-12 col-lg-6 my-3 ">
           <Paper className={classes.paper}>
-            <h4 className="font-r text-center my-3">{t("faq.title")}</h4>
-            <p>{t("faq.desc")}</p>
+            <h4 className="font-r text-center text-col3 my-3 font-weight-bold">
+              {t("faq.title")}
+            </h4>
+            <p className="font-600 text-col1">{t("faq.desc")}</p>
           </Paper>
 
           <div className="my-4 mx-1">

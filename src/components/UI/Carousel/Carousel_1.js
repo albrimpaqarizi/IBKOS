@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileCard from "../ProfileCard/ProfileCard_1";
-import { listProfile } from "../../mapData";
+import { listProfile } from "../../Shared/mapData";
 import AliceCarousel from "react-alice-carousel";
 import { makeStyles } from "@material-ui/core/styles";
 import "./Carousel_1.css";

@@ -1,0 +1,54 @@
+.nav-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+/* .nav-login li {
+  border: 2px solid white;
+  border-radius: 30px;
+} */
+
+.nav-login > li > a {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 2px solid transparent;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  font-size: 1.2rem;
+  padding: 5px 30px;
+  border-radius: 20px;
+  font-weight: 500;
+  color: white;
+}
+.nav-login > li:nth-child(1) a {
+  background-color: transparent;
+  border-color: white;
+}
+.nav-login > li:nth-child(2) a {
+  background-color: #2699fb;
+}
+.nav-login > li > a:hover {
+  background-color: transparent;
+  border-color: #2699fb;
+}
+
+.nav-login > li > a:hover {
+  text-decoration: none;
+}
+.nav-login > li > a:focus {
+  outline: none !important;
+}

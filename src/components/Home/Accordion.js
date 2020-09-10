@@ -3,13 +3,13 @@ import { makeStyles } from "@material-ui/core/styles";
 import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
-import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const useStyles = makeStyles((theme) => ({
   heading: {
-    fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular,
+    fontSize: theme.typography.pxToRem(16),
+    fontWeight: "600",
+    color: "#606a74",
   },
   accordion: {
     margin: " 3% 0%",
@@ -20,6 +20,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   p: {
+    fontWeight: "600",
+    color: "#606a74",
     textAlign: "left",
   },
 }));
@@ -33,10 +35,10 @@ const AccordionCard = (props) => {
         aria-controls={`content-${props.idx}`}
         id={`header-${props.idx}`}
       >
-        <Typography className={classes.heading}>{props.title}</Typography>
+        <h6 className={classes.heading}>{props.title}</h6>
       </AccordionSummary>
       <AccordionDetails>
-        <Typography className={classes.p}>{props.desc}</Typography>
+        <p className={classes.p}>{props.desc}</p>
       </AccordionDetails>
     </Accordion>
   );

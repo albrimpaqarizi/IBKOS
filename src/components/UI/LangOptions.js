@@ -1,53 +1,24 @@
 import React, { useState } from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "react-i18next";
-import { FormControl, NativeSelect } from "@material-ui/core";
-import GTranslateIcon from "@material-ui/icons/GTranslate";
-const useStyles = makeStyles({
-  form: {
-    backgroundColor: "#fff",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-betwen",
-    flexFlow: "row",
-  },
-  select: {
-    "&:before": {
-      // borderColor: "#fff",
-      content: "none",
-    },
-    "&:after": {
-      // borderColor: "#fff",
-      content: "none",
-    },
-  },
-  icon: {
-    margin: "5px 10px 5px",
-  },
-});
+
+import ReactFlagsSelect from "react-flags-select";
+import "react-flags-select/css/react-flags-select.css";
+
 const LangOptions = () => {
   const [lang, setLang] = useState(localStorage.getItem("i18nextLng"));
-  const classes = useStyles();
   const { i18n } = useTranslation();
 
-  const handleChange = (event) => {
-    setLang(event.target.value);
-    i18n.changeLanguage(event.target.value);
+  const handleChange = (countryCode) => {
+    setLang(countryCode);
+    i18n.changeLanguage(countryCode);
   };
 
   return (
-    <FormControl className={classes.form}>
-      <GTranslateIcon className={classes.icon} />
-      <NativeSelect
-        className={classes.select}
-        value={lang}
-        onChange={handleChange}
-      >
-        <option value="sq"> Albanian</option>
-        <option value="en">English</option>
-        <option value="de">German</option>
-      </NativeSelect>
-    </FormControl>
+    <ReactFlagsSelect
+      defaultCountry={lang.toLocaleUpperCase()}
+      countries={["AL", "DE", "GB"]}
+      onSelect={handleChange}
+    />
   );
 };
 

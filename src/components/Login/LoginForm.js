@@ -22,7 +22,7 @@ const LoginForm = () => {
             <ul className="list-unstyled pl-0 my-3 px-3">
               <Avatar
                 avatar={avatar1}
-                desc="Access to your files and gets your benifites"
+                desc="Manage your invoices and tickets"
               />
               <Avatar
                 avatar={avatar2}

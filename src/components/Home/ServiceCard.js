@@ -12,7 +12,7 @@ const useStyles = makeStyles({
     flexFlow: "column",
     alignItems: "center",
     borderRadius: "15px",
-    width: "275px",
+    width: "300px",
     transform: "scale(0.95)",
     "&:hover": {
       cursor: "pointer",
@@ -34,13 +34,13 @@ const ServiceCard = (props) => {
   const classes = useStyles();
   return (
     <Paper elevation={2} className={classes.paper}>
-      <div className="p-3 serviceCard bg-light">
-        <img src={props.icon} alt="stock-market.svg" />
+      <div className="p-3 mb-4 serviceCard bg-light">
+        <img src={props.icon} alt="Service card icon" />
       </div>
       <h4 className="font-cart text-center text-capitalize service-h4 ">
         {props.title}
       </h4>
-      <p className="text-center service-p"> {props.desc} </p>
+      <p className="text-center service-p px-2"> {props.desc} </p>
     </Paper>
   );
 };

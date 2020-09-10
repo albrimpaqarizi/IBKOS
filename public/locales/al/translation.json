@@ -1,0 +1,223 @@
+{
+  "error": {
+    "unspecific": "Dicka shkoi keq",
+    "404": "Faqja nuk u gjet"
+  },
+  "homeBanner": {
+    "title": "Konsulencë profesionale e biznesit",
+    "desc": "Biznesi siguron planifikim, menaxhim dhe këshillim të besueshëm të biznesit bazuar në përvojën e viteve në industri."
+  },
+  "mainMenu": [
+    {
+      "link": "",
+      "name": "ballina"
+    },
+    {
+      "link": "about",
+      "name": "rreth nesh"
+    },
+    {
+      "link": "our-team",
+      "name": "ekipi ynë"
+    },
+    {
+      "link": "service",
+      "name": "sherbimet"
+    },
+    {
+      "link": "pages",
+      "name": "faqet"
+    },
+    {
+      "link": "contact",
+      "name": "kontakt"
+    }
+  ],
+  "logInBtn": {
+    "link": "login",
+    "name": "kyqu"
+  },
+  "signUpBtn": {
+    "link": "signup",
+    "name": "regjistrohu"
+  },
+  "contactBtn": {
+    "link": "contact",
+    "name": "na kontaktoni"
+  },
+  "ourServicesBtn": {
+    "link": "service",
+    "name": "sherbimet tona"
+  },
+  "ourAboutBtn": {
+    "link": "about",
+    "name": "rreth ibkos"
+  },
+  "whyUsBtn": {
+    "link": "about",
+    "name": "pse ne"
+  },
+  "popularQuestionsBtn": {
+    "link": "about",
+    "name": "pyetje popullore"
+  },
+  "readMoreBtn": {
+    "link": "#",
+    "name": "lexo më shumë"
+  },
+  "viewGalleryBtn": {
+    "link": "about",
+    "name": "shiko galerinë"
+  },
+  "whatWeWorkOnBtn": {
+    "link": "about",
+    "name": "çfarë punojmë"
+  },
+  "meetOurTeamBtn": {
+    "link": "our-team",
+    "name": "tako ekipin tonë"
+  },
+  "whatWeDo": "çfarë bëjmë ne",
+  "whatWeDoList": [
+    {
+      "title": "Analiza e tregut",
+      "desc": "Ne e mbështesim biznesin tuaj me hulumtim tregu të bazuar në fakte"
+    },
+    {
+      "title": "Menaxhimi i gjetur",
+      "desc": "Ne e mbështesim biznesin tuaj me hulumtim tregu të bazuar në fakte"
+    },
+    {
+      "title": "PR & Marketingu",
+      "desc": "Ne e mbështesim biznesin tuaj me hulumtim tregu të bazuar në fakte"
+    },
+    {
+      "title": "Planifikimi i biznesit",
+      "desc": "Ne e mbështesim biznesin tuaj me hulumtim tregu të bazuar në fakte"
+    },
+    {
+      "title": "Kontrolli",
+      "desc": "Ne e mbështesim biznesin tuaj me hulumtim tregu të bazuar në fakte"
+    },
+    {
+      "title": "Konsulencë",
+      "desc": "Ne e mbështesim biznesin tuaj me hulumtim tregu të bazuar në fakte"
+    }
+  ],
+  "ourAbout": {
+    "title": "Disa Fjale Rreth Nesh ",
+    "desc": "Kompania jonë e Konsulencës është një firmë kryesore e menaxherëve dhe këshilltarëve të biznesit me zyra në të gjithë SHBA. Ne synojmë t'ju ofrojmë:",
+    "textList": [
+      "Kërkim dhe Analizë e Cilësisë",
+      "Përvoja Këshilluese e Biznesit"
+    ]
+  },
+  "whyUs": {
+    "title": ["Arsyet Njerëzit", " Zgjidhni IBKOS "],
+    "desc": "Ne besojmë se ka shumë arsye të mira që ju të na zgjidhni për konsultimin e biznesit tuaj këtu janë disa prej tyre:",
+    "textList": ["Ekipi i Kualifikuar", "Përvojë 15 vjeçare", "Fleksibiliteti"]
+  },
+  "whatWeWorkOn": {
+    "title": ["Shfletoni të rejat tona ", " Projektet e Konsulencës"],
+    "desc": " Ekipi ynë ka punuar në një larmi të gjerë të projekteve të këshillimit dhe menaxhimit që nga themelimi ynë. Shikoni disa prej tyre në galerinë tonë të projekteve"
+  },
+  "ourProfessionalTeam": "Ekipi ynë profesional",
+  "ourTeam": [
+    {
+      "profileName": "Market Analysis",
+      "jobTitle": "Bashkëthemelues & CTO"
+    },
+    {
+      "profileName": "Jane Willliams",
+      "jobTitle": "Konsulent Ekzekutiv"
+    },
+    {
+      "profileName": "Jennifer Bailey",
+      "jobTitle": "Konsulente sigurie"
+    },
+    {
+      "profileName": "Frida Logan",
+      "jobTitle": "Asistente ekonomik"
+    },
+    {
+      "profileName": "Nick Osmani",
+      "jobTitle": "Programer"
+    },
+    {
+      "profileName": "Eden Walker",
+      "jobTitle": "Konsulente"
+    }
+  ],
+  "faq": {
+    "title": "Çfarë është blerja unike / dhe jo unike?",
+    "desc": "Blerja jo-ekskluzive do të thotë që njerëzit e tjerë mund të blejnë modelin që keni zgjedhur disa kohë më vonë. Blerja ekskluzive ose unike garanton që ju jeni personi i fundit që blini këtë model. Pasi të ketë ndodhur një blerje ekskluzive, modeli po hiqet përgjithmonë nga drejtoria e shitjeve dhe nuk do të jetë më në dispozicion për klientët e tjerë përsëri. Vetëm ju dhe njerëzit që e keni blerë modelin para se ta zotëroni atë"
+  },
+  "faqList": [
+    "Të përgjithshme",
+    "Zgjidhjet tona",
+    "Përvoja jonë",
+    "Shërbimi ndaj klientit"
+  ],
+  "faqAccordion": [
+    "Cilat janë avantazhet e punës me ne ?",
+    "Si mund ta paguaj porosinë time ?"
+  ],
+  "footerMenu": [
+    {
+      "title": "Kush jemi",
+      "items": [
+        {
+          "link": "about",
+          "name": "rreth ne"
+        },
+        {
+          "link": "careers",
+          "name": "karriera"
+        },
+        {
+          "link": "our-team",
+          "name": "ekipi ynë"
+        }
+      ]
+    },
+    {
+      "title": "Lidhjet e shpejta",
+      "items": [
+        {
+          "link": "signup",
+          "name": "regjistrohu"
+        },
+        {
+          "link": "new",
+          "name": "te reja"
+        },
+        {
+          "link": "privacy-policy",
+          "name": "Politika e privatësisë"
+        }
+      ]
+    },
+    {
+      "title": "Lidhjet e shpejta",
+      "items": [
+        {
+          "link": "contact",
+          "name": "na kontaktoni"
+        },
+        {
+          "link": "faq",
+          "name": "FAQs"
+        },
+        {
+          "link": "features",
+          "name": "karakteristikat"
+        }
+      ]
+    }
+  ],
+  "getInTouch": "Na kontakto ",
+  "signUpText": "Zgjidhja juaj është në rrugën e duhur me një klikim",
+  "companyAbout": "Që nga viti 1999, ne kemi ndihmuar American Business Thrive",
+  "followUs": "Na ndiqni",
+  "alRight": "Të gjitha të drejtat e rezervuara"
+}

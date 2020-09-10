@@ -8,7 +8,8 @@ const OurButton = (props) => {
   return (
     <Link
       to={`/${t(`${btn}.link`)}`}
-      className="my-2 btn-a btn-a2 btn-bg3 text-capitalize"
+      // className="my-2 btn-a btn-a2 btn-bg3 text-capitalize"
+      className={`my-2 btn-a btn-a2 btn-bg3 ${props.classProps}`}
     >
       {t(`${btn}.name`)}
     </Link>

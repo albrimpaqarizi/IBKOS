@@ -7,7 +7,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 // have a look at the Quick start guide
 // for passing in lng and translations on init
 
-const Languages = ["sq", "en", "de"];
+const Languages = ["al", "gb", "de"];
 const options = {
   // order and from where user language should be detected
   order: [
@@ -56,7 +56,7 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
-    fallbackLng: "en",
+    fallbackLng: "AL",
     debug: false,
     whitelist: Languages,
     load: "all",
@@ -70,6 +70,8 @@ i18n
     react: {
       wait: true,
       useSuspense: true,
+      bindI18n: "languageChanged loaded",
+      bindStore: "added removed",
       // transSupportBasicHtmlNodes: true, // allow <br/> and simple html elements in translations
       // transKeepBasicHtmlNodesFor: ["br", "strong", "i"], // don't convert to <1></1> if simple react elements
     },

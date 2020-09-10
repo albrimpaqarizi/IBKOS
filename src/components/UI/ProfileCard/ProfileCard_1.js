@@ -7,7 +7,7 @@ const ProfileCard1 = (props) => {
   return (
     <Paper elevation={2} className={props.paper}>
       <div className="p-2 profileCard ">
-        <img src={props.icon} alt="profile" />
+        <img src={props.icon} alt="Profile images" />
       </div>
       <h4 className="font-cart text-center text-capitalize profileCard-h4">
         {props.profileName}

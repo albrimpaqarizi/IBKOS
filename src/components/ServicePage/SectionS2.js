@@ -1,6 +1,6 @@
 import React from "react";
 import MarketCard from "./MarketCard";
-import { marketList } from "../mapData";
+import { marketList } from "../Shared/mapData";
 import "./styles/SectionS2.css";
 
 const SectionS2 = () => {

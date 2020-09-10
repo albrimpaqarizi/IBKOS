@@ -1,7 +1,19 @@
 .page-bg {
   background-color: rgb(27, 27, 27);
 }
-
+.comson {
+  background-color: #046b6b;
+}
+.comson > div > div {
+  padding: 25% 3%;
+  color: white;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+.comson h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 .nF-page h1 {
   padding: 35% 3%;
   color: white;

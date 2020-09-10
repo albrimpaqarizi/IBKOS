@@ -14,10 +14,17 @@ const SectionH3 = () => {
       <div className="sectionH3 container py-5">
         <div className="row">
           <div className="col-12 col-lg-6 about-img">
-            <img className="img-thumbnail" src={about} alt="null" />
+            <img
+              className="img-thumbnail"
+              src={about}
+              alt="Working in office"
+            />
           </div>
           <div className="col-12 col-lg-6 div-2">
-            <OurButton btn="ourAboutBtn" />
+            <OurButton
+              btn="ourAboutBtn"
+              classProps="text-uppercase px-3 py-1 font-s-medium"
+            />
             <h1 className="text-white dt my-3 text-inherit">
               {t("ourAbout.title")}{" "}
             </h1>
@@ -31,7 +38,7 @@ const SectionH3 = () => {
                 </li>
               ))}
             </ul>
-            <ReadMore />
+            <ReadMore classProps="btn-light" />
           </div>
         </div>
       </div>
