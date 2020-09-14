@@ -18,7 +18,7 @@ const SectionA4 = () => {
     <div className="container sectionA4" id="sectionA4">
       <div className="grid-container grid-container--fill">
         <div className="grid-box">
-          <h3 className="text-capitalize font-r my-3 ">Join Our Team</h3>
+          <h3 className="text-capitalize font-r my-3 ">{t("joinOurTeam")} </h3>
           <Link
             to={`/${t("contactBtn.link")}`}
             className="btn-a btn-a1 ml-sm-4 btn-bg1 font-s-small "
@@ -34,7 +34,6 @@ const SectionA4 = () => {
             desc={item.desc}
           />
         ))}
-        ;
       </div>
     </div>
   );

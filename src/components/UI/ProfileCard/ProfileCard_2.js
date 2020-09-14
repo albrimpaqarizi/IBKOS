@@ -8,10 +8,7 @@ const ProfileCard2 = (props) => {
       <div className="p-2 profileCard-2  ">
         <img src={props.icon} alt="Profile images" />
       </div>
-      <p className=" profileCard-2-p ">
-        Cur domus ortum? Ferox, camerarius aususs rare talem de primus, placidus
-        torquis.
-      </p>
+      <p className=" profileCard-2-p ">{props.desc} </p>
       <h4 className="font-cart text-center my-1 text-capitalize profileCard-2-h4">
         {props.profileName}
       </h4>
