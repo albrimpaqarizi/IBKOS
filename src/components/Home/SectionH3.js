@@ -6,7 +6,6 @@ import { useTranslation } from "react-i18next";
 import ReadMore from "../UI/Button/ReadMore";
 import OurButton from "../UI/Button/OurButton";
 import Fade from "react-reveal/Fade";
-import ScrollAnimation from "react-animate-on-scroll";
 
 const SectionH3 = () => {
   const { t } = useTranslation();
@@ -16,13 +15,11 @@ const SectionH3 = () => {
       <div className="sectionH3 container py-5">
         <div className="row">
           <div className="col-12 col-lg-6 about-img">
-            <ScrollAnimation duration={2} animateIn="animate__jackInTheBox">
-              <img
-                className="img-thumbnail"
-                src={about}
-                alt="Working in office"
-              />
-            </ScrollAnimation>
+            <img
+              className="img-thumbnail"
+              src={about}
+              alt="Working in office"
+            />
           </div>
           <Fade right cascade>
             <div className="col-12 col-lg-6 div-2">

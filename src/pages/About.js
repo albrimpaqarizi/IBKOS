@@ -9,7 +9,7 @@ import SectionSix from "../components/About/SectionA6";
 import SectionSeven from "../components/About/SectionA7";
 import SignUpFooter from "../components/Shared/SignUpFooter/SignUpFooter";
 
-const About = (props) => {
+const About = () => {
   return (
     <div>
       <SectionOne />

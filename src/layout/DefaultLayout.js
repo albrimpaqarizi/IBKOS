@@ -5,10 +5,10 @@ import "./DefaultLayout.css";
 
 function DefaultLayout(props) {
   return (
-    <div className="wrapper-parallax">
+    <div className="">
       <Header />
 
-      <main className="content">
+      <main className="">
         <div id="back-to-top-anchor"></div>
         {props.children}
       </main>

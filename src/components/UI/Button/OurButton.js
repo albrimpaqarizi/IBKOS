@@ -1,20 +1,20 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import ScrollAnimation from "react-animate-on-scroll";
+import Fade from "react-reveal/Fade";
 
 const OurButton = (props) => {
   const { t } = useTranslation();
   const { btn } = props;
   return (
-    <ScrollAnimation duration={2.5} animateIn="animate__fadeIn">
+    <Fade bottom>
       <Link
         to={`/${t(`${btn}.link`)}`}
         className={`my-2 btn-a btn-a2 btn-bg3 ${props.classProps}`}
       >
         {t(`${btn}.name`)}
       </Link>
-    </ScrollAnimation>
+    </Fade>
   );
 };
 

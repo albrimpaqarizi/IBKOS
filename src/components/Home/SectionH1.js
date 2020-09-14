@@ -4,7 +4,7 @@ import "./styles/SectionH1.css";
 import "./styles/index.css";
 import { useTranslation } from "react-i18next";
 import ReadMore from "../UI/Button/ReadMore";
-import { Fade } from "react-reveal";
+import { Slide } from "react-reveal";
 
 const SectionH1 = () => {
   const { t } = useTranslation();
@@ -12,7 +12,7 @@ const SectionH1 = () => {
   return (
     <div className="background-1 fullBackground">
       <div className="container">
-        <Fade bottom cascade>
+        <Slide bottom cascade>
           <div className="sectionH1">
             <h1>{t("homeBanner.title")}</h1>
             <h6>{t("homeBanner.desc")}</h6>
@@ -30,7 +30,7 @@ const SectionH1 = () => {
               </Link>
             </div>
           </div>
-        </Fade>
+        </Slide>
       </div>
     </div>
   );

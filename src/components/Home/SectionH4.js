@@ -11,7 +11,7 @@ const SectionH4 = () => {
   return (
     <div className="sectionH4 container my-5">
       <div className="row">
-        <Fade left cascade>
+        <Fade left>
           <div className="col-12 col-lg-6">
             <OurButton
               btn="whyUsBtn"
@@ -36,11 +36,13 @@ const SectionH4 = () => {
           </div>
         </Fade>
         <div className="col-12 col-lg-6 analysis-img text-center">
-          <img
-            className="img-thumbnail"
-            src={analysis}
-            alt="Diagram with statistics"
-          />
+          <Fade right>
+            <img
+              className="img-thumbnail"
+              src={analysis}
+              alt="Diagram with statistics"
+            />
+          </Fade>
         </div>
       </div>
     </div>

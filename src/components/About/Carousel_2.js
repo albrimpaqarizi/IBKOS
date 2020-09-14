@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useEffect, useCallback } from "react";
 import { useEmblaCarousel } from "embla-carousel/react";
 import ProfileCard from "../UI/ProfileCard/ProfileCard_2";
 import { makeStyles, createMuiTheme } from "@material-ui/core/styles";
@@ -55,15 +55,11 @@ const Carousel2 = () => {
   const { t } = useTranslation();
 
   const [viewportRef, embla] = useEmblaCarousel({ loop: true });
-  const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
-  const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
 
   const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
   const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
   const onSelect = useCallback(() => {
     if (!embla) return;
-    setPrevBtnEnabled(embla.canScrollPrev());
-    setNextBtnEnabled(embla.canScrollNext());
   }, [embla]);
 
   useEffect(() => {

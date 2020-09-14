@@ -2,7 +2,7 @@ import React from "react";
 import { Paper } from "@material-ui/core";
 import "./styles/ServiceCard.css";
 import { makeStyles } from "@material-ui/core/styles";
-import ScrollAnimation from "react-animate-on-scroll";
+import Fade from "react-reveal/Fade";
 
 const useStyles = makeStyles({
   paper: {
@@ -34,10 +34,10 @@ const useStyles = makeStyles({
 const ServiceCard = (props) => {
   const classes = useStyles();
   return (
-    <ScrollAnimation duration={1.5} animateIn="animate__fadeIn">
-      <div className="m-md-3">
+    <Fade bottom cascade>
+      <div className="m-md-3 serviceCard">
         <Paper elevation={2} className={classes.paper}>
-          <div className="p-3 mb-4 serviceCard bg-light">
+          <div className="p-3 mb-4 serviceCard__img bg-light">
             <img src={props.icon} alt="Service card icon" />
           </div>
           <h4 className="font-cart text-center text-capitalize service-h4 ">
@@ -46,7 +46,7 @@ const ServiceCard = (props) => {
           <p className="text-center service-p px-2"> {props.desc} </p>
         </Paper>
       </div>
-    </ScrollAnimation>
+    </Fade>
   );
 };
 

@@ -9,7 +9,7 @@ import MobileMenuItem from "./MobileMenuItem";
 const useStyles = makeStyles((theme) => ({
   drawer: {
     "& > .MuiDrawer-paper": {
-      width: "170px !important",
+      width: "200px !important",
     },
   },
   drawerHeader: {
@@ -31,6 +31,7 @@ const MobileMenu = (props) => {
       onClose={props.drawerToggle}
       anchor="right"
       className={classes.drawer}
+      transitionDuration={1200}
     >
       <div className={classes.drawerHeader}>
         <IconButton onClick={props.drawerToggle}>
@@ -49,6 +50,7 @@ const MobileMenu = (props) => {
         ))}
       </List>
       <Divider />
+
       <List>
         <MobileMenuItem
           link="login"
