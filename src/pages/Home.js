@@ -7,6 +7,7 @@ import SectionFour from "../components/Home/SectionH4";
 import SectionFive from "../components/Home/SectionH5";
 import SectionSix from "../components/Home/SectionH6";
 import SectionSeven from "../components/Home/SectionH7";
+import SignUpFooter from "../components/Shared/SignUpFooter/SignUpFooter";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <SectionFive />
       <SectionSix />
       <SectionSeven />
+      <SignUpFooter />
     </div>
   );
 };

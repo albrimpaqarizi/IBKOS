@@ -26,12 +26,12 @@ const useStyles = makeStyles({
   },
 });
 
-const EmailInput = () => {
+const EmailInput = (props) => {
   const classes = useStyles();
   return (
     <FormControl variant="outlined" className={classes.input}>
       <InputLabel htmlFor="email-address" className={classes.inputLabel}>
-        Email address
+        {props.label}
       </InputLabel>
 
       <OutlinedInput
@@ -43,8 +43,8 @@ const EmailInput = () => {
             <MailOutlineIcon className={classes.icon} />
           </InputAdornment>
         }
-        labelWidth={110}
-        placeholder="Enter your email address "
+        labelWidth={120}
+        placeholder={props.placeholder}
       />
     </FormControl>
   );

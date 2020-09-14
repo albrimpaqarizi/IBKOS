@@ -1,8 +1,7 @@
 import React, { useState, Fragment } from "react";
 import Toolbar from "./Navigation/Toolbar";
-import { Drawer } from "@material-ui/core";
-import Nav from "./Navigation/NavigationItems/NavigationItems";
 import "./Navigation/Toolbar.css";
+import MobileMenu from "./MobileMenu/MobileMenu";
 
 const Header = () => {
   const [isToggled, setToggled] = useState(false);
@@ -11,11 +10,7 @@ const Header = () => {
   return (
     <Fragment>
       <Toolbar drawerToggle={toggleTrueFalse} />
-      <Drawer open={isToggled} onClose={toggleTrueFalse}>
-        <div className="list">
-          <Nav drawerToggle={toggleTrueFalse} />
-        </div>
-      </Drawer>
+      <MobileMenu drawerToggle={toggleTrueFalse} isToggled={isToggled} />
     </Fragment>
   );
 };

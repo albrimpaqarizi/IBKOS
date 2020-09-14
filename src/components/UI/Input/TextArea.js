@@ -1,6 +1,8 @@
 import React from "react";
 import { InputLabel, FormControl, OutlinedInput } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import { useTranslation } from "react-i18next";
+
 const useStyles = makeStyles({
   input: {
     margin: "10px 0px",
@@ -22,10 +24,11 @@ const useStyles = makeStyles({
 
 const TextArea = () => {
   const classes = useStyles();
+  const { t } = useTranslation();
   return (
     <FormControl variant="outlined" className={classes.input}>
       <InputLabel htmlFor="comments" className={classes.inputLabel}>
-        Tell us about it
+        {t("contactForm.comment.commentLabel")}
       </InputLabel>
 
       <OutlinedInput
@@ -33,8 +36,8 @@ const TextArea = () => {
         id="comments"
         multiline
         rows={2}
-        labelWidth={110}
-        placeholder="Enter your comments"
+        labelWidth={130}
+        placeholder={t("contactForm.comment.commentPlaceholder")}
       />
     </FormControl>
   );

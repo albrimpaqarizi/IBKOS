@@ -1,8 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./LoginNav.css";
+import { useTranslation } from "react-i18next";
 
 const LoginNav = (props) => {
+  const { t } = useTranslation();
   return (
     <ul className="nav-login p-0 my-auto">
       <li className=" mr-2">
@@ -13,7 +15,7 @@ const LoginNav = (props) => {
           activeClassName="active"
           onClick={props.drawerToggle}
         >
-          Log in
+          {t("logInBtn")}
         </NavLink>
       </li>
       <li className="">
@@ -24,7 +26,7 @@ const LoginNav = (props) => {
           activeClassName="active"
           onClick={props.drawerToggle}
         >
-          sign up
+          {t("signUpBtn")}
         </NavLink>
       </li>
     </ul>

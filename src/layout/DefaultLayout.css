@@ -1,0 +1,30 @@
+/* body {
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  height: 75px;
+}
+.wrapper-parallax {
+  margin-top: 75px;
+  margin-bottom: 878px;
+}
+.content {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background: white;
+  min-height: 500px;
+}
+footer {
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  height: 878px;
+} */

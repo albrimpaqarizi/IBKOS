@@ -1,9 +1,10 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 import Office from "./Office";
-import "./SectionC2.css";
+import "./styles/SectionC2.css";
 import { Box, Divider } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles({
   hr: {
@@ -13,38 +14,33 @@ const useStyles = makeStyles({
 
 const SectionC2 = () => {
   const classes = useStyles();
+  const { t } = useTranslation();
   return (
     <div className="container">
       <div className="row">
         <div className="col-md-6">
           <div className="box">
-            <h1 className="text-capitalize font-r">our office</h1>
-            <p className="text-col1">
-              If you are living Prishtina or Gjilan, <br /> come visit IBKOS in
-              our comfortable office.
-            </p>
+            <h1 className="text-capitalize font-r">{t("ourOffice.title")} </h1>
+            <p className="text-col1">{t("ourOffice.desc")}</p>
           </div>
           <Office
-            name="office 1"
+            name={t("office1.name")}
             linkMap="https://goo.gl/maps/FdytC973wz4VVqzU8"
-            linkName="Str. Fehmi Agani, Nr.15, Dragodan 10000 Prishtinë, Kosovë"
+            linkName={t("office1.link")}
           />
           <Divider className={classes.hr} />
           <Office
-            name="office 2"
+            name={t("office2.name")}
             linkMap="https://goo.gl/maps/g8vfmVjYzb1CHipb9"
-            linkName="Str. Medllin Ollbrajt, Nr.20 ,Kodra e Trimave 10000 Gjilan, Kosovë"
+            linkName={t("office2.link")}
           />
         </div>
         <div className="col-md-6">
           <Box paddingY={2} margin={3}>
             <h4 className="text-col3 text-uppercase font-r">
-              IF YOU NEED AN ASSITANCE
+              {t("contactHelp.title")}
             </h4>
-            <p className="text-col1 ">
-              in doing business feel free to send us a short message. We try to
-              respond within two working days
-            </p>
+            <p className="text-col1 ">{t("contactHelp.desc")} </p>
           </Box>
           <ContactForm />
         </div>

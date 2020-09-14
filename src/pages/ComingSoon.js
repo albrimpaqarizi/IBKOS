@@ -8,7 +8,7 @@ const ComingSoon = () => {
       return <span>You are good to go!</span>;
     } else {
       return (
-        <div className="d-flex flex-row justify-content-center align-items-center">
+        <div className="d-flex flex-row flex-wrap justify-content-center align-items-center">
           <h3 className="m-4">
             Days
             <br />

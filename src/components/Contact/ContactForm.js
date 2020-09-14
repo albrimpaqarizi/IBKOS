@@ -5,6 +5,7 @@ import PersonIcon from "@material-ui/icons/Person";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import TextArea from "../UI/Input/TextArea";
 import { makeStyles, createMuiTheme } from "@material-ui/core/styles";
+import { useTranslation } from "react-i18next";
 
 const theme = createMuiTheme({
   breakpoints: {
@@ -33,40 +34,43 @@ const useStyles = makeStyles({
 
 const ContactForm = () => {
   const classes = useStyles();
+  const { t } = useTranslation();
 
   const inputName = {
     type: "text",
     id: "name-surname",
-    placeholder: "Enter your name and surname",
+    placeholder: t("contactForm.name.namePlaceholder"),
   };
 
   const inputEmail = {
     type: "email",
     id: "email-address",
-    placeholder: "Enter your email address ",
+    placeholder: t("contactForm.email.emailPlaceholder"),
   };
   return (
     <Paper className={classes.form} elevation={3}>
-      <h4 className="text-center form-cart text-col3"> Send as a message</h4>
+      <h4 className="text-center form-cart text-col3">
+        {t("contactForm.title")}
+      </h4>
       <form className="d-flex  justify-content-center flex-column px-1">
         <InputContact
           id="name-surname"
           icon={<PersonIcon />}
           input={inputName}
-          label="Name and surname"
-          labelWidth={150}
+          label={t("contactForm.name.nameLabel")}
+          labelWidth={160}
         />
 
         <InputContact
           id="email-address"
           icon={<MailOutlineIcon />}
           input={inputEmail}
-          label="Email address"
-          labelWidth={110}
+          label={t("contactForm.email.emailLabel")}
+          labelWidth={130}
         />
         <TextArea />
         <button type="submit" className="btn-submit btn">
-          send
+          {t("contactForm.btn")}
         </button>
       </form>
     </Paper>

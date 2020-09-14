@@ -1,9 +1,11 @@
 import React from "react";
 import ProfileCard from "../ProfileCard/ProfileCard_1";
-import { listProfile } from "../../Shared/mapData";
+// import { listProfile } from "../../Shared/mapData";
 import AliceCarousel from "react-alice-carousel";
 import { makeStyles } from "@material-ui/core/styles";
 import "./Carousel_1.css";
+import { profileCardImg } from "../../Shared/mapData";
+import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles({
   paper: {
@@ -22,18 +24,20 @@ const useStyles = makeStyles({
 
 const Carousel1 = () => {
   const classes = useStyles();
+  const { t } = useTranslation();
 
-  const list = listProfile.map((item, index) => {
+  const list = t("ourTeam").map((item, index) => {
     return (
       <ProfileCard
         key={index}
-        icon={item.icon}
+        icon={profileCardImg[index]}
         profileName={item.profileName}
         jobTitle={item.jobTitle}
         paper={classes.paper}
       />
     );
   });
+
   const settings = {
     items: list,
     preventEventOnTouchMove: true,

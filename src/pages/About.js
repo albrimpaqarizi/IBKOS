@@ -7,8 +7,9 @@ import SectionFour from "../components/About/SectionA4";
 import SectionFive from "../components/About/SectionA5";
 import SectionSix from "../components/About/SectionA6";
 import SectionSeven from "../components/About/SectionA7";
+import SignUpFooter from "../components/Shared/SignUpFooter/SignUpFooter";
 
-const About = () => {
+const About = (props) => {
   return (
     <div>
       <SectionOne />
@@ -18,6 +19,7 @@ const About = () => {
       <SectionFive />
       <SectionSix />
       <SectionSeven />
+      <SignUpFooter />
     </div>
   );
 };

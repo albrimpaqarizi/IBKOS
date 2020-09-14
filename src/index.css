@@ -6,7 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -18,7 +20,8 @@ code {
   background-size: cover;
   /* overflow: hidden; */
   background-attachment: fixed;
-  height: 100%;
+  /* height: 100%; */
+  height: auto;
 }
 
 @media only screen and (max-device-width: 1366px) {
@@ -57,12 +60,18 @@ code {
   -o-transition: all 0.4s ease-in;
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
+  cursor: pointer !important ;
 }
 .btn-a1 {
   padding: 15px 40px;
   border-radius: 20px;
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 768px) {
+  .btn-a1 {
+    padding: 10px 30px;
+  }
 }
 .btn-a:hover {
   text-decoration: none;
@@ -87,7 +96,7 @@ code {
   font-weight: 700;
 }
 .btn-bg2:hover {
-  background-color: #2698fbda;
+  background-color: #2699fb;
   color: white;
 }
 
@@ -189,6 +198,12 @@ code {
 .flag-select__option--placeholder {
   display: inline-flex !important;
 }
+.flag-select__options {
+  bottom: 45px !important;
+  right: 2px !important;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 .flag-select__option__icon {
   width: 2em !important;
   height: 1.5em !important;
@@ -198,5 +213,6 @@ code {
   color: white !important;
 }
 .flag-select__btn:after {
-  border-top-color: white !important;
+  border-bottom: 5px solid #fff !important;
+  border-top: 0 !important;
 }

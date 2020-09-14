@@ -1,9 +1,9 @@
 import React from "react";
 import ProfileCard from "../UI/ProfileCard/ProfileCard_1";
-import { profileCardImg } from "../Shared/mapData";
 import "./styles/SectionH6.css";
 import { makeStyles } from "@material-ui/core/styles";
 import OurButton from "../UI/Button/OurButton";
+import { profileCardImg } from "../Shared/mapData";
 import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles({

@@ -9,17 +9,18 @@
 .NavigationItem a {
   color: white;
   margin: 4px 20px;
-  font-size: 20px;
+  font-size: 19px;
   font-family: "Source Sans Pro", sans-serif;
   text-transform: capitalize;
   /* border-bottom: 2px solid transparent; */
   text-decoration: none !important;
   transition: all 0.35s ease-in;
+  line-height: 25px;
 }
 .NavigationItem a:after {
   display: block;
   content: "";
-  border-bottom: 2px solid #2699fb;
+  border-bottom: 1px solid #2699fb;
   transform: scaleX(0);
   transition: transform 0.5s ease-in-out;
 }

@@ -31,10 +31,7 @@ const MediaCard = (props) => {
         />
         <CardContent>
           <h3 className="font-r text-col3 my-2 text-center">{props.title} </h3>
-          <p className="font-r text-col1 text-center">
-            A great brand combines design and messaging to evoke emotion in your
-            customers and drive strategy.
-          </p>
+          <p className="font-r text-col1 text-center">{props.desc} </p>
         </CardContent>
       </CardActionArea>
     </Card>

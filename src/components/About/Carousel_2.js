@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import ProfileCard from "../UI/ProfileCard/ProfileCard_2";
-import { listProfile } from "../Shared/mapData";
 import AliceCarousel from "react-alice-carousel";
 import { withStyles, createMuiTheme } from "@material-ui/core/styles";
 import "./styles/Carousel_2.css";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { IconButton } from "@material-ui/core";
+import { listProfile } from "../Shared/mapData";
 
 const theme = createMuiTheme({
   breakpoints: {
@@ -71,6 +71,20 @@ class Carousel2 extends Component {
     });
     return list;
   }
+
+  // list() {
+  //   const list = this.state.t("ourTeam").map((item, index) => {
+  //     return (
+  //       <ProfileCard
+  //         key={index}
+  //         icon={profileCardImg[index]}
+  //         profileName={item.profileName}
+  //         jobTitle={item.jobTitle}
+  //       />
+  //     );
+  //   });
+  //   return list;
+  // }
 
   render() {
     const { classes } = this.props;

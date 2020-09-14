@@ -27,11 +27,8 @@ const SectionH5 = () => {
             <h6 className="mb-5 mt-4 light-bg gallery-p">
               {t("whatWeWorkOn.desc")}
             </h6>
-            <Link
-              to={`/${t("viewGalleryBtn.link")}`}
-              className="btn-a btn-a1  btn-light mt-4"
-            >
-              {t("viewGalleryBtn.name")}
+            <Link to="/service" className="btn-a btn-a1  btn-light mt-4">
+              {t("viewGalleryBtn")}
             </Link>
           </div>
         </div>

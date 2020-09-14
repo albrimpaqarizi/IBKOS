@@ -1,9 +1,9 @@
 import React from "react";
-import img1 from "../../assets/images/outmethods_quantitative-3-3.svg";
-import img2 from "../../assets/images/ourmethods_qualitative_.svg";
 import "./styles/SectionS4.css";
 import { makeStyles } from "@material-ui/core/styles";
 import MethodCard from "./MethodCard";
+import { useTranslation } from "react-i18next";
+import { methodCardImg } from "../Shared/mapData";
 
 const useStyles = makeStyles({
   avatar: {
@@ -21,14 +21,24 @@ const useStyles = makeStyles({
 
 const SectionS3 = () => {
   const classes = useStyles();
+  const { t } = useTranslation();
 
   return (
     <div className="sectionS4 py-5">
       <div className="container ">
-        <h1 className="font-r text-center mb-3">Our Methods</h1>
+        <h1 className="font-r text-capitalize text-center mb-3">
+          {t("ourMethodsText")}{" "}
+        </h1>
         <div className="sectionS4-cards">
-          <MethodCard img={img1} avatar={classes.avatar} />
-          <MethodCard img={img2} avatar={classes.avatar} />
+          {t("ourMethods").map((item, index) => (
+            <MethodCard
+              key={index}
+              img={methodCardImg[index]}
+              avatar={classes.avatar}
+              title={item.title}
+              desc={item.desc}
+            />
+          ))}
         </div>
       </div>
     </div>

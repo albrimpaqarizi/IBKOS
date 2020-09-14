@@ -33,14 +33,8 @@
       "name": "kontakt"
     }
   ],
-  "logInBtn": {
-    "link": "login",
-    "name": "kyqu"
-  },
-  "signUpBtn": {
-    "link": "signup",
-    "name": "regjistrohu"
-  },
+  "logInBtn": "kyqu",
+  "signUpBtn": "regjistrohu",
   "contactBtn": {
     "link": "contact",
     "name": "na kontaktoni"
@@ -53,6 +47,14 @@
     "link": "about",
     "name": "rreth ibkos"
   },
+  "ourHistoryBtn": {
+    "link": "about",
+    "name": "Historia jonë"
+  },
+  "testimonialsBtn": {
+    "link": "about",
+    "name": "dëshmi"
+  },
   "whyUsBtn": {
     "link": "about",
     "name": "pse ne"
@@ -61,14 +63,9 @@
     "link": "about",
     "name": "pyetje popullore"
   },
-  "readMoreBtn": {
-    "link": "#",
-    "name": "lexo më shumë"
-  },
-  "viewGalleryBtn": {
-    "link": "about",
-    "name": "shiko galerinë"
-  },
+  "readMoreBtn": { "link": "#", "name": "lexo më shumë" },
+  "solutionBtn": { "link": "service", "name": "zgjidhje" },
+  "viewGalleryBtn": "shiko galerinë",
   "whatWeWorkOnBtn": {
     "link": "about",
     "name": "çfarë punojmë"
@@ -124,7 +121,7 @@
   "ourProfessionalTeam": "Ekipi ynë profesional",
   "ourTeam": [
     {
-      "profileName": "Market Analysis",
+      "profileName": "Maichel Logan",
       "jobTitle": "Bashkëthemelues & CTO"
     },
     {
@@ -162,6 +159,164 @@
     "Cilat janë avantazhet e punës me ne ?",
     "Si mund ta paguaj porosinë time ?"
   ],
+  "aboutBanner": "Disa fjalë për IBKOS",
+  "TeamConsultants": {
+    "title": "Ne jemi një ekip i pasionuar i konsulentëve të Biznesit",
+    "desc": "Biznesi po shkon drejt inovacionit dhe transformimit dixhital, kështu që marrja e themelit të duhur është më e rëndësishme se kurrë. Konsulentët tanë ofrojnë një qasje praktike për të përtëritur me shpejtësi dhe për të përshpejtuar biznesin tuaj."
+  },
+  "usersThink": "Një kompani që lë përshtypje të mirë për bashkëpunim të mëtejshëm",
+  "ourSpaces": [
+    {
+      "title": "Hapësira Krijuese",
+      "desc": "Hapësirë moderne e punës dhe e përshtatshme për çdo individ për të punuar dhe rritur në një atmosferë të përqendruar në një komunitet krijues"
+    },
+    {
+      "title": "Cookies",
+      "desc": "Kartat e kujtesës me mbishkrime dhe menaxhim të mirë të detyrave në kohën e caktuar brenda afateve të përcaktuara"
+    },
+    {
+      "title": "Përfitimet",
+      "desc": "Mundësi për një karrierë të suksesshme, mbështetje për ide inovative, partneritet dhe bashkëpunim të mirëfilltë, etj."
+    },
+    {
+      "title": "Karriera në rritje",
+      "desc": "Hapësira dhe mbështetja për fillestarët që janë të përkushtuar për një karrierë të suksesshme"
+    },
+    {
+      "title": "Bashkëpunimi",
+      "desc": "Një mjedis bashkëpunues që u jep profesionistëve të pavarur, fillestarëve dhe mikro-bizneseve mundësinë për të punuar dhe shkëmbyer ide të reja"
+    }
+  ],
+  "whatThink": "Çfarë mendojnë përdoruesit për IBKOS",
+  "historyContent": {
+    "title": "Si e arritëm famen ne treg",
+    "desc": "Puna e stafit tonë është suksesi më i madh që ka lobuar në famen e kompanisë sonë."
+  },
+  "peopleHelpYou": "Personat e gatshëm për t'ju ndihmuar",
+  "workerWord": "Është një nder dhe privatësi të punosh në një kompani me staf të shkëlqyeshëm dhe një kompani vërtet të rëndësishme për produktet që ofron",
+  "serviceBanner": {
+    "title": "Shërbimet tona për ju",
+    "desc": "Sigurimi i zgjidhjeve të individualizuara që ju ndihmojnë të kuptoni më mirë tregjet, klientët dhe të dhënat tuaja"
+  },
+  "marketService": [
+    {
+      "btn": ["readMoreBtn"],
+      "title": "Kerkim tregu",
+      "desc": "Si një kompani e plotë për hulumtimin e tregut, ne ju ndihmojmë të gjeni përgjigjet e pyetjeve tuaja në lidhje me konsumatorët, markat dhe produktet. Çdo vit, kryeni më shumë se një milion intervista, ndërsa grumbulloni dhe analizoni të dhëna"
+    },
+    {
+      "btn": ["readMoreBtn"],
+      "title": "Analiza e tregut dhe parashikimet",
+      "desc": "Sa është madhësia e segmentit tuaj të tregut? Si po zhvillohen tregjet? Cilat janë tendencat prapa këtyre zhvillimeve? Për shumë vite, ne jemi të specializuar në ndërtimin e modeleve të tregut dhe zhvillimin e metodave të parashikimit."
+    },
+    {
+      "btn": ["solutionBtn", "contactBtn"],
+      "title": "Planifikimi dhe këshillimi i biznesit?",
+      "desc": "Sa është madhësia e segmentit tuaj të tregut? Si po zhvillohen tregjet? Cilat janë tendencat prapa këtyre zhvillimeve? Për shumë vite, ne jemi të specializuar në ndërtimin e modeleve të tregut dhe zhvillimin e metodave të parashikimit."
+    }
+  ],
+  "ourFocus": "Fokusi ynë",
+  "focusBtn": {
+    "link": "focuses",
+    "name": "fokusim"
+  },
+  "ourFocusList": [
+    {
+      "title": "Kompanitë",
+      "desc": "Një markë e shkëlqyeshme kombinon dizajnin dhe mesazhet për të ngjallur emocione tek klientët tuaj dhe strategjinë e drejtimit."
+    },
+    {
+      "title": "Marka",
+      "desc": "Një markë e shkëlqyeshme kombinon dizajnin dhe mesazhet për të ngjallur emocione tek klientët tuaj dhe strategjinë e drejtimit."
+    },
+    {
+      "title": "Zgjidhjet",
+      "desc": "Një markë e shkëlqyeshme kombinon dizajnin dhe mesazhet për të ngjallur emocione tek klientët tuaj dhe strategjinë e drejtimit."
+    }
+  ],
+  "ourMethodsText": "Metodat tona",
+  "ourMethods": [
+    {
+      "title": "Metodat sasiore",
+      "desc": "Me mbi 1.000.000 intervista në internet në vit, IBKOS është një nga ofruesit më të mëdhenj të hulumtimit të tregut. Ne jemi ekspertët tuaj për sondazhe në internet të çdo lloji. Ne përgatisim rezultate të gatshme për përdorim"
+    },
+    {
+      "title": "Metodat sasiore",
+      "desc": "Me mbi 1.000.000 intervista në internet në vit, IBKOS është një nga ofruesit më të mëdhenj të hulumtimit të tregut. Ne jemi ekspertët tuaj për sondazhe në internet të çdo lloji. Ne përgatisim rezultate të gatshme për përdorim"
+    }
+  ],
+  "solutions": {
+    "title": ["Pse të zgjidhni kompaninë tonë ", "Për zgjidhjet tuaja?"],
+    "desc": "Ne jemi një ekip njerëzish profesionistë dhe entuziastë, të cilëve u pëlqen ajo që bëjnë dhe janë gjithmonë në procesin e rritjes dhe përmirësimit të aftësive të tyre."
+  },
+  "solutionsCard": [
+    "Projektet e përfunduara nga ekipi ynë i konsulentëve që ata ofruan zgjidhje për biznesin.",
+    "Vlerësime pozitive të dërguara nga klientët tanë të parë dhe të rregullt.",
+    "Vlerësime pozitive të dërguara nga klientët tanë të parë dhe të rregullt."
+  ],
+  "quoteBtn": "Merrni një ofertë",
+  "contactBanner": {
+    "title": "Na kontaktoni",
+    "desc": "Me informata kthyese të fuqishme, zgjidhje të përparuara dhe konsulent të fuqishëm"
+  },
+  "ourOffice": {
+    "title": "zyret tona",
+    "desc": "Nëse jetoni në Prishtinë ose Gjilan, ejani vizitoni IBKOS në një nga zyrat tona komode"
+  },
+  "office1": {
+    "name": "Zyra në Prishtinë",
+    "link": "Rr. Fehmi Agani, Nr.15, Dragodan 10000 Prishtinë, Kosovë"
+  },
+  "office2": {
+    "name": "Zyra në Gjilan",
+    "link": "Rr. Medllin Ollbrajt, Nr.20 ,Kodra e Trimave 10000 Gjilan, Kosovë"
+  },
+  "contactHelp": {
+    "title": "Nëse keni nevojë për një ndihmë",
+    "desc": "Në të bërit biznes mos ngurroni të na dërgoni një mesazh të shkurtër. Ne përpiqemi të përgjigjemi brenda dy ditëve të punës"
+  },
+  "contactForm": {
+    "title": "Dergo nje mesazh",
+    "name": {
+      "nameLabel": "Emri dhe Mbiemri",
+      "namePlaceholder": "Shkruani emrin dhe mbiemrin tuaj"
+    },
+    "email": {
+      "emailLabel": "Adresa e emailit",
+      "emailPlaceholder": "Shkruani adresën tuaj të postës elektronike"
+    },
+    "comment": {
+      "commentLabel": "Na tregoni për këtë",
+      "commentPlaceholder": "Shkruani komentin tuaj"
+    },
+    "btn": "dergo"
+  },
+  "login": {
+    "title": ["A e dini se", " Me IBKOS ju mund të ..."],
+    "list": [
+      "Menaxhoni faturat dhe biletat tuaja",
+      "Zgjidhje të pakufizuara për biznesin tuaj",
+      "Merrni konsultime online me konsulentin tonë ",
+      "Ne e mbështesim biznesin tuaj me fakte të bazuara në hulumtimin e marketingut"
+    ]
+  },
+  "loginForm": {
+    "title": "Hyni falas",
+    "textHeader": "Ju tashmë keni një llogari zgjidhje të Ibkos? Hyni këtu",
+    "email": {
+      "emailLabel": "Adresa e emailit",
+      "emailPlaceholder": "Shkruani adresën tuaj të postës elektronike"
+    },
+    "password": {
+      "passwordLabel": "Fjalëkalimi",
+      "passwordPlaceholder": "Shkruani fjalëkalimin tuaj"
+    },
+    "forgot": "Keni harruar fjalëkalimin",
+    "remember": "Më kujto të dhënat",
+    "btn": "Hyni",
+    "textFooter": ["Keni nevojë për një llogari IBKOS?", " Krijo nje llogari"]
+  },
+
   "footerMenu": [
     {
       "title": "Kush jemi",
@@ -188,8 +343,8 @@
           "name": "regjistrohu"
         },
         {
-          "link": "new",
-          "name": "te reja"
+          "link": "news",
+          "name": "lajme"
         },
         {
           "link": "privacy-policy",
@@ -216,8 +371,8 @@
     }
   ],
   "getInTouch": "Na kontakto ",
-  "signUpText": "Zgjidhja juaj është në rrugën e duhur me një klikim",
-  "companyAbout": "Që nga viti 1999, ne kemi ndihmuar American Business Thrive",
+  "signUpFooterText": "Zgjidhja juaj është në rrugën e duhur me një klikim",
+  "companyAbout": "Që nga viti 1999, ne kemi ndihmuar Kosovos Business Thrive",
   "followUs": "Na ndiqni",
   "alRight": "Të gjitha të drejtat e rezervuara"
 }

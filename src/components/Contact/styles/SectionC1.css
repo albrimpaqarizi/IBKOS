@@ -1,0 +1,43 @@
+.sectionC1 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(28, 30, 32, 91%),
+      rgba(28, 30, 32, 91%)
+    ),
+    url("../../../assets/images/Mask\ Group12.jpg");
+}
+
+.sectionC1 > div > div {
+  padding: 25% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.sectionC1 h1 {
+  margin: 20px 0px;
+  font-weight: 600;
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+  font-family: "Cabin", sans-serif;
+}
+.sectionC1 h3 {
+  width: 80%;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-family: "Cabin", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .sectionC1 h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .sectionC1 h3 {
+    width: auto;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}

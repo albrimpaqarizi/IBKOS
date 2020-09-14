@@ -1,8 +1,14 @@
 import React from "react";
 import ComingSoon from "./ComingSoon";
+import SignUpFooter from "../components/Shared/SignUpFooter/SignUpFooter";
 
 const Pages = () => {
-  return <ComingSoon />;
+  return (
+    <div>
+      <ComingSoon />
+      <SignUpFooter />
+    </div>
+  );
 };
 
 export default Pages;

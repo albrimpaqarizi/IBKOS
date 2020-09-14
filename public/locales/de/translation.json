@@ -1,4 +1,12 @@
 {
+  "error": {
+    "unspecific": "Etwas ist schief gelaufen",
+    "404": "Die Seite wurde nicht gefunden"
+  },
+  "homeBanner": {
+    "title": "Professionelle Unternehmensberatung",
+    "desc": "Business Bieten Sie zuverlässige Planungs, Management und Beratungsdienste für Unternehmen, die auf jahrelanger Erfahrung in der Branche beruhen."
+  },
   "mainMenu": [
     {
       "link": "",
@@ -22,7 +30,353 @@
     },
     {
       "link": "contact",
-      "name": "kontaktiere uns"
+      "name": "kontaktier"
     }
-  ]
+  ],
+  "logInBtn": "einloggen",
+  "signUpBtn": "registrieren",
+  "contactBtn": {
+    "link": "contact",
+    "name": "kontaktiere uns"
+  },
+  "ourServicesBtn": {
+    "link": "service",
+    "name": "Unsere Dienstleistungen"
+  },
+  "ourAboutBtn": {
+    "link": "about",
+    "name": "Über ibkos"
+  },
+  "ourHistoryBtn": {
+    "link": "about",
+    "name": "Unsere Geschichte"
+  },
+  "testimonialsBtn": {
+    "link": "about",
+    "name": "witness"
+  },
+  "whyUsBtn": {
+    "link": "about",
+    "name": "warum uns"
+  },
+  "popularQuestionsBtn": {
+    "link": "about",
+    "name": "beliebte Fragen"
+  },
+  "readMoreBtn": { "link": "#", "name": "Weiterlesen" },
+  "solutionBtn": { "link": "service", "name": "Lösung" },
+  "viewGalleryBtn": "Galerie ansehen",
+  "whatWeWorkOnBtn": {
+    "link": "about",
+    "name": "woran wir arbeiten"
+  },
+  "meetOurTeamBtn": {
+    "link": "our-team",
+    "name": "Triff unser Team"
+  },
+  "whatWeDo": "Was wir tun",
+  "whatWeDoList": [
+    {
+      "title": "Marktanalyse",
+      "desc": "Wir unterstützen Ihr Unternehmen mit faktenbasierter Marktforschung"
+    },
+    {
+      "title": "Management gefunden",
+      "desc": "Wir unterstützen Ihr Unternehmen mit faktenbasierter Marktforschung"
+    },
+    {
+      "title": "PR & Marketing",
+      "desc": "Wir unterstützen Ihr Unternehmen mit faktenbasierter Marktforschung"
+    },
+    {
+      "title": "Geschäftliche Planung",
+      "desc": "Wir unterstützen Ihr Unternehmen mit faktenbasierter Marktforschung"
+    },
+    {
+      "title": "Audit",
+      "desc": "Wir unterstützen Ihr Unternehmen mit faktenbasierter Marktforschung"
+    },
+    {
+      "title": "Beratung",
+      "desc": "Wir unterstützen Ihr Unternehmen mit faktenbasierter Marktforschung"
+    }
+  ],
+  "ourAbout": {
+    "title": "Ein paar Worte über uns ",
+    "desc": "Unsere Beratungsfirma ist eine führende Firma von Geschäftsführern und Beratern mit Niederlassungen in den USA. Wir möchten Ihnen Folgendes bieten:",
+    "textList": [
+      "Qualitätsforschung & Analyse",
+      "Erfahrung in der Unternehmensberatung"
+    ]
+  },
+  "whyUs": {
+    "title": ["Gründe Menschen", "Wählen Sie IBKOS"],
+    "desc": "Wir glauben, dass es viele gute Gründe für Sie gibt, uns für Ihre Unternehmensberatung zu wählen. Einige davon sind:",
+    "textList": ["Qualifiziertes Team", "15 Jahre Erfahrung", "Flexibilität"]
+  },
+  "whatWeWorkOn": {
+    "title": ["Durchsuchen Sie unsere neuesten", "Beratungsprojekte"],
+    "desc": "Unser Team hat seit unserer Gründung an einer Vielzahl von Beratungs- und Managementprojekten gearbeitet. Schauen Sie sich einige davon in unserer Projektgalerie an."
+  },
+  "ourProfessionalTeam": "Unser professionelles Team",
+  "ourTeam": [
+    {
+      "profileName": "Maichel Logan",
+      "jobTitle": "Mitbegründer & CTO"
+    },
+    {
+      "profileName": "Jane Willliams",
+      "jobTitle": "Executive Beraterin"
+    },
+    {
+      "profileName": "Jennifer Bailey",
+      "jobTitle": "Sicherheitsberater"
+    },
+    {
+      "profileName": "Frida Logan",
+      "jobTitle": "Wirtschaftsassistent"
+    },
+    {
+      "profileName": "Nick Osmani",
+      "jobTitle": "Programmierer"
+    },
+    {
+      "profileName": "Eden Walker",
+      "jobTitle": "Beraterin"
+    }
+  ],
+  "faq": {
+    "title": "Was ist ein einzigartiger / und nicht einzigartiger Kauf?",
+    "desc": "Nicht exklusiver Kauf bedeutet, dass andere Personen die von Ihnen ausgewählte Vorlage einige Zeit später kaufen können. Exklusiver oder einzigartiger Kauf garantiert, dass Sie die letzte Person sind, die diese Vorlage kauft. Nach einem exklusiven Kauf wird die Vorlage dauerhaft aus dem Verkaufsverzeichnis entfernt und steht anderen Kunden nie wieder zur Verfügung. Nur Sie und Personen, die die Vorlage gekauft haben, bevor Sie sie besitzen, werden sie besitzen."
+  },
+  "faqList": [
+    "Allgemein",
+    "Unsere Lösungen",
+    "Unsere Erfahrung",
+    "Kundenservice"
+  ],
+  "faqAccordion": [
+    "Was sind die Vorteile bei uns?",
+    "Wie kann ich meine Bestellung bezahlen?"
+  ],
+
+  "aboutBanner": "Ein paar worte zu IBKOS",
+  "TeamConsultants": {
+    "title": "Wir sind ein leidenschaftliches Team von Unternehmensberatern",
+    "desc": "Das Geschäft ist auf Innovation und digitale Transformation ausgerichtet, daher ist es wichtiger denn je, die richtige Grundlage zu finden. Unsere Berater bieten einen praktischen Ansatz, um Ihr Unternehmen schnell zu innovieren und zu beschleunigen."
+  },
+  "usersThink": "Ein Unternehmen, das einen guten Eindruck für die weitere Zusammenarbeit hinterlässt",
+  "ourSpaces": [
+    {
+      "title": "Kreativer Raum",
+      "desc": "Moderner Arbeitsbereich, der für jeden Einzelnen geeignet ist, um in einer Atmosphäre zu arbeiten und zu wachsen, die sich auf eine kreative Gemeinschaft konzentriert."
+    },
+    {
+      "title": "Cookies",
+      "desc": "Speicherkarten mit Beschriftungen und guter Aufgabenverwaltung zum festgelegten Zeitpunkt innerhalb der festgelegten Fristen"
+    },
+    {
+      "title": "Vorteile",
+      "desc": "Chancen für eine erfolgreiche Karriere, Unterstützung für innovative Ideen, Partnerschaft und echte Zusammenarbeit usw."
+    },
+    {
+      "title": "Wachsende Karriere",
+      "desc": "Raum und Unterstützung für Anfänger, die sich für eine erfolgreiche Karriere engagieren"
+    },
+    {
+      "title": "Zusammenarbeit",
+      "desc": "Eine kollaborative Umgebung, die unabhängigen Fachleuten, Start-ups und Kleinstunternehmen die Möglichkeit bietet, zu arbeiten und neue Ideen auszutauschen."
+    }
+  ],
+  "historyContent": {
+    "title": "Wie wir Anerkennung erlangt haben",
+    "desc": "Die Arbeit unserer Mitarbeiter ist der größte Erfolg, der zur Anerkennung unseres Unternehmens beigetragen hat."
+  },
+  "whatThink": "Was Benutzer über IBKOS denken",
+  "peopleHelpYou": "Menschen, die bereit sind, Ihnen zu helfen",
+  "workerWord": " Es ist eine Ehre und Privatsphäre, in einem Unternehmen mit hervorragenden Mitarbeitern und einem wirklich wichtigen Unternehmen für die angebotenen Produkte zu arbeiten",
+  "serviceBanner": {
+    "title": "Unsere Dienstleistungen für Sie",
+    "desc": "Bereitstellung individueller Lösungen, mit denen Sie Ihre Märkte, Kunden und Daten besser verstehen können"
+  },
+  "marketService": [
+    {
+      "btn": ["readMoreBtn"],
+      "title": "Marktforschung",
+      "desc": "Als umfassendes Marktforschungsunternehmen helfen wir Ihnen, Antworten auf Ihre Fragen zu Kunden, Marken und Produkten zu finden. Führen Sie jedes Jahr mehr als eine Million Interviews durch, während Sie Daten sammeln und analysieren"
+    },
+    {
+      "btn": ["readMoreBtn"],
+      "title": "Marktanalyse und Prognosen",
+      "desc": "Wie groß ist Ihr Marktsegment? Wie entwickeln sich die Märkte? Welche Trends stehen hinter diesen Entwicklungen? Seit vielen Jahren haben wir uns darauf spezialisiert, Marktmodelle zu erstellen und Prognosemethoden zu entwickeln."
+    },
+    {
+      "btn": ["solutionBtn", "contactBtn"],
+      "title": "Geschäftsplanung und Beratung?",
+      "desc": "Wie groß ist Ihr Marktsegment? Wie entwickeln sich die Märkte? Welche Trends stehen hinter diesen Entwicklungen? Seit vielen Jahren haben wir uns darauf spezialisiert, Marktmodelle zu erstellen und Prognosemethoden zu entwickeln."
+    }
+  ],
+  "ourFocus": "unser Fokus",
+  "focusBtn": {
+    "link": "focuses",
+    "name": "konzentriert sich"
+  },
+  "ourFocusList": [
+    {
+      "btn": ["readMoreBtn"],
+      "title": "Unternehmen",
+      "desc": "Eine großartige Marke kombiniert Design und Messaging, um bei Ihren Kunden Emotionen hervorzurufen und die Strategie voranzutreiben."
+    },
+    {
+      "btn": ["readMoreBtn"],
+      "title": "Marken",
+      "desc": "Eine großartige Marke kombiniert Design und Messaging, um bei Ihren Kunden Emotionen hervorzurufen und die Strategie voranzutreiben."
+    },
+    {
+      "btn": ["solutionBtn", "contactBtn"],
+      "title": "Lösungen",
+      "desc": "Eine großartige Marke kombiniert Design und Messaging, um bei Ihren Kunden Emotionen hervorzurufen und die Strategie voranzutreiben."
+    }
+  ],
+  "ourMethodsText": "Unsere Methoden",
+  "ourMethods": [
+    {
+      "title": "Quantitative Methoden",
+      "desc": "Mit über 1.000.000 Online-Interviews pro Jahr ist IBKOS einer der größten Marktforschungsanbieter. Wir sind Ihre Experten für Online-Umfragen jeglicher Art. Wir bereiten gebrauchsfertige Ergebnisse vor"
+    },
+    {
+      "title": "Quantitative Methoden",
+      "desc": "Mit über 1.000.000 Online-Interviews pro Jahr ist IBKOS einer der größten Marktforschungsanbieter. Wir sind Ihre Experten für Online-Umfragen jeglicher Art. Wir bereiten gebrauchsfertige Ergebnisse vor"
+    }
+  ],
+  "solutions": {
+    "title": ["Warum wählen Sie unser Unternehmen", "Für Ihre Lösungen?"],
+    "desc": "Wir sind ein Team von professionellen und begeisterten Menschen, die ihre Arbeit mögen und ständig dabei sind, ihre Fähigkeiten zu erweitern und zu verbessern."
+  },
+  "solutionsCard": [
+    "Projekte, die von unserem Beraterteam abgeschlossen wurden und Lösungen für Unternehmen anboten.",
+    "Positive Bewertungen von unseren Erst- und Stammkunden.",
+    "Positive Bewertungen von unseren Erst- und Stammkunden."
+  ],
+  "quoteBtn": "Ein Angebot bekommen",
+  "contactBanner": {
+    "title": "Kontaktiere uns",
+    "desc": "Mit leistungsstarken Rückmeldungen, fortschrittlichen Lösungen und leistungsstarken Beratern"
+  },
+  "ourOffice": {
+    "title": "Unsere büros ",
+    "desc": "Wenn Sie in Pristina oder Gjilan leben, Besuchen Sie IBKOS in einem unserer komfortablen Büros"
+  },
+  "office1": {
+    "name": "Büro in Pristina",
+    "link": "St. Fehmi Agani, Nr. 15, Dragodan 10000 Pristina, Kosovo"
+  },
+  "office2": {
+    "name": "Büro in Gjilan",
+    "link": "St. Medlin Albright, Nr. 20, Kodra e Trimave 10000 Gjilan, Kosovo"
+  },
+  "contactHelp": {
+    "title": "Wenn Sie Hilfe benötigen",
+    "desc": "Wenn Sie geschäftlich tätig sind, senden Sie uns bitte eine kurze Nachricht. Wir versuchen innerhalb von zwei Arbeitstagen zu antworten"
+  },
+  "contactForm": {
+    "title": "Eine Nachricht schicken",
+    "name": {
+      "nameLabel": "Name und Nachname",
+      "namePlaceholder": "Geben Sie Ihren Vor und Nachnamen ein"
+    },
+    "email": {
+      "emailLabel": "E-Mail Adresse",
+      "emailPlaceholder": "Geben sie ihre E-Mail Adresse ein"
+    },
+    "comment": {
+      "commentLabel": "Erzähl uns davon",
+      "commentPlaceholder": "Schreibe deinen Kommentar"
+    },
+    "btn": "senden"
+  },
+  "login": {
+    "title": ["Wusstest du?", "Mit IBKOS können Sie ..."],
+    "list": [
+      "Verwalten Sie Ihre Rechnungen und Tickets",
+      "Unbegrenzte Lösungen für Ihr Unternehmen ",
+      "Holen Sie sich Online-Beratung mit unserem Berater",
+      " Wir unterstützen Ihr Unternehmen mit Fakten, die auf der Marktforschung basieren"
+    ]
+  },
+  "loginForm": {
+    "title": "Einloggen frei",
+    "textHeader": "Sie haben bereits ein Ibkos-Lösungskonto? Hier einloggen",
+    "email": {
+      "emailLabel": "E-Mail Adresse",
+      "emailPlaceholder": "Geben sie ihre E-Mail Adresse ein"
+    },
+    "password": {
+      "passwordLabel": "Passwort",
+      "passwordPlaceholder": "Geben Sie Ihr Passwort ein"
+    },
+    "forgot": "Passwort vergessen",
+    "remember": "Behalte mich in Erinnerung",
+    "btn": "einloggen",
+    "textFooter": ["Benötigen Sie ein IBKOS-Konto? ", " Ein Konto erstellen"]
+  },
+
+  "footerMenu": [
+    {
+      "title": "Wer wir sind",
+      "items": [
+        {
+          "link": "about",
+          "name": "Über uns"
+        },
+        {
+          "link": "careers",
+          "name": "Karriere"
+        },
+        {
+          "link": "our-team",
+          "name": "unser Team"
+        }
+      ]
+    },
+    {
+      "title": "Quick links",
+      "items": [
+        {
+          "link": "signup",
+          "name": "Registrieren"
+        },
+        {
+          "link": "news",
+          "name": "Nachrichten"
+        },
+        {
+          "link": "privacy-policy",
+          "name": "Datenschutzbestimmungen"
+        }
+      ]
+    },
+    {
+      "title": "Quick links",
+      "items": [
+        {
+          "link": "contact",
+          "name": "kontaktiere uns"
+        },
+        {
+          "link": "faq",
+          "name": "FAQs"
+        },
+        {
+          "link": "features",
+          "name": "Eigenschaften"
+        }
+      ]
+    }
+  ],
+  "getInTouch": "In Kontakt kommen",
+  "signUpFooterText": "Ihre Lösung ist mit wenigen Klicks unterwegs",
+  "companyAbout": "Seit 1999 unterstützen wir Kosovos Business Thrive",
+  "followUs": "Folge uns",
+  "alRight": "Alle Rechte vorbehalten"
 }

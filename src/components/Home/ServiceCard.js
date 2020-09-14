@@ -2,11 +2,12 @@ import React from "react";
 import { Paper } from "@material-ui/core";
 import "./styles/ServiceCard.css";
 import { makeStyles } from "@material-ui/core/styles";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const useStyles = makeStyles({
   paper: {
     margin: "0.8%",
-    padding: "0.5%",
+    padding: "1%",
     display: "flex",
     justifyContent: "center",
     flexFlow: "column",
@@ -33,15 +34,19 @@ const useStyles = makeStyles({
 const ServiceCard = (props) => {
   const classes = useStyles();
   return (
-    <Paper elevation={2} className={classes.paper}>
-      <div className="p-3 mb-4 serviceCard bg-light">
-        <img src={props.icon} alt="Service card icon" />
+    <ScrollAnimation duration={1.5} animateIn="animate__fadeIn">
+      <div className="m-md-3">
+        <Paper elevation={2} className={classes.paper}>
+          <div className="p-3 mb-4 serviceCard bg-light">
+            <img src={props.icon} alt="Service card icon" />
+          </div>
+          <h4 className="font-cart text-center text-capitalize service-h4 ">
+            {props.title}
+          </h4>
+          <p className="text-center service-p px-2"> {props.desc} </p>
+        </Paper>
       </div>
-      <h4 className="font-cart text-center text-capitalize service-h4 ">
-        {props.title}
-      </h4>
-      <p className="text-center service-p px-2"> {props.desc} </p>
-    </Paper>
+    </ScrollAnimation>
   );
 };
 

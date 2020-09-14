@@ -18,6 +18,17 @@ import market1 from "../../assets/images/Loesungen_Marktforschung.jpg";
 import market2 from "../../assets/images/Marktanalysen&Prognosen.jpg";
 import market3 from "../../assets/images/askStatista.jpg";
 
+//focus card
+import focus1 from "../../assets/images/lycs-architecture-U2BI3GMnSSE-unsplash.jpg";
+import focus2 from "../../assets/images/balazs-ketyi-LPWl2pEVGKc-unsplash.jpg";
+import focus3 from "../../assets/images/scott-graham-5fNmWej4tAA-unsplash.jpg";
+
+//methods card
+import methodImage1 from "../../assets/images/outmethods_quantitative-3-3.svg";
+import methodImage2 from "../../assets/images/ourmethods_qualitative_.svg";
+
+export const methodCardImg = [methodImage1, methodImage2];
+export const focusCardImg = [focus1, focus2, focus3];
 export const profileCardImg = [img1, img2, img3, img4, img5, img6];
 export const listProfile = [
   {
@@ -86,29 +97,30 @@ export const listServices = [
   },
 ];
 
-export const marketList = [
-  {
-    img: market1,
-    title: "Market Resarch",
-    desc:
-      "As a full-service market research firm, we help you find the answers to your questions about consumers, brands and products. Each year, weconduct more than a million interviews, while collecting and analyzing data ",
-    btn: [{ name: "read more", to: "/#" }],
-  },
-  {
-    img: market2,
-    title: "Market Analyses & Forecasts",
-    desc:
-      "What's the size of your market segment? How are markets developing? What are the trends behind these developments? For many years, we have specialized in building market models and developing forecasting methods. ",
-    btn: [{ name: "read more", to: "/#" }],
-  },
-  {
-    img: market3,
-    title: "Business Planing And Consulting?",
-    desc:
-      "What's the size of your market segment? How are markets developing? What are the trends behind these developments? For many years, we have specialized in building market models and developing forecasting methods. ",
-    btn: [
-      { name: "solution", to: "/#" },
-      { name: "contact us", to: "/contact" },
-    ],
-  },
-];
+export const marketImages = [market1, market2, market3];
+// export const marketList = [
+//   {
+//     img: market1,
+//     title: "Market Resarch",
+//     desc:
+//       "As a full-service market research firm, we help you find the answers to your questions about consumers, brands and products. Each year, weconduct more than a million interviews, while collecting and analyzing data ",
+//     btn: [{ name: "read more", to: "/#" }],
+//   },
+//   {
+//     img: market2,
+//     title: "Market Analyses & Forecasts",
+//     desc:
+//       "What's the size of your market segment? How are markets developing? What are the trends behind these developments? For many years, we have specialized in building market models and developing forecasting methods. ",
+//     btn: [{ name: "read more", to: "/#" }],
+//   },
+//   {
+//     img: market3,
+//     title: "Business Planing And Consulting?",
+//     desc:
+//       "What's the size of your market segment? How are markets developing? What are the trends behind these developments? For many years, we have specialized in building market models and developing forecasting methods. ",
+//     btn: [
+//       { name: "solution", to: "/#" },
+//       { name: "contact us", to: "/contact" },
+//     ],
+//   },
+// ];

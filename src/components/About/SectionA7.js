@@ -2,15 +2,22 @@ import React from "react";
 import "./styles/index.css";
 import "./styles/SectionA7.css";
 import Carousel2 from "./Carousel_2";
+import { useTranslation } from "react-i18next";
+import OurButton from "../UI/Button/OurButton";
 
 const SectionA7 = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="sectionA7 fullBackground">
-      <div className="container ">
+      <div className="container " id="sectionA7">
         <div className="d-flex justify-content-center flex-column align-items-center">
-          <button className="btn-a btn-a2 btn-bg3 my-2">Testimonials</button>
+          <OurButton
+            btn="testimonialsBtn"
+            classProps="text-capitalize px-4 py-2 font-s-small"
+          />
           <h1 className="font-r my-3 text-center text-white">
-            What Users Thinks About IBKOS
+            {t("whatThink")}
           </h1>
         </div>
         <Carousel2 />

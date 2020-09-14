@@ -33,18 +33,9 @@
       "name": "contact us"
     }
   ],
-  "logInBtn": {
-    "link": "login",
-    "name": "login"
-  },
-  "signUpBtn": {
-    "link": "signup",
-    "name": "sign up"
-  },
-  "contactBtn": {
-    "link": "contact",
-    "name": "contact us"
-  },
+  "logInBtn": "login",
+  "signUpBtn": "sign up",
+  "contactBtn": { "link": "contact", "name": "contact us" },
   "ourServicesBtn": {
     "link": "service",
     "name": "our services"
@@ -52,6 +43,14 @@
   "ourAboutBtn": {
     "link": "about",
     "name": "about ibkos"
+  },
+  "ourHistoryBtn": {
+    "link": "about",
+    "name": "our history"
+  },
+  "testimonialsBtn": {
+    "link": "about",
+    "name": "testimonials"
   },
   "whyUsBtn": {
     "link": "about",
@@ -61,14 +60,9 @@
     "link": "about",
     "name": "popular questions"
   },
-  "readMoreBtn": {
-    "link": "#",
-    "name": "read more"
-  },
-  "viewGalleryBtn": {
-    "link": "about",
-    "name": "view gallery"
-  },
+  "readMoreBtn": { "link": "#", "name": "read more" },
+  "solutionBtn": { "link": "service", "name": "solution" },
+  "viewGalleryBtn": "view gallery",
   "whatWeWorkOnBtn": {
     "link": "about",
     "name": "what we work on "
@@ -111,7 +105,7 @@
   },
   "whyUs": {
     "title": ["Reasons People ", "Choose IBKOS"],
-    "desc": "We believe there are many good reasons for you to choose us for your business consoulting here are some of them:",
+    "desc": "We believe there are many good reasons for you to choose us for your business consulting here are some of them:",
     "textList": ["Qualified Team ", "15 Years Experience", "Flexibility"]
   },
   "whatWeWorkOn": {
@@ -121,7 +115,7 @@
   "ourProfessionalTeam": "Our Professional Team",
   "ourTeam": [
     {
-      "profileName": "Market Analysis",
+      "profileName": "Maichel Logan",
       "jobTitle": "Co-Founder & CTO"
     },
     {
@@ -149,11 +143,169 @@
     "title": "What is unique / and non unique purchase ?",
     "desc": "Non-exclusive purchase means that other people can buy the template you have chosen some time later. Exclusive or unique purchase guarantees that you are the last person to buy this template. After an exclusive purchase occurs the template is being permanently removed from the sales directory and will never be available to other customers again. Only you and people who bought the template before you will own it."
   },
-  "faqList": ["General", "Our Solutions", "Our Experience", "Costumer Service"],
+  "faqList": ["General", "Our Solutions", "Our Experience", "Customer Service"],
   "faqAccordion": [
     "What are advantages working with us?",
     " How can i pay my order?"
   ],
+  "aboutBanner": "A few words about IBKOS",
+  "TeamConsultants": {
+    "title": "We're a Passionate Team of Business Consultants",
+    "desc": "Business is heading towards innovation and digital transformation, so getting the foundation right is more important than ever.Our consultants provide a practical approach to rapidly innovate and accelerate your business."
+  },
+  "usersThink": "A company that leave a good impression for further cooperation",
+  "ourSpaces": [
+    {
+      "title": "Creative Space",
+      "desc": "Modern workspace and suitable for any individual to work and grow in an atmosphere focused on a creative community"
+    },
+    {
+      "title": "Cookies",
+      "desc": "Memory cards with inscriptions and good task management at the appointed time within the set deadlines"
+    },
+    {
+      "title": "Benefits",
+      "desc": "Opportunities for a successful career, support for innovative ideas, partnership and genuine cooperation, etc."
+    },
+    {
+      "title": "Growing Career",
+      "desc": "Space and support for beginners who are committed to a successful career"
+    },
+    {
+      "title": "Collaboration",
+      "desc": "A collaborative environment that gives independent professionals, start-ups and micro-businesses the opportunity to work and exchange new ideas"
+    }
+  ],
+  "historyContent": {
+    "title": "How we achieved Recognition",
+    "desc": "The work of our staff is the greatest success that has lobbied in the recognition of our company."
+  },
+  "whatThink": "What users think about IBKOS",
+  "peopleHelpYou": "People Ready To Help You ",
+  "workerWord": "It is an honor and privacy to work in a company with excellent staff and a really important company for the products it offers",
+  "serviceBanner": {
+    "title": "Our Services To You",
+    "desc": "Providing individualized solutions that help you better understand your markets, customers and data"
+  },
+  "marketService": [
+    {
+      "btn": ["readMoreBtn"],
+      "title": " Market Research",
+      "desc": "As a full-service market research firm, we help you find the answers to your questions about consumers, brands and products. Each year, weconduct more than a million interviews, while collecting and analyzing data"
+    },
+    {
+      "btn": ["readMoreBtn"],
+      "title": "Market Analysis & Forecasts",
+      "desc": "What's the size of your market segment? How are markets developing? What are the trends behind these developments? For many years, we have specialized in building market models and developing forecasting methods."
+    },
+    {
+      "btn": ["solutionBtn", "contactBtn"],
+      "title": "Business Planing And Consulting?",
+      "desc": "What's the size of your market segment? How are markets developing? What are the trends behind these developments? For many years, we have specialized in building market models and developing forecasting methods."
+    }
+  ],
+  "ourFocus": "our focus",
+  "focusBtn": {
+    "link": "focuses",
+    "name": "focuses"
+  },
+  "ourFocusList": [
+    {
+      "title": "Companies",
+      "desc": "A great brand combined design and messaging to evoke emotion in your customers and drive strategy."
+    },
+    {
+      "title": "Brands",
+      "desc": "A great brand combined design and messaging to evoke emotion in your customers and drive strategy."
+    },
+    {
+      "title": "Solutions",
+      "desc": "A great brand combined design and messaging to evoke emotion in your customers and drive strategy."
+    }
+  ],
+  "ourMethodsText": "Our Methods",
+  "ourMethods": [
+    {
+      "title": "Quantitative methods",
+      "desc": "With over 1,000,000 online interviews a year, IBKOS is one of the largest market research providers. We are your experts for online surveys of any kind. We prepare ready-to-use results"
+    },
+    {
+      "title": "Quantitative methods",
+      "desc": "With over 1,000,000 online interviews a year, IBKOS is one of the largest market research providers. We are your experts for online surveys of any kind. We prepare ready-to-use results"
+    }
+  ],
+  "solutions": {
+    "title": ["Why Choose Our Company", "For Your Solutions?"],
+    "desc": "We are a team of professional and enthusiastic people, who like what they do and are always in the process of growing and improving their skills."
+  },
+  "solutionsCard": [
+    "Projects completed by our team of consultant that they offered solutions for business.",
+    "Positive reviews sent by our first-time and regular customers.",
+    "Positive reviews sent by our first-time and regular customers."
+  ],
+  "quoteBtn": "Get a Quote",
+  "contactBanner": {
+    "title": "Contact us",
+    "desc": "With powerful feedbacks, advanced solutions and powerful consultant"
+  },
+  "ourOffice": {
+    "title": "Our offices",
+    "desc": "If you live in Pristina or Gjilan, come visit IBKOS in one of our comfortable offices"
+  },
+  "office1": {
+    "name": "Office in Pristina",
+    "link": "St. Fehmi Agani, No.15, Dragodan 10000 Pristina, Kosovo"
+  },
+  "office2": {
+    "name": "Office in Gjilan",
+    "link": "St. Medlin Albright, No.20, Kodra e Trimave 10000 Gjilan, Kosovo"
+  },
+  "contactHelp": {
+    "title": "If you need an assistance",
+    "desc": "In doing business feel free to send us a short message. We try to respond within two working days"
+  },
+  "contactForm": {
+    "title": "Send a message",
+    "name": {
+      "nameLabel": "Name and Surname",
+      "namePlaceholder": "Enter your name and surname"
+    },
+    "email": {
+      "emailLabel": "Email address",
+      "emailPlaceholder": "Enter your email address"
+    },
+    "comment": {
+      "commentLabel": "Tell us about it",
+      "commentPlaceholder": "Enter your comment"
+    },
+    "btn": "send"
+  },
+  "login": {
+    "title": ["Did You Know? ", " With IBKOS you can ..."],
+    "list": [
+      "Manage your invoices and tickets",
+      "Unlimited solutions for your business",
+      "Get online consulting with our consultant",
+      "We support your business with facts based on the marketing research"
+    ]
+  },
+  "loginForm": {
+    "title": "Sign in free",
+    "textHeader": "You already have a Ibkos solution account ? Login here",
+    "email": {
+      "emailLabel": "Email address",
+      "emailPlaceholder": "Enter your email address"
+    },
+    "password": {
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password"
+    },
+    "forgot": "Forgot password",
+    "remember": "Remember me",
+    "btn": "Log in",
+    "textFooter": ["Need a IBKOS account? ", "Create an account"]
+  },
+
   "footerMenu": [
     {
       "title": "Who we are",
@@ -180,8 +332,8 @@
           "name": "sign up"
         },
         {
-          "link": "new",
-          "name": "new"
+          "link": "news",
+          "name": "news"
         },
         {
           "link": "privacy-policy",
@@ -208,8 +360,8 @@
     }
   ],
   "getInTouch": "Get in touch",
-  "signUpText": "Your solution is on its way in a few clicks",
-  "companyAbout": "Since 1999, we have been helping American Business Thrive",
+  "signUpFooterText": "Your solution is on its way in a few clicks",
+  "companyAbout": "Since 1999, we have been helping Kosovos Business Thrive",
   "followUs": "follow us",
   "alRight": "All Rights Reserved"
 }

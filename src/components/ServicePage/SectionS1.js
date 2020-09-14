@@ -1,19 +1,19 @@
 import React from "react";
 import "./styles/index.css";
 import "./styles/SectionS1.css";
+import { useTranslation } from "react-i18next";
 
 const SectionS1 = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="sectionS1 fullBackground">
       <div className="container main-top">
         <div>
           <h1 className="text-capitalize text-center font-r">
-            Our Services To You
+            {t("serviceBanner.title")}
           </h1>
-          <p className="font-r">
-            Providing individualized solutions that help you better understand
-            your markets, customers and data
-          </p>
+          <h4 className="font-r my-md-3">{t("serviceBanner.desc")}</h4>
         </div>
       </div>
     </div>

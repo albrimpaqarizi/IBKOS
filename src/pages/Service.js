@@ -6,6 +6,7 @@ import SectionThree from "../components/ServicePage/SectionS3";
 import SectionFour from "../components/ServicePage/SectionS4";
 import SectionFive from "../components/ServicePage/SectionS5";
 import SectionSix from "../components/ServicePage/SectionS6";
+import SignUpFooter from "../components/Shared/SignUpFooter/SignUpFooter";
 
 const Service = () => {
   return (
@@ -16,6 +17,7 @@ const Service = () => {
       <SectionFour />
       <SectionFive />
       <SectionSix />
+      <SignUpFooter />
     </div>
   );
 };

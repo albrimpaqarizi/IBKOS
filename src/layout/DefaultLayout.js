@@ -1,18 +1,21 @@
 import React from "react";
 import Footer from "../components/Shared/Footer/Footer";
 import Header from "../components/Shared/Header";
+import "./DefaultLayout.css";
 
-function Layout(props) {
+function DefaultLayout(props) {
   return (
-    <React.Fragment>
+    <div className="wrapper-parallax">
       <Header />
-      <main>
+
+      <main className="content">
         <div id="back-to-top-anchor"></div>
         {props.children}
       </main>
+
       <Footer />
-    </React.Fragment>
+    </div>
   );
 }
 
-export default Layout;
+export default DefaultLayout;

@@ -7,7 +7,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 // have a look at the Quick start guide
 // for passing in lng and translations on init
 
-const Languages = ["al", "gb", "de"];
+const Languages = ["al", "de", "gb"];
 const options = {
   // order and from where user language should be detected
   order: [
@@ -56,7 +56,7 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
-    fallbackLng: "AL",
+    fallbackLng: "GB",
     debug: false,
     whitelist: Languages,
     load: "all",

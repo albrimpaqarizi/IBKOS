@@ -10,6 +10,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 import Password from "../UI/Input/Password";
 import Email from "../UI/Input/Email";
+import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles({
   paper: {
@@ -36,25 +37,26 @@ const useStyles = makeStyles({
 
 const Form = (props) => {
   const classes = useStyles();
+  const { t } = useTranslation();
 
   return (
     <Paper className={classes.paper} elevation={3}>
-      <h3 className="text-center font-r form-name"> Sign up free</h3>
-      <p className="font-r m-0 small">
-        You already have a Ibkos solution account ? Login here
+      <h3 className="text-center font-r form-name"> {t("loginForm.title")} </h3>
+      <p className="font-r m-0 small text-center">
+        {t("loginForm.textHeader")}
       </p>
-
       <Divider className={classes.divider} />
-      <Box
-        paddingX={1}
-        display="flex"
-        justifyContent="center"
-        flexDirection="column"
-      >
-        <Email />
-        <Password />
+      <form className="d-flex px-1 justify-content-center flex-column">
+        <Email
+          label={t("loginForm.email.emailLabel")}
+          placeholder={t("loginForm.email.emailPlaceholder")}
+        />
+        <Password
+          label={t("loginForm.password.passwordLabel")}
+          placeholder={t("loginForm.password.passwordPlaceholder")}
+        />
         <Link to="#" className="text-decoration-none my-2 font-r ">
-          Forget password
+          {t("loginForm.forgot")}
         </Link>
         <Box>
           <FormControlLabel
@@ -65,19 +67,19 @@ const Form = (props) => {
                 className={classes.checkbox}
               />
             }
-            label="Remember me"
+            label={t("loginForm.remember")}
           />
         </Box>
         <button type="submit" className="btn btn-submit m-0">
-          Log in
+          {t("loginForm.btn")}
         </button>
         <p className="font-r mt-3 small ">
-          <span className="light "> Need a IBKOS account? </span>
+          <span className="light "> {t("loginForm.textFooter")[0]} </span>
           <Link to="#" className="text-decoration-none my-2 font-r ">
-            Create an account
+            {t("loginForm.textFooter")[1]}
           </Link>
         </p>
-      </Box>
+      </form>
     </Paper>
   );
 };

@@ -35,7 +35,7 @@ const useStyles = makeStyles({
   },
 });
 
-const PasswordInput = () => {
+const PasswordInput = (props) => {
   const classes = useStyles();
   const [showPassword, setShowPassword] = useToggle(false);
   const [password, setPassword] = useInput("");
@@ -43,7 +43,7 @@ const PasswordInput = () => {
   return (
     <FormControl variant="outlined" className={classes.formControl}>
       <InputLabel htmlFor="password" className={classes.inputLabel}>
-        Password
+        {props.label}
       </InputLabel>
       <OutlinedInput
         className={classes.inputOutline}
@@ -64,7 +64,7 @@ const PasswordInput = () => {
             </IconButton>
           </InputAdornment>
         }
-        placeholder="Enter your password"
+        placeholder={props.placeholder}
         labelWidth={80}
       />
     </FormControl>

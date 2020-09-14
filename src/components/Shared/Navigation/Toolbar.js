@@ -3,7 +3,7 @@ import { AppBar, Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import NavigationItems from "./NavigationItems/NavigationItems";
 import Logo from "../../UI/Logo/Logo";
-import DrawerToggle from "./DrawerToggle/DrawerToggle";
+import DrawerToggle from "../DrawerToggle";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import "./Toolbar.css";
 import LogNav from "./LoginNav/LoginNav";
@@ -12,8 +12,7 @@ const useStyles = makeStyles({
   appBar: {
     display: "flex",
     justifyContent: "space-between",
-    padding: "10px",
-    paddingTop: "20px",
+    padding: "5px",
     alignItems: "center",
   },
   fullList: {
@@ -22,13 +21,16 @@ const useStyles = makeStyles({
   box1: {
     boxShadow: "none ",
     backgroundColor: "transparent ",
-    transition: "all 1.5s ease-out",
+    transition: "all 0.7s ease-out",
+    zIndex: "1",
+    padding: "15px 0",
   },
   box2: {
     boxShadow:
       "0px 3px 5px -1px #00000033, 0px 6px 10px 0px #00000024, 0px 1px 18px 0px #0000001f ",
-    backgroundColor: "#1c1e20 ",
-    transition: "all 1s ease-in",
+    backgroundColor: "#1c1e20 !important ",
+    transition: "all 0.7s ease-in",
+    padding: "9px 0",
   },
 });
 
