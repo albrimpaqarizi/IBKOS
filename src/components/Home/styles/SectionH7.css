@@ -1,5 +1,18 @@
-.h-1px {
+.list_progress li div {
   height: 2px !important;
+}
+
+.list_progress li:first-child div div {
+  width: 40%;
+}
+.list_progress li:nth-child(2) div div {
+  width: 33%;
+}
+.list_progress li:nth-child(3) div div {
+  width: 19%;
+}
+.list_progress li:nth-child(4) div div {
+  width: 45%;
 }
 
 @media (min-width: 992.98px) {
@@ -8,7 +21,7 @@
   }
 }
 @media (max-width: 992.98px) {
-  .questions div {
+  .questions:first div {
     display: flex;
     justify-content: center;
     flex-flow: column;

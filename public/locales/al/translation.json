@@ -156,8 +156,14 @@
     "Shërbimi ndaj klientit"
   ],
   "faqAccordion": [
-    "Cilat janë avantazhet e punës me ne ?",
-    "Si mund ta paguaj porosinë time ?"
+    {
+      "question": "Cilat janë avantazhet e punës me ne ?",
+      "answer": "Ne ofrojmë shërbim të shpejtë, zgjidhjet më të mira, mbështetje për ide të reja dhe bashkëpunim të ngushtë gjatë gjithë zhvillimit të projektit."
+    },
+    {
+      "question": "Si mund ta paguaj porosinë time ?",
+      "answer": "Ju do të paguani përmes bankave, ne do t'ju dërgojmë fletëpagesën me skedar pdf me të gjitha informacionet e nevojshme."
+    }
   ],
   "aboutBanner": "Disa fjalë për IBKOS",
   "TeamConsultants": {
@@ -253,7 +259,7 @@
   },
   "solutionsCard": [
     "Projektet e përfunduara nga ekipi ynë i konsulentëve që ata ofruan zgjidhje për biznesin.",
-    "Vlerësime pozitive të dërguara nga klientët tanë të parë dhe të rregullt.",
+    "Projektet në progres dhe në pritje të ekipit tonë të konsulentëve që ata ofruan zgjidhje për biznesin.",
     "Vlerësime pozitive të dërguara nga klientët tanë të parë dhe të rregullt."
   ],
   "quoteBtn": "Merrni një ofertë",

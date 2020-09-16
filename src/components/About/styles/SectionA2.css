@@ -10,7 +10,12 @@
   display: flex;
   align-items: flex-start;
 }
-
+.profile_member {
+  background-image: url("../../../assets/images/about/MaskGroup11.jpg");
+  display: inline-flex;
+  width: 65px;
+  height: 65px;
+}
 .img_consult {
   background-image: url("../../../assets/images/about/christina-wocintechchat-com-PviMD8jDeYE-unsplash.jpg");
   max-width: 100%;

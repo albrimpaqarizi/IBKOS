@@ -2,13 +2,14 @@ import React from "react";
 import "./styles/index.css";
 import Form from "./Form";
 import Avatar from "./ImageAvatars";
-import avatar1 from "../../assets/images/login/Group200.jpg";
-import avatar2 from "../../assets/images/login/Group201.jpg";
-import avatar3 from "../../assets/images/login/Group203.jpg";
-import avatar4 from "../../assets/images/login/Group204.jpg";
 import { useTranslation } from "react-i18next";
 
-export const avatarImg = [avatar1, avatar2, avatar3, avatar4];
+export const avatarImg = [
+  "img_avatar1",
+  "img_avatar2",
+  "img_avatar3",
+  "img_avatar4",
+];
 
 const LoginForm = () => {
   const { t } = useTranslation();

@@ -1,10 +1,3 @@
-/* .sectionS2 > :first-child {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row;
-  align-items: center;
-} */
-
 .sectionS2 > :nth-child(1),
 .sectionS2 > :nth-child(3) {
   display: flex;
@@ -18,17 +11,6 @@
 .sectionS2 > div {
   margin: 3rem 0;
 }
-/* .sectionS2 h2::after {
-  content: "";
-  position: absolute;
-  width: 150px;
-  height: 1px;
-  background: #000;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-} */
 .sectionS2 p {
   font-family: Arial, sans-serif;
   margin: 5% 0;
@@ -44,7 +26,18 @@
   height: 1px;
   background-color: #259bf9;
 }
-.sectionS2 img {
+
+.img_market1 {
+  background-image: url("../../../assets/images/Loesungen_Marktforschung.jpg");
+}
+.img_market2 {
+  background-image: url("../../../assets/images/Marktanalysen&Prognosen.jpg");
+}
+.img_market3 {
+  background-image: url("../../../assets/images/askStatista.jpg");
+}
+
+.img_market {
   height: 250px;
 }
 .sectionS2 > :nth-child(2) {
@@ -63,7 +56,7 @@
     flex-flow: column;
   }
   .sectionS2 > div > div {
-    width: auto;
+    width: 100%;
     margin: 1rem 0;
   }
   .sectionS2 > :nth-child(2) {
@@ -74,7 +67,7 @@
   .sectionS2 > :nth-child(3) {
     border-top: 1px solid black;
   }
-  .sectionS2 img {
+  .img_market {
     height: 200px;
   }
   .sectionS2 p {

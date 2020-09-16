@@ -3,11 +3,32 @@
   flex-flow: row;
   align-items: center;
 }
-div.sectionS4-cards div:last-child {
+.method_container {
   margin-left: 10%;
 }
-.sectionS4-cards div > div:last-child {
+.img_method_container {
   margin: 2% auto 5% 20%;
+}
+
+.img_method {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid rgb(40, 118, 221);
+  box-shadow: 3px 3px #2876dd66, 6px 6px #2876dd4d, 9px 9px #2876dd33,
+    12px 12px #2876dd1a, 15px 15px #2876dd0d;
+}
+.img_method1,
+.img_method2 {
+  width: 50px;
+  height: 50px;
+}
+.img_method1 {
+  background-image: url("../../../assets/images/outmethods_quantitative-3-3.svg");
+}
+.img_method2 {
+  background-image: url("../../../assets/images/ourmethods_qualitative_.svg");
 }
 
 @media (max-width: 992px) {
@@ -15,19 +36,14 @@ div.sectionS4-cards div:last-child {
     flex-flow: column;
     text-align: center;
   }
-  div.sectionS4-cards div:last-child {
-    margin-left: auto;
+  .img_method_container {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
   }
   .sectionS4-cards p {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-
-    /* box-shadow: 
-    5px 5px rgba(40, 118, 221, 0.4), 
-    10px 10px rgba(40, 118, 221, 0.3),
-      15px 15px rgba(40, 118, 221, 0.2), 
-      20px 20px rgba(40, 118, 221, 0.1),
-      25px 25px rgba(40, 118, 221, 0.05); */
   }
 }

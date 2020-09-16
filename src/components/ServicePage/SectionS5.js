@@ -25,7 +25,7 @@ const SectionS5 = () => {
             <div className="row">
               <div className="col-lg-6 px-2  ">
                 <SolutionCard title="1880+" desc={t("solutionsCard")[0]} />
-                <SolutionCard title="1300" desc={t("solutionsCard")[1]} />
+                <SolutionCard title="950+" desc={t("solutionsCard")[1]} />
               </div>
               <div className="col-lg-6 px-2 my-auto">
                 <SolutionCard title="100%" desc={t("solutionsCard")[2]} />

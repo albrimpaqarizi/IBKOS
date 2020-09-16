@@ -24,7 +24,7 @@ const MarketCard = (props) => {
           );
         })}
       </div>
-      <img src={props.img} className="" alt="Market images" />
+      <div className={`${props.img} img_css img_market `}></div>
     </div>
   );
 };

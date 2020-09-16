@@ -1,7 +1,6 @@
 import React from "react";
-import { Divider, Avatar } from "@material-ui/core";
+import { Divider } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import profile from "../../assets/images/about/MaskGroup11.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import "./styles/index.css";
@@ -14,11 +13,6 @@ const useStyles = makeStyles({
     width: "80%",
     margin: "1.5rem auto",
     height: "2px",
-  },
-  avatar: {
-    display: "inline-flex",
-    width: "65px",
-    height: "65px",
   },
 });
 
@@ -51,12 +45,8 @@ const SectionH2 = (props) => {
           <div className="d-flex justify-content-start align-items-center profile-text">
             <span className="font-r text-col2 text-left mr-2">
               "Arturo Meier"
-            </span>{" "}
-            <Avatar
-              className={classes.avatar}
-              src={profile}
-              alt="Profile image a member"
-            />
+            </span>
+            <div className="profile_member img_css"></div>
           </div>
         </div>
         <div className="col-12 col-lg-6 about-consult py-5">

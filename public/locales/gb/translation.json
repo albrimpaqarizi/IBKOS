@@ -145,8 +145,14 @@
   },
   "faqList": ["General", "Our Solutions", "Our Experience", "Customer Service"],
   "faqAccordion": [
-    "What are advantages working with us?",
-    " How can i pay my order?"
+    {
+      "question": "What are advantages working with us?",
+      "answer": "We offer fast service, best solutions, support for new ideas and close cooperation throughout the project development."
+    },
+    {
+      "question": "How can i pay my order?",
+      "answer": "You will pay through banks, we will send you the payment slip with pdf file with all the necessary information"
+    }
   ],
   "aboutBanner": "A few words about IBKOS",
   "TeamConsultants": {
@@ -242,7 +248,7 @@
   },
   "solutionsCard": [
     "Projects completed by our team of consultant that they offered solutions for business.",
-    "Positive reviews sent by our first-time and regular customers.",
+    "Projects in progress and pending by our team of consultant that they offered solutions for business.",
     "Positive reviews sent by our first-time and regular customers."
   ],
   "quoteBtn": "Get a Quote",

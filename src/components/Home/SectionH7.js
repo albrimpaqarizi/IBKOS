@@ -33,7 +33,7 @@ const SectionH7 = () => {
             />
           </div>
           <h2 className=" my-3 text-uppercase">faq</h2>
-          <ul className="list-unstyled pl-0 my-3">
+          <ul className="list-unstyled pl-0 my-3 list_progress">
             {t("faqList").map((item, index) => (
               <FaqProgressBar key={index} name={item} />
             ))}
@@ -49,16 +49,9 @@ const SectionH7 = () => {
           </Paper>
 
           <div className="my-4 mx-1">
-            <Accordion
-              idx={1}
-              title={t("faqAccordion")[0]}
-              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
-            />
-            <Accordion
-              idx={2}
-              title={t("faqAccordion")[1]}
-              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
-            />
+            {t("faqAccordion").map((item, index) => (
+              <Accordion idx={index} title={item.question} desc={item.answer} />
+            ))}
           </div>
         </div>
       </div>

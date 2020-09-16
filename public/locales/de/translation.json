@@ -156,10 +156,15 @@
     "Kundenservice"
   ],
   "faqAccordion": [
-    "Was sind die Vorteile bei uns?",
-    "Wie kann ich meine Bestellung bezahlen?"
+    {
+      "question": "Was sind die Vorteile bei uns?",
+      "answer": "Wir bieten schnellen Service, beste Lösungen, Unterstützung für neue Ideen und enge Zusammenarbeit während der gesamten Projektentwicklung."
+    },
+    {
+      "question": "Wie kann ich meine Bestellung bezahlen?",
+      "answer": "Sie zahlen über Banken, wir senden Ihnen den Einzahlungsschein mit PDF-Datei mit allen notwendigen Informationen."
+    }
   ],
-
   "aboutBanner": "Ein paar worte zu IBKOS",
   "TeamConsultants": {
     "title": "Wir sind ein leidenschaftliches Team von Unternehmensberatern",
@@ -257,7 +262,7 @@
   },
   "solutionsCard": [
     "Projekte, die von unserem Beraterteam abgeschlossen wurden und Lösungen für Unternehmen anboten.",
-    "Positive Bewertungen von unseren Erst- und Stammkunden.",
+    "Projekte in Bearbeitung und von unserem Beraterteam ausstehend, dass sie Lösungen für Unternehmen anbieten.",
     "Positive Bewertungen von unseren Erst- und Stammkunden."
   ],
   "quoteBtn": "Ein Angebot bekommen",

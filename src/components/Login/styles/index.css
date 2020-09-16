@@ -10,6 +10,25 @@
 .login-page {
   padding: 10% 0;
 }
+.img_avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.img_avatar1 {
+  background-image: url("../../../assets/images/login/Group200.jpg");
+}
+.img_avatar2 {
+  background-image: url("../../../assets/images/login/Group201.jpg");
+}
+.img_avatar3 {
+  background-image: url("../../../assets/images/login/Group203.jpg");
+}
+.img_avatar4 {
+  background-image: url("../../../assets/images/login/Group204.jpg");
+}
+
 @media (max-width: 992.98px) {
   .login-page .row {
     flex-flow: column-reverse;

@@ -1,8 +1,9 @@
 import React from "react";
 import MarketCard from "./MarketCard";
-import { marketImages } from "../Shared/mapData";
 import "./styles/SectionS2.css";
 import { useTranslation } from "react-i18next";
+
+const marketImages = ["img_market1", "img_market2", "img_market3"];
 
 const SectionS2 = () => {
   const { t } = useTranslation();
