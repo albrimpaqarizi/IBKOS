@@ -2,14 +2,15 @@ import React from "react";
 import CardGrid from "./CardGrid";
 import { Link } from "react-router-dom";
 import "./styles/SectionA4.css";
-import img1 from "../../assets/images/about/innovation.jpg";
-import img2 from "../../assets/images/about/cookie.jpg";
-import img3 from "../../assets/images/about/goal.jpg";
-import img4 from "../../assets/images/about/benefit.jpg";
-import img5 from "../../assets/images/about/sport-team.jpg";
 import { useTranslation } from "react-i18next";
 
-export const images = [img1, img2, img3, img4, img5];
+export const images = [
+  "img_grid1",
+  "img_grid2",
+  "img_grid3",
+  "img_grid4",
+  "img_grid5",
+];
 
 const SectionA4 = () => {
   const { t } = useTranslation();

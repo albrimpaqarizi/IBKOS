@@ -2,7 +2,6 @@ import React from "react";
 import { Divider, Avatar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import profile from "../../assets/images/about/MaskGroup11.jpg";
-import consult from "../../assets/images/about/christina-wocintechchat-com-PviMD8jDeYE-unsplash.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import "./styles/index.css";
@@ -60,12 +59,12 @@ const SectionH2 = (props) => {
             />
           </div>
         </div>
-        <div className="col-12 col-lg-6 about-consult">
-          <img
-            className="img-thumbnail "
-            src={consult}
-            alt="being consulted the team"
-          />
+        <div className="col-12 col-lg-6 about-consult py-5">
+          <div
+            role="img"
+            aria-label="Coffee and croissant."
+            className="img_consult img_css"
+          ></div>
         </div>
       </div>
     </div>

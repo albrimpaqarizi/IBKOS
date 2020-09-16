@@ -1,11 +1,17 @@
-.analysis-img img {
-  width: 576px;
+.analysis_img {
+  background-image: url("../../../assets/images/home/home-01-610x432.jpg");
+  /* width: 576px; */
+  width: 100%;
+  height: 80%;
   border: none;
-  padding: 2rem;
+  /* background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: border-box; */
 }
 
 @media (max-width: 992.98px) {
-  .analysis-img img {
-    padding: 0;
+  .analysis_img {
+    height: 50vmin;
   }
 }

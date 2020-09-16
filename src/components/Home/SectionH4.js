@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/SectionH4.css";
 import "./styles/index.css";
-import analysis from "../../assets/images/home/home-01-610x432.jpg";
+// import analysis from "../../assets/images/home/home-01-610x432.jpg";
 import OurButton from "../UI/Button/OurButton";
 import { useTranslation } from "react-i18next";
 import Fade from "react-reveal/Fade";
@@ -35,13 +35,9 @@ const SectionH4 = () => {
             </ul>
           </div>
         </Fade>
-        <div className="col-12 col-lg-6 analysis-img text-center">
+        <div className="col-12 col-lg-6 analysis_div text-center">
           <Fade right>
-            <img
-              className="img-thumbnail"
-              src={analysis}
-              alt="Diagram with statistics"
-            />
+            <div className="analysis_img img_css"></div>
           </Fade>
         </div>
       </div>

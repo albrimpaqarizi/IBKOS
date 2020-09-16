@@ -2,9 +2,9 @@
   margin: 0;
   text-align: center;
 }
-.profileCard img {
-  width: 60%;
-  height: auto;
+.profileCard > div {
+  width: 230px;
+  height: 130px;
 }
 .profileCard-h4 {
   color: #575c60;
@@ -13,4 +13,23 @@
 .profileCard-p {
   color: #564040;
   text-align: center;
+}
+
+.img_1 {
+  background-image: url("../../../assets/images//home/Man-PNG-Pic.jpg");
+}
+.img_2 {
+  background-image: url("../../../assets/images/home/255-2559295_men-robert-negoita.jpg");
+}
+.img_3 {
+  background-image: url("../../../assets/images/home/woman-smiling-png-1.jpg");
+}
+.img_4 {
+  background-image: url("../../../assets/images/home/364-3645348_about-us-executive-suit-for-women.jpg");
+}
+.img_5 {
+  background-image: url("../../../assets/images/home/340-3400395_guy-left-call-center-man-jpg.jpg");
+}
+.img_6 {
+  background-image: url("../../../assets/images/home/edu-women.jpg");
 }

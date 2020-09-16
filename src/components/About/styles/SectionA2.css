@@ -6,14 +6,20 @@
 .profile-text {
   margin-left: 10%;
 }
-
-.about-consult img {
-  border-color: transparent;
-  width: 670px;
-}
 .about-consult {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+  align-items: flex-start;
+}
+
+.img_consult {
+  background-image: url("../../../assets/images/about/christina-wocintechchat-com-PviMD8jDeYE-unsplash.jpg");
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 992.98px) {
+  .img_consult {
+    height: 50vmin;
+  }
 }

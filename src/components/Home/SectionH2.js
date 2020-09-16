@@ -1,9 +1,17 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
 import "./styles/SectionH2.css";
-import { serviceCardImg } from "../Shared/mapData";
 import { useTranslation } from "react-i18next";
 import OurButton from "../UI/Button/OurButton";
+
+export const serviceCardImg = [
+  "service_img_1",
+  "service_img_2",
+  "service_img_3",
+  "service_img_4",
+  "service_img_5",
+  "service_img_6",
+];
 
 const SectionH2 = () => {
   const { t } = useTranslation();

@@ -2,22 +2,19 @@ import React from "react";
 import { Paper } from "@material-ui/core";
 import SocialMedia from "./SocialMediaCard";
 import "./ProfileCard1.css";
-import { Fade } from "react-reveal";
 
 const ProfileCard1 = (props) => {
   return (
-    <Fade bottom cascade>
-      <Paper elevation={2} className={props.paper}>
-        <div className="p-2 profileCard ">
-          <img src={props.icon} alt="Profile images" />
-        </div>
-        <h4 className="font-cart text-center text-capitalize profileCard-h4">
-          {props.profileName}
-        </h4>
-        <p className="profileCard-p text-capitalize"> {props.jobTitle} </p>
-        <SocialMedia />
-      </Paper>
-    </Fade>
+    <Paper elevation={2} className={props.paper}>
+      <div className="p-2 profileCard ">
+        <div className={`${props.icon} img_css`}></div>
+      </div>
+      <h4 className="font-cart text-center text-capitalize profileCard-h4">
+        {props.profileName}
+      </h4>
+      <p className="profileCard-p text-capitalize"> {props.jobTitle} </p>
+      <SocialMedia />
+    </Paper>
   );
 };
 

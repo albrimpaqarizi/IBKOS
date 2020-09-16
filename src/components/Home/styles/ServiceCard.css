@@ -3,7 +3,7 @@
   border-radius: 50%;
   margin: 10px 0px;
 }
-.serviceCard__img img {
+.serviceCard__img > div {
   width: 40px !important;
   height: 40px !important;
 }
@@ -13,4 +13,22 @@
 .service-p {
   color: #606a74;
   text-align: center;
+}
+.service_img_1 {
+  background-image: url("../../../assets/images/home/stock-market.svg");
+}
+.service_img_2 {
+  background-image: url("../../../assets/images/home/team-management.svg");
+}
+.service_img_3 {
+  background-image: url("../../../assets/images/home/strategy.svg");
+}
+.service_img_4 {
+  background-image: url("../../../assets/images/home/list.svg");
+}
+.service_img_5 {
+  background-image: url("../../../assets/images/home/audit.svg");
+}
+.service_img_6 {
+  background-image: url("../../../assets/images/home/talk.svg");
 }

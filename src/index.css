@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  /* -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; */
 }
 html {
   scroll-behavior: smooth;
@@ -32,9 +32,16 @@ code {
   }
 }
 
-/* .main-top {
-  margin-top: 65px;
-} */
+.img_css {
+  vertical-align: middle;
+  border-style: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  transition: All 0.3s ease-in-out;
+  -webkit-transition: All 0.3s ease-in-out;
+}
 
 .font-r {
   font-family: "Roboto", sans-serif;

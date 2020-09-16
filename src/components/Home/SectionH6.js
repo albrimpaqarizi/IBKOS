@@ -3,8 +3,16 @@ import ProfileCard from "../UI/ProfileCard/ProfileCard_1";
 import "./styles/SectionH6.css";
 import { makeStyles } from "@material-ui/core/styles";
 import OurButton from "../UI/Button/OurButton";
-import { profileCardImg } from "../Shared/mapData";
 import { useTranslation } from "react-i18next";
+
+export const profileCardImg = [
+  "img_1",
+  "img_2",
+  "img_3",
+  "img_4",
+  "img_5",
+  "img_6",
+];
 
 const useStyles = makeStyles({
   paper: {

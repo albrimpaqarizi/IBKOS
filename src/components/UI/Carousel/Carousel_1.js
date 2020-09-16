@@ -1,11 +1,19 @@
 import React from "react";
 import ProfileCard from "../ProfileCard/ProfileCard_1";
-// import { listProfile } from "../../Shared/mapData";
 import AliceCarousel from "react-alice-carousel";
 import { makeStyles } from "@material-ui/core/styles";
 import "./Carousel_1.css";
-import { profileCardImg } from "../../Shared/mapData";
+// import { profileCardImg } from "../../Shared/mapData";
 import { useTranslation } from "react-i18next";
+
+export const profileCardImg = [
+  "img_1",
+  "img_2",
+  "img_3",
+  "img_4",
+  "img_5",
+  "img_6",
+];
 
 const useStyles = makeStyles({
   paper: {

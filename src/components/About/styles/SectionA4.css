@@ -2,6 +2,25 @@
   padding: 6rem 0rem;
 }
 
+.img_grid1 {
+  background-image: url("../../../assets/images/about/innovation.jpg");
+}
+.img_grid2 {
+  background-image: url("../../../assets/images/about/cookie.jpg");
+}
+.img_grid3 {
+  background-image: url("../../../assets/images/about/goal.jpg");
+}
+.img_grid4 {
+  background-image: url("../../../assets/images/about/benefit.jpg");
+}
+.img_grid5 {
+  background-image: url("../../../assets/images/about/sport-team.jpg");
+}
+.img_grid {
+  width: 58px;
+  height: 58px;
+}
 .grid-container {
   background-color: #7070702b;
   display: grid;

@@ -26,7 +26,7 @@ const SectionH5 = () => {
                   {t("whatWeWorkOn.title")[1]}
                 </span>
               </h1>
-              <h6 className="mb-5 mt-4 light-bg gallery-p">
+              <h6 className="mb-5 mt-4 light-bg gallery-p px-2">
                 {t("whatWeWorkOn.desc")}
               </h6>
               <Link to="/service" className="btn-a btn-a1  btn-light mt-4">
