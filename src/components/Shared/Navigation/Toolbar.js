@@ -23,14 +23,14 @@ const useStyles = makeStyles({
     backgroundColor: "transparent ",
     transition: "all 0.7s ease-out",
     zIndex: "1",
-    padding: "15px 0",
+    padding: "15px 3px",
   },
   box2: {
     boxShadow:
       "0px 3px 5px -1px #00000033, 0px 6px 10px 0px #00000024, 0px 1px 18px 0px #0000001f ",
     backgroundColor: "#1c1e20 !important ",
     transition: "all 0.7s ease-in",
-    padding: "9px 0",
+    padding: "9px 3px",
   },
 });
 

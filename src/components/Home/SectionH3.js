@@ -4,24 +4,26 @@ import "./styles/index.css";
 import { useTranslation } from "react-i18next";
 import ReadMore from "../UI/Button/ReadMore";
 import OurButton from "../UI/Button/OurButton";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-reveal";
 
 const SectionH3 = () => {
   const { t } = useTranslation();
 
   return (
     <div className="background-2 fullBackground">
-      <div className="sectionH3 container py-5">
+      <div className="sectionH3 container py-2">
         <div className="row">
-          <div className="col-12 col-lg-6 about_img_div py-4">
-            <div className="about_img img_css"></div>
-          </div>
-          <Fade right cascade>
-            <div className="col-12 col-lg-6 div-2 py-3 my-4">
-              <OurButton
-                btn="ourAboutBtn"
-                classProps="text-uppercase px-3 py-1 font-s-medium"
-              />
+          <Fade bottom cascade>
+            <div className="col-12 col-lg-6 about_img_div py-4">
+              <div className="about_img img_css"></div>
+            </div>
+          </Fade>
+          <div className="col-12 col-lg-6 div-2 py-3 my-4">
+            <OurButton
+              btn="ourAboutBtn"
+              classProps="text-uppercase px-3 py-1 font-s-medium"
+            />
+            <Fade right cascade>
               <h1 className="text-white dt my-3 text-inherit">
                 {t("ourAbout.title")}
               </h1>
@@ -37,9 +39,9 @@ const SectionH3 = () => {
                   </li>
                 ))}
               </ul>
-              <ReadMore classProps="btn-light" link="sectionH4" offset={-190} />
-            </div>
-          </Fade>
+            </Fade>
+            <ReadMore classProps="btn-light" link="sectionH4" offset={-190} />
+          </div>
         </div>
       </div>
     </div>

@@ -5,12 +5,13 @@ import {
   InputLabel,
   FormControl,
   OutlinedInput,
+  FormGroup,
 } from "@material-ui/core";
 
 import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles({
   input: {
-    margin: "10px 0px",
+    margin: "0px 0px 12px 0px",
   },
   icon: {
     marginRight: "13px",
@@ -24,6 +25,7 @@ const useStyles = makeStyles({
     "&.MuiFormLabel-root.Mui-focused": {
       color: "#555555",
     },
+    margin: "5px 0",
   },
 });
 
@@ -31,22 +33,22 @@ const InputContact = (props) => {
   const classes = useStyles();
   const [value, setvalue] = useInput("");
   return (
-    <FormControl variant="outlined" className={classes.input}>
+    <FormGroup>
       <InputLabel htmlFor={props.id} className={classes.inputLabel}>
         {props.label}
       </InputLabel>
-
-      <OutlinedInput
-        value={value}
-        onChange={setvalue}
-        className={classes.inputOutline}
-        inputProps={props.input}
-        startAdornment={
-          <InputAdornment position="start">{props.icon}</InputAdornment>
-        }
-        labelWidth={props.labelWidth}
-      />
-    </FormControl>
+      <FormControl variant="outlined" className={classes.input}>
+        <OutlinedInput
+          value={value}
+          onChange={setvalue}
+          className={classes.inputOutline}
+          inputProps={props.input}
+          startAdornment={
+            <InputAdornment position="start">{props.icon}</InputAdornment>
+          }
+        />
+      </FormControl>
+    </FormGroup>
   );
 };
 

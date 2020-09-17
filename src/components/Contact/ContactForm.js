@@ -58,7 +58,6 @@ const ContactForm = () => {
           icon={<PersonIcon />}
           input={inputName}
           label={t("contactForm.name.nameLabel")}
-          labelWidth={160}
         />
 
         <InputContact
@@ -66,7 +65,6 @@ const ContactForm = () => {
           icon={<MailOutlineIcon />}
           input={inputEmail}
           label={t("contactForm.email.emailLabel")}
-          labelWidth={130}
         />
         <TextArea />
         <button type="submit" className="btn-submit btn">

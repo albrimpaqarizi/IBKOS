@@ -1,5 +1,5 @@
 import React from "react";
-import "./main.css";
+import "../../pages/main.css";
 import Countdown from "react-countdown-now";
 
 const ComingSoon = () => {

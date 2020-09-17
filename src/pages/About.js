@@ -1,26 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./main.css";
-import SectionOne from "../components/About/SectionA1";
-import SectionTwo from "../components/About/SectionA2";
-import SectionThree from "../components/About/SectionA3";
-import SectionFour from "../components/About/SectionA4";
-import SectionFive from "../components/About/SectionA5";
-import SectionSix from "../components/About/SectionA6";
-import SectionSeven from "../components/About/SectionA7";
-import SignUpFooter from "../components/Shared/SignUpFooter/SignUpFooter";
+import AboutComponent from "../components/About/index";
 
 const About = () => {
   return (
-    <div>
-      <SectionOne />
-      <SectionTwo />
-      <SectionThree />
-      <SectionFour />
-      <SectionFive />
-      <SectionSix />
-      <SectionSeven />
-      <SignUpFooter />
-    </div>
+    <Fragment>
+      <AboutComponent />
+    </Fragment>
   );
 };
 

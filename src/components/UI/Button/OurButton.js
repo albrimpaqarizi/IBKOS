@@ -7,7 +7,7 @@ const OurButton = (props) => {
   const { t } = useTranslation();
   const { btn } = props;
   return (
-    <Fade bottom>
+    <Fade bottom cascade>
       <Link
         to={`/${t(`${btn}.link`)}`}
         className={`my-2 btn-a btn-a2 btn-bg3 ${props.classProps}`}

@@ -1,14 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./main.css";
-import SectionOne from "../components/Contact/SectionC1";
-import SectionTwo from "../components/Contact/SectionC2";
+import ContactComponent from "../components/Contact/index";
 
 const Contact = () => {
   return (
-    <div>
-      <SectionOne />
-      <SectionTwo />
-    </div>
+    <Fragment>
+      <ContactComponent />
+    </Fragment>
   );
 };
 

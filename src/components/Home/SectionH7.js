@@ -50,7 +50,12 @@ const SectionH7 = () => {
 
           <div className="my-4 mx-1">
             {t("faqAccordion").map((item, index) => (
-              <Accordion idx={index} title={item.question} desc={item.answer} />
+              <Accordion
+                key={index}
+                idx={index}
+                title={item.question}
+                desc={item.answer}
+              />
             ))}
           </div>
         </div>

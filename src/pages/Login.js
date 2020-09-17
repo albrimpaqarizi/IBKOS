@@ -1,12 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./main.css";
-import LoginForm from "../components/Login/LoginForm";
+import LoginComponent from "../components/Login/index";
 
 const Login = () => {
   return (
-    <div>
-      <LoginForm />
-    </div>
+    <Fragment>
+      <LoginComponent />
+    </Fragment>
   );
 };
 

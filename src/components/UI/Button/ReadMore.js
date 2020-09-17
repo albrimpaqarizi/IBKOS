@@ -1,15 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import * as Scroll from "react-scroll";
-// import {
-//   Link,
-//   Element,
-//   Events,
-//   animateScroll as scroll,
-//   scrollSpy,
-//   scroller,
-// } from "react-scroll";
-
 const ReadMore = (props) => {
   const { t } = useTranslation();
   let Link = Scroll.Link;

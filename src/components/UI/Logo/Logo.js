@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Logo = (props) => (
   <React.Fragment>
-    <Link to="/" className="logo pl-2">
+    <Link to="/" className="logo ">
       <img src={logo} className="img" alt="IBKOS" />
       <span className="logo-name">ibkos</span>
     </Link>
