@@ -1,13 +1,8 @@
-import React, { Fragment } from "react";
+import React from "react";
 import "./main.css";
 import AboutComponent from "../components/About/index";
-
 const About = () => {
-  return (
-    <Fragment>
-      <AboutComponent />
-    </Fragment>
-  );
+  return <AboutComponent />;
 };
 
 export default About;

@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import "./App.css";
-import Route from "./route.js";
+import Route from "./route";
 import "animate.css/animate.min.css";
 import Spinner from "./components/UI/Spinner/Spinner";
 

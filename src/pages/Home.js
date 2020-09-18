@@ -1,13 +1,9 @@
-import React, { Fragment } from "react";
+import React from "react";
 import "./main.css";
 import HomeComponent from "../components/Home/index";
 
 const Home = () => {
-  return (
-    <Fragment>
-      <HomeComponent />
-    </Fragment>
-  );
+  return <HomeComponent />;
 };
 
 export default Home;

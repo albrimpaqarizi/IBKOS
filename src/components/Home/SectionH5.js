@@ -26,7 +26,7 @@ const SectionH5 = () => {
                   {t("whatWeWorkOn.title")[1]}
                 </span>
               </h1>
-              <h6 className="mb-5 mt-4 light-bg gallery-p px-2">
+              <h6 className="mb-lg-5 mt-lg-4 light-bg gallery-p px-2">
                 {t("whatWeWorkOn.desc")}
               </h6>
             </Fade>

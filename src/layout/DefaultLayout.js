@@ -8,7 +8,7 @@ function DefaultLayout(props) {
     <div className="">
       <Header />
 
-      <main className="">
+      <main>
         <div id="back-to-top-anchor"></div>
         {props.children}
       </main>
