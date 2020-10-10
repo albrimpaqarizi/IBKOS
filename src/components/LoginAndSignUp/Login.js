@@ -1,17 +1,10 @@
 import React from "react";
 import "./styles/index.css";
-import Form from "./Form";
+import Form from "./LoginForm";
 import Avatar from "./ImageAvatars";
 import { useTranslation } from "react-i18next";
 
-export const avatarImg = [
-  "img_avatar1",
-  "img_avatar2",
-  "img_avatar3",
-  "img_avatar4",
-];
-
-const LoginForm = () => {
+const Login = () => {
   const { t } = useTranslation();
 
   return (
@@ -23,11 +16,16 @@ const LoginForm = () => {
           </div>
           <div className="col-12 col-lg-6 p-3 pt-5">
             <h1 className="text-white font-r px-3">
-              {t("login.title")[0]} <br /> <span> {t("login.title")[1]}</span>
+              {t("loginAndSignUp.title")[0]} <br />
+              <span> {t("loginAndSignUp.title")[1]}</span>
             </h1>
             <ul className="list-unstyled pl-0 my-3 px-3">
-              {t("login.list").map((item, index) => (
-                <Avatar key={index} avatar={avatarImg[index]} desc={item} />
+              {t("loginAndSignUp.list").map((item, index) => (
+                <Avatar
+                  key={index}
+                  avatar={`img_avatar${index + 1}`}
+                  desc={item}
+                />
               ))}
             </ul>
           </div>
@@ -37,4 +35,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default Login;

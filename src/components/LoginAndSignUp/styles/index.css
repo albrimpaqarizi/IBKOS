@@ -1,0 +1,80 @@
+.login,
+.signup {
+  background-image: linear-gradient(
+      0deg,
+      rgba(28, 30, 32, 80%),
+      rgba(28, 30, 32, 80%)
+    ),
+    url(" ../../../../../assets/images/login/Mask\ Group\ 11.jpg");
+}
+
+.login-page,
+.signup-page {
+  padding: 9% 0;
+}
+
+.socialLink_signup {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  margin-bottom: 0;
+}
+.socialLink_signup li {
+  width: 30px;
+  height: 30px;
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialLink_signup li a {
+  line-height: 20px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 50%;
+  transition: all 0.3s ease-in;
+}
+.socialLink_signup li a:hover {
+  color: #2699fb;
+  cursor: pointer;
+  border-color: #2699fb;
+}
+.socialLink_signup li a svg {
+  font-size: 20px;
+}
+.img_avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.img_avatar1 {
+  background-image: url("../../../assets/images/login/Group200.jpg");
+}
+.img_avatar2 {
+  background-image: url("../../../assets/images/login/Group201.jpg");
+}
+.img_avatar3 {
+  background-image: url("../../../assets/images/login/Group203.jpg");
+}
+.img_avatar4 {
+  background-image: url("../../../assets/images/login/Group204.jpg");
+}
+
+@media (max-width: 992.98px) {
+  .login-page .row,
+  .signup-page .row {
+    flex-flow: column-reverse;
+  }
+  .login-page,
+  .signup-page {
+    padding-top: 15% 0;
+  }
+}

@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import "./main.css";
-import LoginComponent from "../components/Login/index";
+import LoginComponent from "../components/LoginAndSignUp/Login";
 
 const Login = () => {
   return (

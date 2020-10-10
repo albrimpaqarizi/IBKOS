@@ -311,14 +311,8 @@
   "loginForm": {
     "title": "Hyni falas",
     "textHeader": "Ju tashmë keni një llogari zgjidhje të Ibkos? Hyni këtu",
-    "email": {
-      "emailLabel": "Adresa e emailit",
-      "emailPlaceholder": "Shkruani adresën tuaj të postës elektronike"
-    },
-    "password": {
-      "passwordLabel": "Fjalëkalimi",
-      "passwordPlaceholder": "Shkruani fjalëkalimin tuaj"
-    },
+    "emailPlaceholder": "Shkruani adresën tuaj të postës elektronike",
+    "passwordPlaceholder": "Shkruani fjalëkalimin tuaj",
     "forgot": "Keni harruar fjalëkalimin",
     "remember": "Më kujto të dhënat",
     "btn": "Hyni",

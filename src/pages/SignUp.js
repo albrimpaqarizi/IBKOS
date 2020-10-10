@@ -1,8 +1,8 @@
 import React from "react";
-import ComingSoon from "../components/Shared/ComingSoon";
+import SignUpComponent from "../components/LoginAndSignUp/SignUp";
 
 const SignUp = () => {
-  return <ComingSoon />;
+  return <SignUpComponent />;
 };
 
 export default SignUp;

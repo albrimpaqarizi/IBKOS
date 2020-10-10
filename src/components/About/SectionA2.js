@@ -1,8 +1,7 @@
 import React from "react";
 import { Divider } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import { FaQuoteLeft } from "react-icons/fa";
 import "./styles/index.css";
 import "./styles/SectionA2.css";
 import { useTranslation } from "react-i18next";
@@ -37,7 +36,7 @@ const SectionH2 = (props) => {
           <Divider className={classes.divider} />
           <div className="d-flex justify-content-start align-items-center">
             <i className="quote-col">
-              <FontAwesomeIcon icon={faQuoteLeft} />
+              <FaQuoteLeft />
             </i>
             <p className="font-r text-col2 text-left m-0">{t("teamMember")}</p>
           </div>

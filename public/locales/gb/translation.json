@@ -288,7 +288,7 @@
     },
     "btn": "send"
   },
-  "login": {
+  "loginAndSignUp": {
     "title": ["Did You Know? ", " With IBKOS you can ..."],
     "list": [
       "Manage your invoices and tickets",
@@ -300,18 +300,21 @@
   "loginForm": {
     "title": "Sign in free",
     "textHeader": "You already have a Ibkos solution account ? Login here",
-    "email": {
-      "emailLabel": "Email address",
-      "emailPlaceholder": "Enter your email address"
-    },
-    "password": {
-      "passwordLabel": "Password",
-      "passwordPlaceholder": "Enter your password"
-    },
+    "emailPlaceholder": "Enter your email address",
+    "passwordPlaceholder": "Enter your password",
     "forgot": "Forgot password",
     "remember": "Remember me",
     "btn": "Log in",
     "textFooter": ["Need a IBKOS account? ", "Create an account"]
+  },
+  "signUpForm": {
+    "title": "Create Your Account",
+    "fullNamePlaceholder": "Name",
+    "emailPlaceholder": "Email address",
+    "passwordPlaceholder": "Password",
+    "configPswPlaceholder": "Confirm Password",
+    "btn": "sign up",
+    "textFooter": ["Already a member?", "Sign In"]
   },
 
   "footerMenu": [

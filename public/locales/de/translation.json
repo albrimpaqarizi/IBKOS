@@ -314,14 +314,8 @@
   "loginForm": {
     "title": "Einloggen frei",
     "textHeader": "Sie haben bereits ein Ibkos-Lösungskonto? Hier einloggen",
-    "email": {
-      "emailLabel": "E-Mail Adresse",
-      "emailPlaceholder": "Geben sie ihre E-Mail Adresse ein"
-    },
-    "password": {
-      "passwordLabel": "Passwort",
-      "passwordPlaceholder": "Geben Sie Ihr Passwort ein"
-    },
+    "emailPlaceholder": "Geben sie ihre E-Mail Adresse ein",
+    "passwordPlaceholder": "Geben Sie Ihr Passwort ein",
     "forgot": "Passwort vergessen",
     "remember": "Behalte mich in Erinnerung",
     "btn": "einloggen",
