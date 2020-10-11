@@ -1,0 +1,22 @@
+.services_popper_icon1 {
+  background-image: url("../../../../assets/images/icon/stock-market.svg");
+}
+.services_popper_icon2 {
+  background-image: url("../../../../assets/images/icon/list.svg");
+}
+.services_popper_icon3 {
+  background-image: url("../../../../assets/images/icon/team-management.svg");
+}
+.services_popper_icon4 {
+  background-image: url("../../../../assets/images/icon/audit.svg");
+}
+.services_popper_icon5 {
+  background-image: url("../../../../assets/images/icon/strategy.svg");
+}
+.services_popper_icon6 {
+  background-image: url("../../../../assets/images/icon/talk.svg");
+}
+
+.services_popper_list {
+  justify-content: center;
+}

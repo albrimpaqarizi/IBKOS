@@ -1,6 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch,  Redirect, } from "react-router-dom";
 import Layout from "./layout/DefaultLayout";
+import ScrollToTop from "./components/Shared/ScrollToTop";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Service from "./pages/Service";
@@ -14,6 +15,7 @@ import OurTeam from "./pages/OurTeam";
 function route() {
   return (
     <Router>
+       <ScrollToTop />
       <Layout>
         <Switch>
           <Route path="/" exact render={() => <Home />} />
@@ -25,6 +27,7 @@ function route() {
           <Route path="/pages" exact render={() => <Pages />} />
           <Route path="/our-team" exact render={() => <OurTeam />} />
           <Route to="/404" render={() => <PageNotFound />} />
+          <Redirect to="/404" />
         </Switch>
       </Layout>
     </Router>

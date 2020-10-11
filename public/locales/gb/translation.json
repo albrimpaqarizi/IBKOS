@@ -33,6 +33,17 @@
       "name": "contact us"
     }
   ],
+  "servicesPopper": {
+    "name": "services",
+    "servicesMenu": [
+      { "link": "market analysis", "name": "Market Analysis", "text": "Market Analysis for your business." },
+      { "link": "business planing", "name": "Business Planing" , "text": "Best way to plan your business."},
+      { "link": "found management", "name": "Found Management" , "text": "We Support your business with  marketing and management."},
+      { "link": "audit", "name": "Audit", "text":"We Provide our Audit services to you." },
+      { "link": "pr marketing", "name": "PR & Marketing", "text": "Social Media its the best way" },
+      { "link": "consulting", "name": "Consulting", "text" : "Chat and 24/7 h we support" }
+    ]
+  },
   "logInBtn": "login",
   "signUpBtn": "sign up",
   "contactBtn": { "link": "contact", "name": "contact us" },
