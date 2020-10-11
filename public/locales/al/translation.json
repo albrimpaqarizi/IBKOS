@@ -299,7 +299,7 @@
     },
     "btn": "dergo"
   },
-  "login": {
+  "loginAndSignUp": {
     "title": ["A e dini se", " Me IBKOS ju mund të ..."],
     "list": [
       "Menaxhoni faturat dhe biletat tuaja",
@@ -318,7 +318,15 @@
     "btn": "Hyni",
     "textFooter": ["Keni nevojë për një llogari IBKOS?", " Krijo nje llogari"]
   },
-
+  "signUpForm": {
+    "title": "Krijo llogarine tende",
+    "fullNamePlaceholder": "Emri dhe Mbiemri",
+    "emailPlaceholder": "Adresa e emailit",
+    "passwordPlaceholder": "Fjalëkalimi",
+    "configPswPlaceholder": "Konfirmo fjalëkalimin",
+    "btn": "Regjistrohu",
+    "textFooter": ["Tashmë je një anëtar?", "Identifikohu"]
+  },
   "footerMenu": [
     {
       "title": "Kush jemi",
@@ -373,7 +381,11 @@
     }
   ],
   "getInTouch": "Na kontakto ",
-  "signUpFooterText": "Zgjidhja juaj është në rrugën e duhur me një klikim",
+  "subscribe": {
+    "placeholder":"Vendosni adresën tuaj të postës elektronike",
+    "text": "Abonohuni për të rejat tona!",
+    "btn": "Abonohu"
+    },
   "companyAbout": "Që nga viti 1999, ne kemi ndihmuar Kosovos Business Thrive",
   "followUs": "Na ndiqni",
   "alRight": "Të gjitha të drejtat e rezervuara"

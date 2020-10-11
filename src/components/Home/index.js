@@ -6,7 +6,6 @@ import SectionFour from "./SectionH4";
 import SectionFive from "./SectionH5";
 import SectionSix from "./SectionH6";
 import SectionSeven from "./SectionH7";
-import SignUpFooter from "../Shared/SignUpFooter/SignUpFooter";
 
 const index = () => {
   return (
@@ -18,7 +17,6 @@ const index = () => {
       <SectionFive />
       <SectionSix />
       <SectionSeven />
-      <SignUpFooter />
     </div>
   );
 };

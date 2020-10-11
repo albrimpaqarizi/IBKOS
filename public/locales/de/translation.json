@@ -302,7 +302,7 @@
     },
     "btn": "senden"
   },
-  "login": {
+  "loginAndSignUp": {
     "title": ["Wusstest du?", "Mit IBKOS können Sie ..."],
     "list": [
       "Verwalten Sie Ihre Rechnungen und Tickets",
@@ -321,7 +321,15 @@
     "btn": "einloggen",
     "textFooter": ["Benötigen Sie ein IBKOS-Konto? ", " Ein Konto erstellen"]
   },
-
+  "signUpForm": {
+    "title": "Erstelle deinen Account",
+    "fullNamePlaceholder": "Name und Nachname",
+    "emailPlaceholder": "E-Mail Adresse",
+    "passwordPlaceholder": "Passwort",
+    "configPswPlaceholder": "Passwort bestätigen",
+    "btn": "Anmelden",
+    "textFooter": ["Bereits Mitglied? Anmelden"]
+  },
   "footerMenu": [
     {
       "title": "Wer wir sind",
@@ -376,7 +384,11 @@
     }
   ],
   "getInTouch": "In Kontakt kommen",
-  "signUpFooterText": "Ihre Lösung ist mit wenigen Klicks unterwegs",
+  "subscribe": {
+    "placeholder":"Geben Sie Ihre E-Mail-Adresse ein",
+    "text": "Abonniere unseren Newsletter!",
+    "btn": "Abonnieren"
+    },
   "companyAbout": "Seit 1999 unterstützen wir Kosovos Business Thrive",
   "followUs": "Folge uns",
   "alRight": "Alle Rechte vorbehalten"

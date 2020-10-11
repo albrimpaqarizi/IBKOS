@@ -309,14 +309,13 @@
   },
   "signUpForm": {
     "title": "Create Your Account",
-    "fullNamePlaceholder": "Name",
+    "fullNamePlaceholder": "Name and Surname",
     "emailPlaceholder": "Email address",
     "passwordPlaceholder": "Password",
     "configPswPlaceholder": "Confirm Password",
     "btn": "sign up",
     "textFooter": ["Already a member?", "Sign In"]
   },
-
   "footerMenu": [
     {
       "title": "Who we are",
@@ -371,7 +370,11 @@
     }
   ],
   "getInTouch": "Get in touch",
-  "signUpFooterText": "Your solution is on its way in a few clicks",
+  "subscribe": {
+  "placeholder":"Enter you email address",
+  "text": "Subscribe to our Newsletter!",
+  "btn": "Subscribe"
+  },
   "companyAbout": "Since 1999, we have been helping Kosovos Business Thrive",
   "followUs": "follow us",
   "alRight": "All Rights Reserved"

@@ -1,0 +1,86 @@
+.subscribe {
+  background-image: linear-gradient(
+      0deg,
+      rgba(28, 30, 32, 81%),
+      rgba(28, 30, 32, 81%)
+    ),
+    url("../../../assets//images//MaskGroup2.jpg");
+  border-bottom: 2px solid #c9bfbf;
+  border-top: 2px solid #c9bfbf;
+}
+.subscribe_container {
+  padding: 8% 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.subscribe_form {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  flex-flow: row;
+  width: 60%;
+}
+
+.subscribe_form input[type="email"] {
+  display: inline-flex;
+  padding: 15px 10px;
+  font-size: 17px;
+  border: 1px solid transparent;
+  border-radius: 10px 0px 0px 10px;
+  background: #f1f1f1;
+  width: 80%;
+}
+
+.subscribe_form button {
+  padding: 10px;
+  text-align: center;
+  width: 20%;
+  background: #006fff;
+  color: white;
+  font-size: 17px;
+  border: 1px solid transparent;
+  border-radius: 0px 10px 10px 0px;
+  border-left: none;
+  cursor: pointer;
+}
+
+.subscribe_form button:hover {
+  background: #0571ca;
+}
+
+.subscribe_form::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.subscribe_container > h3 {
+  font-size: 2.2rem;
+}
+
+@media (max-width: 992px) {
+  .subscribe {
+    padding-top: 7rem;
+  }
+  .subscribe_form input[type="email"],
+  .subscribe_form button {
+    width: auto;
+  }
+}
+@media (max-width: 600px) {
+  .subscribe {
+    padding-top: 4rem;
+  }
+  .subscribe_form {
+    width: 100%;
+  }
+  .subscribe_container > h3 {
+    font-size: 1.3rem;
+  }
+}
