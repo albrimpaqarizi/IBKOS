@@ -21,12 +21,8 @@
       "name": "our team"
     },
     {
-      "link": "service",
-      "name": "services"
-    },
-    {
-      "link": "pages",
-      "name": "pages"
+      "link": "solutions",
+      "name": "solutions"
     },
     {
       "link": "contact",
@@ -203,7 +199,7 @@
   "peopleHelpYou": "People Ready To Help You ",
   "workerWord": "It is an honor and privacy to work in a company with excellent staff and a really important company for the products it offers",
   "serviceBanner": {
-    "title": "Our Services To You",
+    "title": "Our Solutions",
     "desc": "Providing individualized solutions that help you better understand your markets, customers and data"
   },
   "marketService": [
