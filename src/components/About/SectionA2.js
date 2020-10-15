@@ -50,8 +50,6 @@ const SectionH2 = (props) => {
         </div>
         <div className="col-12 col-lg-6 about-consult py-5">
           <div
-            role="img"
-            aria-label="Coffee and croissant."
             className="img_consult img_css"
           ></div>
         </div>

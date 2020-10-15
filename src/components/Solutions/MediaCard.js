@@ -1,40 +1,58 @@
 import React from "react";
+import { Divider } from "@material-ui/core";
+import ReadMore from "../UI/Button/ReadMore";
 import { makeStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
+import { Link } from "react-router-dom";
+import { ImQuotesLeft } from "react-icons/im";
 
 const useStyles = makeStyles({
-  media: {
-    maxWidth: 345,
-    borderRadius: "6px",
-    margin: "1.5%",
-    "& button:focus": {
-      outline: "none",
-    },
+  divider: {
+    width: "80%",
+    margin: "1.5rem auto",
+    height: "2px",
   },
 });
 
 const MediaCard = (props) => {
   const classes = useStyles();
-
+  const { title,desc,teamMember ,profileImg, consultImg, person,order,linkBtn , offsetBtn} = props;
   return (
-    <Card className={classes.media}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Contemplative Reptile"
-          height="140"
-          image={props.img}
-          title="Contemplative Reptile"
+    <div className="row my-5 mx-0"  >
+      <div className="col-12 col-lg-6 pr-4">
+        <h2 className="font-r mb-3 font-500 ">{title}<br/> <span className="border-span" ></span> </h2>
+        <p className="text-left font-r text-col1 my-3 py-3">
+          {desc}
+        </p>
+        <Link to="/?" className="btn-a btn-a1 btn-bg1 font-s-small" >
+        {order}
+        </Link>
+        <ReadMore
+          classProps="btn-bg5 font-s-small "
+          link={linkBtn}
+          offset={offsetBtn}
         />
-        <CardContent>
-          <h3 className="font-r text-col3 my-2 text-center">{props.title} </h3>
-          <p className="font-r text-col1 text-center">{props.desc} </p>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+
+        <Divider className={classes.divider} />
+        <div className="d-flex justify-content-start align-items-center">
+          <i className="quote-col">
+            <ImQuotesLeft />
+          </i>
+          <p className="font-r text-col2 text-left m-0">
+            {teamMember}
+          </p>
+        </div>
+        <Divider className={classes.divider} />
+        <div className="d-flex justify-content-start align-items-center profile-text">
+          <span className="font-r text-col2 text-left mr-2  ">
+            {person}
+          </span>
+          <div className={`img_css profile_member ${profileImg}`} />
+        </div>
+      </div>
+      <div className="col-12 col-lg-6 about-consult py-5">
+        <div className={`img_css media_consult ${consultImg}`} ></div>
+      </div>
+    </div>
   );
 };
 export default MediaCard;

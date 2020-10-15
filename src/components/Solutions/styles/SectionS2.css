@@ -1,79 +1,107 @@
-.sectionS2 > :nth-child(1),
-.sectionS2 > :nth-child(3) {
+.sectionS2 {
   display: flex;
-  justify-content: flex-start;
-  flex-flow: row;
-  align-items: center;
+  flex-flow: column;
+  justify-content: center;
 }
-.sectionS2 > div > div {
-  width: 50%;
+.sectionS2 > :nth-child(1) {
+  order: 1;
 }
-.sectionS2 > div {
-  margin: 3rem 0;
+.sectionS2 > :nth-child(2) {
+  order: 3;
+}
+.sectionS2 > :nth-child(3) {
+  order: 2;
+}
+.sectionS2 > :nth-child(4) {
+  order: 4;
 }
 .sectionS2 p {
   font-family: Arial, sans-serif;
   margin: 5% 0;
   font-size: 16px;
-  width: 90%;
+  width: 80%;
 }
-.sectionS2 a {
+.sectionS2 .btn-a1 {
   margin: 10px 15px 10px 0;
+  padding: 10px 24px;
 }
-.sectionS2 span {
+.sectionS2 .border-span {
   position: absolute;
   width: 80px;
   height: 1px;
   background-color: #259bf9;
 }
 
-.img_market1 {
-  background-image: url("../../../assets/images/Loesungen_Marktforschung.jpg");
-}
-.img_market2 {
-  background-image: url("../../../assets/images/Marktanalysen&Prognosen.jpg");
-}
-.img_market3 {
-  background-image: url("../../../assets/images/askStatista.jpg");
-}
-
-.img_market {
-  height: 250px;
-}
-.sectionS2 > :nth-child(2) {
+.quote-col {
+  color: #2196f3;
+  padding: 1rem 0.7rem;
+  font-size: 1.8rem;
   display: flex;
-  justify-content: flex-start !important;
-  flex-flow: row-reverse;
+  justify-content: center;
   align-items: center;
 }
-.sectionS2 > :nth-child(2) > img {
-  margin-right: 3%;
+.profile-text {
+  margin-left: 10%;
+}
+.about-consult {
+  display: flex;
+  align-items: flex-start;
+}
+.profile_member {
+  display: inline-flex;
+  width: 65px;
+  height: 65px;
+}
+
+.profile_member1 {
+  background-image: url("../../../assets/images/solutions/MaskGroup11.jpg");
+}
+.profile_member2 {
+  background-image: url("../../../assets/images/solutions/UI-Containers-User.jpg");
+}
+
+.media_consult,
+.img_market {
+  max-width: 100%;
+  width: 100%;
+  height: 350px;
+}
+
+.media_consult1 {
+  background-image: url("../../../assets/images/solutions/features-1-538x395.jpg");
+}
+.media_consult2 {
+  background-image: url("../../../assets/images/solutions/features-3-538x395.jpg");
+}
+
+.img_market1 {
+  background-image: url("../../../assets/images/solutions/features-3-538x395.jpg");
+}
+.img_market2 {
+  background-image: url("../../../assets/images/solutions/features-4-538x395.jpg");
+}
+
+@media (max-width: 992px) {
+  .sectionS2 > :nth-child(3) > div:first-child,
+  .sectionS2 > :nth-child(4) > div:first-child {
+    order: 1;
+  }
 }
 
 @media (max-width: 768px) {
-  .sectionS2 > :nth-child(1),
-  .sectionS2 > :nth-child(3) {
-    flex-flow: column;
-  }
-  .sectionS2 > div > div {
-    width: 100%;
-    margin: 1rem 0;
-  }
-  .sectionS2 > :nth-child(2) {
-    flex-flow: column;
-    padding: 1rem 0;
-    border-top: 1px solid black;
-  }
-  .sectionS2 > :nth-child(3) {
-    border-top: 1px solid black;
-  }
   .img_market {
     height: 200px;
+  }
+  .media_consult {
+    height: 250px;
   }
   .sectionS2 p {
     width: auto;
   }
-  .sectionS2 a {
+  .sectionS2 .btn-a1 {
+    padding: 8px 20px;
+    font-size: 1rem;
+    line-height: 1.15rem;
     margin: 5px 10px 5px 0;
   }
 }

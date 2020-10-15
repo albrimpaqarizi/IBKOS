@@ -21,3 +21,7 @@
     url("../../../assets/images/Mask\ Group\ 15.jpg");
   padding: 3% 0;
 }
+
+.sectionS3 button {
+  text-decoration: none;
+}

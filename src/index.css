@@ -112,6 +112,16 @@ code {
   background-color: #2699fb;
   color: white;
 }
+.btn-bg5 {
+  background-color: #fff;
+  color: #606a74;
+  font-weight: 600;
+  border-color: #606a74;
+}
+.btn-bg5:hover {
+  background-color: #606a74;
+  color: white;
+}
 
 .btn-a2 {
   background-color: #dceef6;

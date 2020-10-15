@@ -32,17 +32,42 @@
   "servicesPopper": {
     "name": "services",
     "servicesMenu": [
-      { "link": "market analysis", "name": "Market Analysis", "text": "Market Analysis for your business." },
-      { "link": "business planing", "name": "Business Planing" , "text": "Best way to plan your business."},
-      { "link": "found management", "name": "Found Management" , "text": "We Support your business with  marketing and management."},
-      { "link": "audit", "name": "Audit", "text":"We Provide our Audit services to you." },
-      { "link": "pr marketing", "name": "PR & Marketing", "text": "Social Media its the best way" },
-      { "link": "consulting", "name": "Consulting", "text" : "Chat and 24/7 h we support" }
+      {
+        "link": "market analysis",
+        "name": "Market Analysis",
+        "text": "Market Analysis for your business."
+      },
+      {
+        "link": "business planing",
+        "name": "Business Planing",
+        "text": "Best way to plan your business."
+      },
+      {
+        "link": "found management",
+        "name": "Found Management",
+        "text": "We Support your business with  marketing and management."
+      },
+      {
+        "link": "audit",
+        "name": "Audit",
+        "text": "We Provide our Audit services to you."
+      },
+      {
+        "link": "pr marketing",
+        "name": "PR & Marketing",
+        "text": "Social Media its the best way"
+      },
+      {
+        "link": "consulting",
+        "name": "Consulting",
+        "text": "Chat and 24/7 h we support"
+      }
     ]
   },
   "logInBtn": "login",
   "signUpBtn": "sign up",
   "contactBtn": { "link": "contact", "name": "contact us" },
+  "orderBtn": { "link": "?", "name": "order now" },
   "ourServicesBtn": {
     "link": "service",
     "name": "our services"
@@ -67,7 +92,7 @@
     "link": "about",
     "name": "popular questions"
   },
-  "readMoreBtn": { "link": "#", "name": "read more" },
+  "readMoreBtn": { "link": "#", "name": "learn more" },
   "solutionBtn": { "link": "service", "name": "solution" },
   "viewGalleryBtn": "view gallery",
   "whatWeWorkOnBtn": {
@@ -202,6 +227,18 @@
     "title": "Our Solutions",
     "desc": "Providing individualized solutions that help you better understand your markets, customers and data"
   },
+  "mediaCards": [
+    { 
+      "title": "Business Solutions",
+      "desc": "So, if we take the definition literally: a business solution is a group of software units that create a cross functional system for your company.",
+       "teamMember": "Best Business Solutions is with Ibkos the best company in Pristina Kosova."
+    },
+    {
+      "title": "Strategic Consulting",
+      "desc": "Management consulting is the practice of helping organizations to improve their performance. Organizations may draw upon the services of management consultants for a number of reasons, including gaining external advice and access to consultants' specialized expertise.",
+      "teamMember": "When you need the strategic consulting for your business you can only find that on IBKOS it has the best strategic consultings."
+    }
+  ],
   "marketService": [
     {
       "btn": ["readMoreBtn"],
@@ -211,11 +248,6 @@
     {
       "btn": ["readMoreBtn"],
       "title": "Market Analysis & Forecasts",
-      "desc": "What's the size of your market segment? How are markets developing? What are the trends behind these developments? For many years, we have specialized in building market models and developing forecasting methods."
-    },
-    {
-      "btn": ["solutionBtn", "contactBtn"],
-      "title": "Business Planing And Consulting?",
       "desc": "What's the size of your market segment? How are markets developing? What are the trends behind these developments? For many years, we have specialized in building market models and developing forecasting methods."
     }
   ],
@@ -378,9 +410,9 @@
   ],
   "getInTouch": "Get in touch",
   "subscribe": {
-  "placeholder":"Enter you email address",
-  "text": "Subscribe to our Newsletter!",
-  "btn": "Subscribe"
+    "placeholder": "Enter you email address",
+    "text": "Subscribe to our Newsletter!",
+    "btn": "Subscribe"
   },
   "companyAbout": "Since 1999, we have been helping Kosovos Business Thrive",
   "followUs": "follow us",

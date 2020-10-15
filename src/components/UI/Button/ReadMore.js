@@ -1,12 +1,12 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import * as Scroll from "react-scroll";
+
 const ReadMore = (props) => {
   const { t } = useTranslation();
   let Link = Scroll.Link;
   return (
     <Link
-      // to={`/${t("readMoreBtn.link")}`}
       // activeClass="active"
       to={props.link}
       spy={true}
