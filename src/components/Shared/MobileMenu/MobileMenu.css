@@ -14,3 +14,34 @@
 .link:focus {
   color: #757575;
 }
+
+.subMenu_text {
+  background-color: #a5a5a5;
+  color: white;
+  padding: 5px 9px;
+  margin: 1px 0;
+  transition: all 0.9s ease-in-out;
+}
+.subMenu_text:hover,
+.subMenu_text:focus {
+  color: black;
+}
+
+.MuiList-root > :nth-child(1) {
+  order: 3;
+}
+.MuiList-root > :nth-child(2) {
+  order: 1;
+}
+.MuiList-root > :nth-child(3) {
+  order: 2;
+}
+.MuiList-root > :nth-child(4) {
+  order: 4;
+}
+.MuiList-root > :nth-child(5) {
+  order: 5;
+}
+.MuiList-root > :nth-child(6) {
+  order: 6;
+}

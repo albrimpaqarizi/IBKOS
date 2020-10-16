@@ -5,6 +5,8 @@ import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import { useTranslation } from "react-i18next";
 import "./MobileMenu.css";
 import MobileMenuItem from "./MobileMenuItem";
+import Fade from "react-reveal/Fade";
+import DropItem from "./DropItem";
 
 const useStyles = makeStyles((theme) => ({
   drawer: {
@@ -18,6 +20,28 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(0, 1),
     ...theme.mixins.toolbar,
     justifyContent: "flex-start",
+  },
+  list: {
+    display: "flex",
+    flexFlow: "column",
+    "& >div:nth-child(1)": {
+      order: "3 !important",
+    },
+    "& >div:nth-child(2)": {
+      order: "1 !important",
+    },
+    "& >div:nth-child(3)": {
+      order: "2 !important",
+    },
+    "& >div:nth-child(4)": {
+      order: "4 !important",
+    },
+    "& >div:nth-child(5)": {
+      order: "5 !important",
+    },
+    "& >div:nth-child(6)": {
+      order: "6 !important",
+    },
   },
 }));
 
@@ -39,15 +63,18 @@ const MobileMenu = (props) => {
         </IconButton>
       </div>
       <Divider />
-      <List>
-        {t("mainMenu").map(({ link, name }, index) => (
-          <MobileMenuItem
-            key={index}
-            link={link}
-            name={name}
-            drawerToggle={props.drawerToggle}
-          />
-        ))}
+      <List className={classes.list}>
+        <Fade right cascade>
+          <DropItem drawerToggle={props.drawerToggle} tr="servicesPopper" />
+          {t("mainMenu").map(({ link, name }, index) => (
+            <MobileMenuItem
+              key={index}
+              link={link}
+              name={name}
+              drawerToggle={props.drawerToggle}
+            />
+          ))}
+        </Fade>
       </List>
       <Divider />
 

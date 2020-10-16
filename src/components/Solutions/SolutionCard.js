@@ -16,9 +16,9 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles({
   paper: {
-    backgroundColor: "rgb(77 78 80 / 43%)",
-    padding: "0.6rem 1.5rem",
-    borderRadius: "25px",
+    backgroundColor: "transparent",
+    // padding: "0.6rem 1.5rem",
+    // borderRadius: "25px",
     marginBottom: "8%",
     height: "190px",
     [theme.breakpoints.down("sm")]: {
@@ -32,8 +32,10 @@ const SolutionCard = (props) => {
   const classes = useStyles();
   return (
     <Paper elevation={0} className={classes.paper}>
-      <h2 className="text-white font-r font-weight-bold ">{props.title}</h2>
-      <p className="text-white"> {props.desc}</p>
+      <div className={`img_css solutionCard_img${props.idx + 1}`}>
+        <h2 className="text-white font-r font-weight-bold ">{props.title}</h2>
+        <p className="text-white"> {props.desc}</p>
+      </div>
     </Paper>
   );
 };

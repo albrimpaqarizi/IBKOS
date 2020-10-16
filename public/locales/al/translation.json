@@ -17,24 +17,56 @@
       "name": "rreth nesh"
     },
     {
+      "link": "solutions",
+      "name": "zgjidhjet"
+    },
+    {
       "link": "our-team",
       "name": "ekipi ynë"
-    },
-    {
-      "link": "service",
-      "name": "sherbimet"
-    },
-    {
-      "link": "pages",
-      "name": "faqet"
     },
     {
       "link": "contact",
       "name": "kontakt"
     }
   ],
+  "servicesPopper": {
+    "name": "services",
+    "servicesMenu": [
+      {
+        "link": "market analysis",
+        "name": "Analiza e tregut",
+        "text": "Analiza e tregut për biznesin tuaj."
+      },
+      {
+        "link": "business planning",
+        "name": "Planifikimi i biznesit",
+        "text": "Mënyra më e mirë për të planifikuar biznesin tuaj."
+      },
+      {
+        "link": "found management",
+        "name": "Menaxhimi i Gjetur",
+        "text": "Ne mbështesim biznesin tuaj me marketing dhe menaxhim."
+      },
+      {
+        "link": "audit",
+        "name": "Kontrolli",
+        "text": "Ne ju ofrojmë shërbimet tona të auditimit."
+      },
+      {
+        "link": "pr marketing",
+        "name": "PR & Marketingu",
+        "text": "Media Sociale është mënyra më e mirë"
+      },
+      {
+        "link": "consulting",
+        "name": "Konsulencë",
+        "text": "Chat dhe 24/7 orë ne mbështeje"
+      }
+    ]
+  },
   "logInBtn": "kyqu",
   "signUpBtn": "regjistrohu",
+  "orderBtn": { "link": "?", "name": "porosit tani" },
   "contactBtn": {
     "link": "contact",
     "name": "na kontaktoni"
@@ -206,21 +238,36 @@
     "title": "Zgjidhjet tona",
     "desc": "Sigurimi i zgjidhjeve të individualizuara që ju ndihmojnë të kuptoni më mirë tregjet, klientët dhe të dhënat tuaja"
   },
+  "mediaCards": [
+    {
+      "title": "Zgjidhjet e Biznesit",
+      "desc": "Pra, nëse e marrim përkufizimin fjalë për fjalë: një zgjidhje biznesi është një grup njësish softuerësh që krijojnë një sistem ndër-funksional për kompaninë tuaj.",
+      "teamMember": "Zgjidhjet më të mira të biznesit është me Ibkos kompaninë më të mirë në Prishtinë në Kosovë."
+    },
+    {
+      "title": "Konsulencë Strategjike",
+      "desc": "Konsultimi i menaxhimit është praktika e ndihmës për organizatat për të përmirësuar performancën e tyre. Organizatat mund të mbështeten në shërbimet e konsulentëve të menaxhimit për një numër arsyesh, duke përfshirë marrjen e këshillave të jashtme dhe qasjen në ekspertizën e specializuar të konsulentëve.",
+      "teamMember": "Kur keni nevojë për këshillim strategjik për biznesin tuaj, ju mund të zbuloni se vetëm në IBKOS ka këshilltarët më të mirë strategjikë."
+    }
+  ],
   "marketService": [
     {
-      "btn": ["readMoreBtn"],
+      "list": [
+        "Planifikimi kalendarik i detyrave të biznesit",
+        "Punë e lehtë me reagimet e klientëve",
+        "Menaxhimi i projekteve të kompanisë suaj"
+      ],
       "title": "Kerkim tregu",
-      "desc": "Si një kompani e plotë për hulumtimin e tregut, ne ju ndihmojmë të gjeni përgjigjet e pyetjeve tuaja në lidhje me konsumatorët, markat dhe produktet. Çdo vit, kryeni më shumë se një milion intervista, ndërsa grumbulloni dhe analizoni të dhëna"
+      "desc": "Studimi i tregut është një përpjekje e organizuar për të mbledhur informacion në lidhje me tregjet e synuara dhe klientët: dini rreth tyre, duke filluar nga kush janë ata. Isshtë një komponent shumë i rëndësishëm i strategjisë së biznesit dhe një faktor kryesor në ruajtjen e konkurrencës."
     },
     {
-      "btn": ["readMoreBtn"],
-      "title": "Analiza e tregut dhe parashikimet",
-      "desc": "Sa është madhësia e segmentit tuaj të tregut? Si po zhvillohen tregjet? Cilat janë tendencat prapa këtyre zhvillimeve? Për shumë vite, ne jemi të specializuar në ndërtimin e modeleve të tregut dhe zhvillimin e metodave të parashikimit."
-    },
-    {
-      "btn": ["solutionBtn", "contactBtn"],
-      "title": "Planifikimi dhe këshillimi i biznesit?",
-      "desc": "Sa është madhësia e segmentit tuaj të tregut? Si po zhvillohen tregjet? Cilat janë tendencat prapa këtyre zhvillimeve? Për shumë vite, ne jemi të specializuar në ndërtimin e modeleve të tregut dhe zhvillimin e metodave të parashikimit."
+      "list": [
+        "Përmbledhje e shitjeve ditore / javore",
+        "Shuma e pritjeve të konvertuar",
+        "Numri i referimeve dhe gazetave të hapura"
+      ],
+      "title": "Shërbimet e Shitjes",
+      "desc": "Shërbimi pas shitjes i një kompanie është e gjithë ndihma dhe informacioni që u ofron klientëve pasi ata të kenë blerë një produkt të veçantë. [biznes] ... një shitës me pakicë lokal i cili ofron një shërbim të mirë pas shitjes. Ata përpiqen ta mbajnë blerësin e makinës si një klient afatgjatë duke ofruar shërbim pas shitjes."
     }
   ],
   "ourFocus": "Fokusi ynë",
@@ -240,17 +287,6 @@
     {
       "title": "Zgjidhjet",
       "desc": "Një markë e shkëlqyeshme kombinon dizajnin dhe mesazhet për të ngjallur emocione tek klientët tuaj dhe strategjinë e drejtimit."
-    }
-  ],
-  "ourMethodsText": "Metodat tona",
-  "ourMethods": [
-    {
-      "title": "Metodat sasiore",
-      "desc": "Me mbi 1.000.000 intervista në internet në vit, IBKOS është një nga ofruesit më të mëdhenj të hulumtimit të tregut. Ne jemi ekspertët tuaj për sondazhe në internet të çdo lloji. Ne përgatisim rezultate të gatshme për përdorim"
-    },
-    {
-      "title": "Metodat sasiore",
-      "desc": "Me mbi 1.000.000 intervista në internet në vit, IBKOS është një nga ofruesit më të mëdhenj të hulumtimit të tregut. Ne jemi ekspertët tuaj për sondazhe në internet të çdo lloji. Ne përgatisim rezultate të gatshme për përdorim"
     }
   ],
   "solutions": {
@@ -382,10 +418,10 @@
   ],
   "getInTouch": "Na kontakto ",
   "subscribe": {
-    "placeholder":"Vendosni adresën tuaj të postës elektronike",
+    "placeholder": "Vendosni adresën tuaj të postës elektronike",
     "text": "Abonohuni për të rejat tona!",
     "btn": "Abonohu"
-    },
+  },
   "companyAbout": "Që nga viti 1999, ne kemi ndihmuar Kosovos Business Thrive",
   "followUs": "Na ndiqni",
   "alRight": "Të gjitha të drejtat e rezervuara"

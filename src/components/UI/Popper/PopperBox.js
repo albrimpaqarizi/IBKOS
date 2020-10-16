@@ -1,5 +1,4 @@
 import React, { useRef, useState, useEffect } from "react";
-import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 import "./index.css";
 import { ClickAwayListener, Popper, Zoom, Paper } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
@@ -33,7 +32,7 @@ const PopperBox = (props) => {
       return;
     }
 
-    setOpen(true);
+    setOpen(false);
   };
 
   const prevOpen = useRef(open);
@@ -53,12 +52,9 @@ const PopperBox = (props) => {
           aria-haspopup="true"
           onClick={handleToggle}
           className="button a_white"
-          // onMouseOver={handleToggle}
+          onMouseOver={handleToggle}
         >
           {props.name}
-          <span className="icon_dropdown">
-            {open ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}
-          </span>
         </button>
       </li>
 
@@ -69,6 +65,7 @@ const PopperBox = (props) => {
         anchorEl={anchorRef.current}
         role={undefined}
         transition
+        onMouseLeave={handleClose}
         disablePortal
         modifiers={{
           flip: {
@@ -87,10 +84,7 @@ const PopperBox = (props) => {
         <Zoom in={open}>
           <div>
             {open && (
-              <span
-                className="arrow arrow_white"
-                ref={handleArrowRef}
-              />
+              <span className="arrow arrow_white" ref={handleArrowRef} />
             )}
             <Paper
               className={classes.paper}

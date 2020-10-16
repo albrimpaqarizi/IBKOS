@@ -17,12 +17,12 @@
       "name": "about us"
     },
     {
-      "link": "our-team",
-      "name": "our team"
-    },
-    {
       "link": "solutions",
       "name": "solutions"
+    },
+    {
+      "link": "our-team",
+      "name": "our team"
     },
     {
       "link": "contact",
@@ -38,8 +38,8 @@
         "text": "Market Analysis for your business."
       },
       {
-        "link": "business planing",
-        "name": "Business Planing",
+        "link": "business planning",
+        "name": "Business Planning",
         "text": "Best way to plan your business."
       },
       {
@@ -228,27 +228,35 @@
     "desc": "Providing individualized solutions that help you better understand your markets, customers and data"
   },
   "mediaCards": [
-    { 
+    {
       "title": "Business Solutions",
       "desc": "So, if we take the definition literally: a business solution is a group of software units that create a cross functional system for your company.",
-       "teamMember": "Best Business Solutions is with Ibkos the best company in Pristina Kosova."
+      "teamMember": "Best Business Solutions is with Ibkos the best company in Pristina Kosovo."
     },
     {
       "title": "Strategic Consulting",
       "desc": "Management consulting is the practice of helping organizations to improve their performance. Organizations may draw upon the services of management consultants for a number of reasons, including gaining external advice and access to consultants' specialized expertise.",
-      "teamMember": "When you need the strategic consulting for your business you can only find that on IBKOS it has the best strategic consultings."
+      "teamMember": "When you need the strategic consulting for your business you can only find that on IBKOS it has the best strategic consultants."
     }
   ],
   "marketService": [
     {
-      "btn": ["readMoreBtn"],
+      "list": [
+        "Calendar planning of business tasks",
+        "Easy work with clients’ feedback",
+        "Management of your company’s projects"
+      ],
       "title": " Market Research",
-      "desc": "As a full-service market research firm, we help you find the answers to your questions about consumers, brands and products. Each year, weconduct more than a million interviews, while collecting and analyzing data"
+      "desc": "Market research is an organized effort to gather information about target markets and customers: know about them, starting with who they are. It is a very important component of business strategy and a major factor in maintaining competitiveness."
     },
     {
-      "btn": ["readMoreBtn"],
-      "title": "Market Analysis & Forecasts",
-      "desc": "What's the size of your market segment? How are markets developing? What are the trends behind these developments? For many years, we have specialized in building market models and developing forecasting methods."
+      "list": [
+        "Daily/Weekly sales summary",
+        "Amount of converted leads",
+        "Number of referrals and opened newsletters"
+      ],
+      "title": "Sales Services",
+      "desc": "A company's after-sales service is all the help and information that it provides to customers after they have bought a particular product. [business] ...a local retailer who offers a good after-sales service. They attempt to keep the car buyer as a long-term customer by offering after-sales service."
     }
   ],
   "ourFocus": "our focus",
@@ -268,17 +276,6 @@
     {
       "title": "Solutions",
       "desc": "A great brand combined design and messaging to evoke emotion in your customers and drive strategy."
-    }
-  ],
-  "ourMethodsText": "Our Methods",
-  "ourMethods": [
-    {
-      "title": "Quantitative methods",
-      "desc": "With over 1,000,000 online interviews a year, IBKOS is one of the largest market research providers. We are your experts for online surveys of any kind. We prepare ready-to-use results"
-    },
-    {
-      "title": "Quantitative methods",
-      "desc": "With over 1,000,000 online interviews a year, IBKOS is one of the largest market research providers. We are your experts for online surveys of any kind. We prepare ready-to-use results"
     }
   ],
   "solutions": {

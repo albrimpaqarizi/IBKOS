@@ -1,18 +1,8 @@
-.sectionS3 {
-  background-image: linear-gradient(
-      0deg,
-      rgba(37, 155, 249, 64%),
-      rgba(37, 155, 249, 64%)
-    ),
-    url("../../../assets/images/MaskGroup11.jpg");
-  padding: 3% 0;
-}
-
-.sectionS6 {
+.sectionS4 {
   background-image: url("../../../assets/images/about/Mask\ Group\ 7.jpg");
   padding: 5% 0%;
 }
-.sectionS5 {
+.sectionS3 {
   background-image: linear-gradient(
       0deg,
       rgba(28, 30, 32, 95%),
@@ -20,8 +10,4 @@
     ),
     url("../../../assets/images/Mask\ Group\ 15.jpg");
   padding: 3% 0;
-}
-
-.sectionS3 button {
-  text-decoration: none;
 }

@@ -1,0 +1,33 @@
+.sectionS3 .solutionCard_img1,
+.sectionS3 .solutionCard_img2,
+.sectionS3 .solutionCard_img3 {
+  width: 100%;
+  height: 190px;
+  background-size: cover;
+  border-radius: 25px;
+  padding: 0.6rem 1.5rem;
+}
+.sectionS3 .solutionCard_img1 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(28, 30, 32, 41%),
+      rgba(28, 30, 32, 41%)
+    ),
+    url("../../../assets/images/solutions/luis-villasmil-4V8uMZx8FYA-unsplash.jpg");
+}
+.sectionS3 .solutionCard_img2 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(28, 30, 32, 41%),
+      rgba(28, 30, 32, 41%)
+    ),
+    url("../../../assets/images/solutions/nordwood-themes-EZSm8xRjnX0-unsplash.jpg");
+}
+.sectionS3 .solutionCard_img3 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(28, 30, 32, 41%),
+      rgba(28, 30, 32, 41%)
+    ),
+    url("../../../assets/images/solutions/Mask\ Group\ 17.jpg");
+}

@@ -17,24 +17,56 @@
       "name": "Über uns"
     },
     {
+      "link": "solutions",
+      "name": "Lösungen"
+    },
+    {
       "link": "our-team",
       "name": "unser Team"
-    },
-    {
-      "link": "service",
-      "name": "bedienung"
-    },
-    {
-      "link": "pages",
-      "name": "seiten"
     },
     {
       "link": "contact",
       "name": "kontaktier"
     }
   ],
+  "servicesPopper": {
+    "name": "services",
+    "servicesMenu": [
+      {
+        "link": "market analysis",
+        "name": "Marktanalyse",
+        "text": "Marktanalyse für Ihr Unternehmen."
+      },
+      {
+        "link": "business planning",
+        "name": "Geschäftliche Planung",
+        "text": "Der beste Weg, um Ihr Geschäft zu planen."
+      },
+      {
+        "link": "found management",
+        "name": "Management gefunden",
+        "text": "Wir unterstützen Ihr Unternehmen mit Marketing und Management."
+      },
+      {
+        "link": "audit",
+        "name": "Prüfung",
+        "text": "Wir bieten Ihnen unsere Prüfungsdienstleistungen an."
+      },
+      {
+        "link": "pr marketing",
+        "name": "PR & Marketing",
+        "text": "Social Media ist der beste Weg"
+      },
+      {
+        "link": "consulting",
+        "name": "Beratung",
+        "text": "Chat und 24/7 h unterstützen wir"
+      }
+    ]
+  },
   "logInBtn": "einloggen",
   "signUpBtn": "registrieren",
+  "orderBtn": { "link": "?", "name": "jetzt bestellen" },
   "contactBtn": {
     "link": "contact",
     "name": "kontaktiere uns"
@@ -206,21 +238,36 @@
     "title": "Unsere Lösungen",
     "desc": "Bereitstellung individueller Lösungen, mit denen Sie Ihre Märkte, Kunden und Daten besser verstehen können"
   },
+  "mediaCards": [
+    {
+      "title": "Geschäftslösungen",
+      "desc": "Wenn wir die Definition also wörtlich nehmen: Eine Geschäftslösung ist eine Gruppe von Softwareeinheiten, die ein funktionsübergreifendes System für Ihr Unternehmen erstellen.",
+      "teamMember": "Best Business Solutions ist mit Ibkos das beste Unternehmen im Pristina Kosovo."
+    },
+    {
+      "title": "Strategische Beratung",
+      "desc": "Unternehmensberatung ist die Praxis, Organisationen dabei zu unterstützen, ihre Leistung zu verbessern. Unternehmen können aus einer Reihe von Gründen auf die Dienste von Unternehmensberatern zurückgreifen, darunter externe Beratung und Zugang zu Fachwissen der Berater.",
+      "teamMember": "Wenn Sie die strategische Beratung für Ihr Unternehmen benötigen, können Sie nur feststellen, dass IBKOS die besten strategischen Berater hat."
+    }
+  ],
   "marketService": [
     {
-      "btn": ["readMoreBtn"],
+      "list": [
+        "Kalenderplanung von Geschäftsaufgaben",
+        "Einfache Arbeit mit Kundenfeedback",
+        "Management der Projekte Ihres Unternehmens"
+      ],
       "title": "Marktforschung",
-      "desc": "Als umfassendes Marktforschungsunternehmen helfen wir Ihnen, Antworten auf Ihre Fragen zu Kunden, Marken und Produkten zu finden. Führen Sie jedes Jahr mehr als eine Million Interviews durch, während Sie Daten sammeln und analysieren"
+      "desc": "Marktforschung ist eine organisierte Anstrengung, um Informationen über Zielmärkte und Kunden zu sammeln: Wissen Sie über sie, beginnend damit, wer sie sind. Es ist ein sehr wichtiger Bestandteil der Geschäftsstrategie und ein wichtiger Faktor für die Aufrechterhaltung der Wettbewerbsfähigkeit."
     },
     {
-      "btn": ["readMoreBtn"],
-      "title": "Marktanalyse und Prognosen",
-      "desc": "Wie groß ist Ihr Marktsegment? Wie entwickeln sich die Märkte? Welche Trends stehen hinter diesen Entwicklungen? Seit vielen Jahren haben wir uns darauf spezialisiert, Marktmodelle zu erstellen und Prognosemethoden zu entwickeln."
-    },
-    {
-      "btn": ["solutionBtn", "contactBtn"],
-      "title": "Geschäftsplanung und Beratung?",
-      "desc": "Wie groß ist Ihr Marktsegment? Wie entwickeln sich die Märkte? Welche Trends stehen hinter diesen Entwicklungen? Seit vielen Jahren haben wir uns darauf spezialisiert, Marktmodelle zu erstellen und Prognosemethoden zu entwickeln."
+      "list": [
+        "Tägliche / wöchentliche Verkaufsübersicht",
+        "Anzahl der konvertierten Leads",
+        "Anzahl der Empfehlungen und geöffneten Newsletter"
+      ],
+      "title": "Verkaufsservices",
+      "desc": "Der Kundendienst eines Unternehmens bietet alle Hilfe und Informationen, die Kunden nach dem Kauf eines bestimmten Produkts erhalten. [Geschäft] ... ein lokaler Einzelhändler, der einen guten Kundendienst anbietet. Sie versuchen, den Autokäufer als langfristigen Kunden zu halten, indem sie einen Kundendienst anbieten."
     }
   ],
   "ourFocus": "unser Fokus",
@@ -243,17 +290,6 @@
       "btn": ["solutionBtn", "contactBtn"],
       "title": "Lösungen",
       "desc": "Eine großartige Marke kombiniert Design und Messaging, um bei Ihren Kunden Emotionen hervorzurufen und die Strategie voranzutreiben."
-    }
-  ],
-  "ourMethodsText": "Unsere Methoden",
-  "ourMethods": [
-    {
-      "title": "Quantitative Methoden",
-      "desc": "Mit über 1.000.000 Online-Interviews pro Jahr ist IBKOS einer der größten Marktforschungsanbieter. Wir sind Ihre Experten für Online-Umfragen jeglicher Art. Wir bereiten gebrauchsfertige Ergebnisse vor"
-    },
-    {
-      "title": "Quantitative Methoden",
-      "desc": "Mit über 1.000.000 Online-Interviews pro Jahr ist IBKOS einer der größten Marktforschungsanbieter. Wir sind Ihre Experten für Online-Umfragen jeglicher Art. Wir bereiten gebrauchsfertige Ergebnisse vor"
     }
   ],
   "solutions": {
@@ -385,10 +421,10 @@
   ],
   "getInTouch": "In Kontakt kommen",
   "subscribe": {
-    "placeholder":"Geben Sie Ihre E-Mail-Adresse ein",
+    "placeholder": "Geben Sie Ihre E-Mail-Adresse ein",
     "text": "Abonniere unseren Newsletter!",
     "btn": "Abonnieren"
-    },
+  },
   "companyAbout": "Seit 1999 unterstützen wir Kosovos Business Thrive",
   "followUs": "Folge uns",
   "alRight": "Alle Rechte vorbehalten"
